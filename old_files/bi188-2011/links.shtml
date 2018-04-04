@@ -1,0 +1,44 @@
+<!--#include file="head.html" -->
+
+<h1> Bi 188 Spring 2011 - Useful Links</h1>
+<hr>
+<br>
+<ul>
+<li> <a href=http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM>Online Mendelian Inheritance in Man (OMIM)</a> - a catalog of human genes and genetic disorders 
+authored and edited by Dr. Victor A. McKusick and his colleagues at 
+Johns Hopkins and elsewhere, 
+and developed for the World Wide Web by NCBI, the National Center 
+for Biotechnology Information
+<li>
+<a href=http://www.repeatmasker.org>RepeatMasker</a> - a good program for 
+masking out repeat sequence
+<li><a href=http://bioinfo.weizmann.ac.il/cards/index.shtml>GeneCards</a>
+- a database of human genes, their products and their involvement in diseases. It offers concise information about the functions of all human genes that have 
+received official names
+<li> <a href=http://mussa.caltech.edu>MUSSA</a> - an n-way sequence comparison program
+<li> <a href=http://genome.ucsc.edu/>UCSC Genome Browser</a> - a database and browser of various genomes, including mouse and human
+<li> <a href=http://symatlas.gnf.org/SymAtlas/> GNF SymAtlas </a> - an expression database run by the Genomics Institute of the Novartis Research Foundation
+<li> <a href=http://www.geneontology.org> Gene Ontology </a> - a database of Gene Ontology (GO) numbers for various genes
+<li> <a href=http://hapmap.ncbi.nlm.nih.gov/> The International HapMap Project </a>
+<li> <a href=http://www.ncbi.nlm.nih.gov/snp> dbSNP</a> - a database of SNPs for various organisms
+<li> <a href=http://www.genome.gov/10005107> ENCODE Project</a> - website of the ENCODE project
+<li> <a href=http://genome.ucsc.edu/ENCODE/> ENCODE Project at UCSC</a> - the ENCODE project at UCSC
+<li> <a href=http://www.modencode.org/> modENCODE</a> - the modENCODE project (fly and worm)
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

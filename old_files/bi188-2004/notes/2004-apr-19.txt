@@ -1,0 +1,205 @@
+Bi188
+
+* Microbial organisms
+* genome evolution
+
+* perimidine synthesis
+  1) make carbonate phosphate
+  2) Uregna sustinate
+     (alosteric enzyme)
+  3) Dihydral oritate
+  4) Oritate
+  5) OMP
+  6) UMP
+
+different bacteria
+  for step 2, catalytic subunits similar, regulatory region completely
+  different, gets more different the further away you get.
+
+DHO step 
+  at least 2 different enzymes to solve this problem
+  e. coli has human, yeast has completly different
+
+Fused polypeptide for OMP and UMP synthesis
+
+steps 1,2,3 have been fused for several other organisms
+  though, in yeast, the part for step 3 is broken, and a different
+  gene is performing the function
+
+phylogenetic trees based on rhibosomal sequences
+
+       human
+       s.pomba
+       neurospora/asperiglis
+       candida
+       sacromicies
+
+Tree based on rhibosomal sequences may be different for your gene of
+interest. There's horizontal transmission or something else.
+
+Can construct a tree based on a larger set of genes
+
+* Genomes
+
+bacterial genome organization (textbooks simplified it)
+  Usually think in terms the K12 ?
+  genome size is quite variable even in related species
+
+  lime disease bacteria has a linear chromosome with hairpins.
+  (others don't have the hairpins)
+    most plasmids add another 60% coding capcity (only a few are
+    actually necessary)
+
+  what is a chromosome in bacteria
+    essential functions?
+    rhibosomes?
+
+Eukaryotes
+  * linear useful for reciprocal recombination
+    * linear safe for odd number of copies
+
+* duplicate sequence? 
+  * how did that happen?
+    * bacterial world
+    * rhodibacter photosynthetic
+      * has 2 chromosomes, 5 plasmids
+        1) 3.2 mb
+        2) 0.9 mb
+        duplicaton between chromosomes
+        looked for exact duplication sequences
+          * how long were they on average
+          * intrachromosome are smaller "thus older"
+          * inter chromosmoes are longer - younger
+        paraloge genes
+        type A - CI/X  CII  - anchient duplications
+        type B - CI/CII X
+          X - gene in related species
+          CI/CII related gene on two chromosomes
+
+* smallest bacterial genomes
+  * mycoplasma 580 kb genome 1/8 e. coli
+  * low G/C content, ~ 470 genes
+    * very little metobolism
+      has to get amino acids, nucleotides from the environment
+      one operon for bactera
+      has lots of transporters to import useful molecules 
+  * Buchnera - endosymbants of insects
+    * live in insect cells in symbosis
+    * ~ 600 kb range
+    * reasonably close to e.coli
+    * makes essential amino acids for the host
+      * put some aminio acids on plasmids to up gene dosage
+    * ~ 300 between similar types of organisms
+    * ~ 200 when compared to mycoplasma
+  * nanoarchaerum
+    * symbiotic relationship with thermophile
+    * ~ 4[79]0 kb
+    * unclear where it's getting energy
+    * very different from all other bacteria
+    * seems to be deep branch on evolutionary tree
+      * very deep using rhibosomal protein
+      * very few operons
+    * small geneome but more genes than above examples 552
+      * small intergenic regions
+      * things that appear as single polypeptide in familiar organisms
+        appear as two polypeptides here.
+      * tRNA program can't find all the tRNAs
+
+* e.coli genome "familiar"
+  * K12, early selected for seqeuencing
+  * O157:H7 "bad burgers"
+    * causes severe diahrea
+  * ureopathic 
+    * live as commensals in gut, but contain genes to attach to
+      urinary track.
+  * salmenila different from e.coli
+    * can invade cells, transmit as macrophages
+  * shugella? disentery
+
+  * looked to see what made O157 a pathagen hoping for small
+    difference
+    * K12, O157 share 4.1 mb "backbone", 98% identical at sequence level
+    * O157 has unique 1.3 mb
+    * k12 has 0.5 mb
+    * lysogenic phages can add/subtract large blocks from genome
+    * pathogenicity "islands" (>50 bp inserted)
+      * O157 has 177 islands
+        * has some genes for toxins
+      * K12 has 234 islands
+      
+    * compare with uninary tract e.coli and compare
+      * see Welch_etal02 pg 4
+      * less than 40% are common between all 3 organisms
+
+  * salmonila typhid
+    * ~ 4.8 mb, + 2 large plasmids
+    * large numbers of pseduo-genes, not just research strain
+      * recent loss
+
+  * shugella
+    * 13 large rearrangements compared to e.coli.
+
+* diploid organisms
+  * sequence one or two copies of genome.
+  * shotgun sequence whole thing and hope the assembler works it out
+  
+* Eukaryotic genes
+  * Gene order
+  * found many nearest neighbors when sequencing
+    * except order might have flipped
+    * many local inversions + large scale translocations
+  * try comparing two closely related organism to sacromicies
+    * sacromicies genome doubled, look for genes that are still
+      conserved between two copies.
+
+* how to figure out unknown genes in saccromyces
+  * knock out YFG1 (your favorite gene 1)
+  * use "molecular barcodes" to id organism
+    * different short sequence surrounded by common sequence
+      * PCR amplify common sequence and spot on microarry for short
+        sequence
+  * make mutants in heterozygote strains
+    * can exist as haploid/diploid
+    * 1100 essential
+    * 15% of viables had reduced growth rate on rich media
+  * Drug searching
+    * using heterozygotes grow in antibotic media and look for reduced
+      fitness 
+
+* look for alignment between distant bacteria
+  * operons give some help
+
+* genomic profiling
+  * using large number of sequenced organisms
+
+             species (completely sequenced)
+
+          X        X          X
+ Genes  X             XX
+             X X      XX
+
+  Can cluster looking for genes that always show up together
+  possibly find genes doing related things
+
+  at least 50 completel genomes for bacteria
+
+  what's a species?
+    * union close species?
+    * look at closly related species good for functional
+  what's a gene? 
+    genes get fused together, 
+      * break them apart to find in each genomes
+
+  * COG cluster of orthologous group
+    * at least 3 species
+
+  * berlius only 43% in COGs
+  * genes conserved in distant organisms are probably doing something
+    similar. 
+
+* HW
+  * pick genetic disorder by monday, email it to tracy
+  * no cystic fibrosis
+  * some work will be done using FRII
+  * 5-6 pages, double spaced?
+    * show each component as seperate discussion.

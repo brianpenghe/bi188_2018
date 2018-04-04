@@ -1,0 +1,318 @@
+<!--#include file="head.html" -->
+
+<H1> Bi 188 Class Notes and References</H1>
+<hr>
+
+
+<p> Here I will attempt to keep an updated list of class notes.  Any
+projected material I can obtain will be posted (i.e. Powerpoint slides,
+overheads, etc.).  
+<p>
+There are two sets of notes for each lecture, 
+taken by two different people in class. 
+Notes taken by Joe Roden are in a Wiki Wiki format. 
+These notes can be edited. If you find errors or want to add 
+information to these notes, please do. Some editing for spelling 
+and accuracy has already been done. 
+<p>
+The other set of notes is taken by Diane Trout. For formatting reasons, 
+these are available as text files. 
+<p>
+Both sets of notes may contain errors. Remember, they are trying to type at the speed of the lecturer in class. They are meant only as a supplement to your own note taking in class. When in doubt, trust your own notes or textbook or ask Tracy. 
+
+<p>All the notes are available at 
+<a href=http://woldlab.caltech.edu/bi188/wiki/>
+http://woldlab.caltech.edu/bi188/wiki/</a>
+and links to them are posted under each lecture below.
+
+
+
+<p>
+
+<h2> Classes </h2>
+
+<font color=blue>
+<a href=#march29>March 29</a> | <a href=#april5>April 5</a> | <a href=#april12>April 12</a> | <a href=#april19>April 19</a> 
+| <a href=#april26>April 26</a> 
+| <a href=#may3>May 3</a> | <a href=#may10>May 10</a> 
+| <a href=#may17>May 17</a> | <a href=#may24>May 24</a>
+</font>
+<br><br><font color=red>*</font> = recommended reading
+
+<p><br><br>
+<font size=+1 color=red><a name=march29><b>March 29</b></a></font>
+      
+     <br>Sequence analysis: statistical analysis of sequences, alignment algorithms, gene prediction
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture1Notes>WikiWiki Notes</a>
+
+
+
+     <p><b>References:</b>
+<dl>
+   <dt>Mrazek, J. and Karlin, S.
+   <dd><a href=http://www.pnas.org/cgi/content/full/95/7/3720><i>Strand compositional asymmetry in bacterial and large viral genomes</i></a>
+<br>Proc Natl Acad Sci U S A. 1998 Mar 31;95(7):3720-5
+
+ <dt>Sharp, PM and Li, WH
+<dd><a href=http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&pubmedid=3547335><i>The codon Adaptation Index--a measure of directional synonymous codon usage bias, and its potential applications</i></a>
+<br>Nucleic Acids Res. 1987 Feb 11;15(3):1281-95
+
+<dt>Henikoff S, Henikoff JG
+<dd><i><a href=http://www.pnas.org/cgi/reprint/89/22/10915.pdf>Amino acid substitution matrices from protein blocks</a></i>
+<br>Proc Natl Acad Sci U S A. 1992 Nov 15;89(22):10915-9
+
+<dt>Burge C, Karlin S.  <b>(Genscan paper)</b>
+<dd><a href=http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WK7-45VGF7T-9&_coverDate=04%2F25%2F1997&_alid=160112332&_rdoc=1&_fmt=&_orig=search&_qd=1&_cdi=6899&_sort=d&view=c&_acct=C000050264&_version=1&_urlVersion=0&_userid=1010281&md5=005a1721daf865b7d0d94c3f79ec68f2><i>Prediction of complete gene structures in human genomic DNA</i></a>
+<br>J Mol Biol. 1997 Apr 25;268(1):78-94. 
+
+<dt>Korf I, Flicek P, Duan D, Brent MR
+<dd><a href=http://bioinformatics.oupjournals.org/cgi/pmidlookup?view=reprint&pmid=11473003><i>Integrating genomic homology into gene structure prediction</i></a>
+<br>Bioinformatics. 2001;17 Suppl 1:S140-8. 
+
+
+</dl>
+
+<p><br><br>
+<font size=+1 color=red><a name=april5><b>April 5</b></a></font>
+
+     <br>Comparative genomic and informatics tools: basic properties of 
+genomes, non-coding RNAs, cis-acting regulatory sequences, unusual gene families, analysis tools in current use.
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture2Notes>WikiWiki Notes</a>
+<li><a href=notes/188lecture1+2004upload.ppt>PowerPoint Slides</a>
+
+     <p><b>References:</b>
+<dl>
+<dt>Chapter 10 in Hartwell textbook
+<dd>&nbsp;
+
+<dt><font color=red>*</font>
+Waterston R, et al
+<dd><a href=papers/bi188mousegenome2002.pdf><i>Initial sequencing and comparitive analysis of the mouse genome</i></a>
+<br>Nature, v. 420 pp. 520-562; December, 2002.
+
+<dt><font color=red>*</font>
+Dehal, P., et al
+<dd><a href=papers/stubbsH19chromcompbi188.pdf><i>Human Chromosome 19 and
+Related Regions in Mouse: Conservative and Lineage-Specific Evolution</i></a>
+<br>Science, Vol 293, pp. 104-112; July 6, 2001.
+
+<dt><font color=red>*</font>
+Shannon, M. et al
+<dd><a href=papers/stubbsznfingerH19bi188.pdf><i>Differential Expansion of Zinc-Finger Transcription
+Factor Loci in Homologous Human and Mouse
+Gene Clusters</i></a>
+<br>Genome Research 13: 1097-1110; 2003.
+</dl>
+
+
+<p><b>Links:</b>
+<dl>
+<dt><a href=http://genome.ucsc.edu/>UCSC Draft Human Genome Browser</a> 
+</dl>
+
+
+<p><br><br>
+<font size=+1 color=red><a name=april12><b>April 12</b></a></font>
+
+<br>Global gene expression studies: tools for analysis, ordering and clustering, data quality and statistics, practical considerations 
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture3Notes>WikiWiki Notes</a>
+
+          <p><b>References:</b>
+	  <dl>
+
+	  <dt><font color=red>*</font>
+	  Ross, D.T. et al 
+<dd><a href=papers/bi188_3/trichebotsteintumorclass.pdf><i>Systematic variation in gene expression
+patterns in human cancer cell lines</i></a>
+<br>Nature Genetics, Volume 24, March 2000
+<br>The Botstein 60 tumor cell lines paper
+
+<dt><font color=red>*</font>
+Lee, T.I. et al
+<dd><a href=papers/bi188_3/leeyoungchrmatinipchipchip.pdf><i>Transcriptional Regulatory Networks in Saccharomyces cerevisiae</i></a>
+<br>Science Vol 298 25 October 2002
+<br>Lee et al microarray chip/chip paper
+
+<dt><font color=red>*</font>
+Bergmann et al
+<dd><a href=papers/bi188_3/barkaimultiorganismplos2004.pdf><i>Similarities and Differences in Genome-Wide Expression Data of Six Organisms</i></a>
+<br>PLoS Biology, January 2004, Volume 2, Issue 1, Page 0085
+<br>Barkai multiple organism paper
+
+<dt><font color=red>*</font>
+Eisen, M.B. et al
+<dd><a href=papers/bi188_3/eisenbotsteinpnasxclust.pdf><i>Cluster analysis and display of genome-wide expression patterns</i></a>
+<br>Proc. Natl. Acad. Sci. USA
+Vol. 95, pp. 14863-14868, December 1998
+<br>Eisen and Botstein X clust paper
+
+<dt>McCarrol, S.A. et al
+<dd><a href=papers/bi188_3/Bargmannliflywormarrayage.pdf><i>Comparing genomic expression patterns across species identifies shared transcriptional profile in aging</i></a>
+<br>Nature Genetics, Vol 36, Num 2, February 2004
+
+<dt>Perou, C.M. et al
+<dd><a href=papers/bi188_3/Botsteinarray188triche.pdf><i>Molecular portrait of human breast tumors</i></a>
+<br>Nature, Vol 406, 17 August 2000
+
+<dt>Bergmann, S. et al
+<dd><a href=papers/bi188_3/Barkaisignaturephysrev03.pdf>Iterative signature algorithm for the analysis of large-scale gene expression data</i></a>
+<br>Physical Review E 67, 031902 (2003)
+</dl>
+
+<p><br>
+<b>Optional Assignment:</b>
+<dl>
+<dt><a href=http://issola.caltech.edu/~t/sites/family.caltech.edu/project/>Comparative Sequence Analysis</a>
+</dl>
+
+<p><br>
+<b><font size=+1 color=red><a name=april19>April 19</a></b></font>
+<br>Microbes and other model genomes: genome organization and evolution, large-scale gene disruption 
+<p><a href=projects.shtml>Midterm project</a> handed out in class.  Project is due May 10 and topic selection must be made by April 26.
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture4Notes>WikiWiki Notes</a>
+
+
+<p><b>References:</b>
+<dl>
+    <dt><font color=red>*</font>
+Welch et al
+<dd><a href=papers/Welch_etal02.pdf><i>Extensive mosaic structure revealed by the complete
+	      genome sequence of uropathogenic Escherichia coli</i></a>
+       <br>PNAS 99, 17020-4 (2002)  
+       <br>E.coli genomes
+
+<dt><font color=red>*</font>
+Waters et al
+<dd><a href=papers/Waters_etal03.pdf><i>The genome of Nanoarchaeum equitans: Insights into early archaeal evolution and derived parasitism</i></a>
+	<br>PNAS 100 12984-8 (2003) 
+	<br>very small archaeon genome
+			      
+<dt><font color=red>*</font>
+Kellis et al
+<dd><a href=papers/Kellis_etal04.pdf><i>Proof and evolutionary analysis of ancient genome duplication in the yeast Saccharomyces cerevisiae</i></a>
+				        <br>Nature 428 617-24 (2004)
+					  <br>genome duplication
+
+<dt><font color=red>*</font>
+Giaever et al
+<dd><a href=papers/Giaever_etal02.pdf><i>Functional profiling of the Saccharomyces cerevisiae genome</i></a>
+	<br>Nature 418 387-391 (2002) 
+	<br>Saccharomyces deletion set
+						      
+<dt>Lum et al
+<dd><a href=papers/Lum_etal04.pdf><i>Discovering modes of action for therapeutic compounds using a genome-wide screen of yeast heterozygotes</i></a>
+<br>Cell. 2004 Jan 9;116(1):121-37
+<br>antibiotics screen
+
+<dt>
+Tatusov et al
+<dd><a href=papers/Tatusov_etal03.pdf><i>The COG database: an updated version includes eukaryotes</i></a>
+<br>BMC Bioinformatics. 2003 Sep 11;4(1):41
+
+</dl>
+
+<p><br>
+<b><font size=+1 color=red><a name=april26>April 26</a></b></font>
+<br>Human genetics: gene mapping and discovery, results from population genetics, susceptibility to infection, analysis of pathways 
+<p>Tutorial for the project scheduled for 10pm Tuesday, April 27 in the regular 
+lecture room.  A <a href=bi188-project.html>handy URL</a> was used in the tutorial that included links to 
+sites that you'll need to use.  
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture5Notes>WikiWiki Notes</a>
+
+
+<p><b>References:</b>
+<dl>
+   <dt><font color=red>*</font>
+   Samson et al
+      <dd><a href=papers/Samson_etal96.pdf><i>Resistance to HIV-1 infection in 
+         caucasian individuals bearing mutant alleles of the CCR-5 chemokin receptor
+	    gene</i></a>
+	       <br>Nature 382, 722-5 (1996)   
+	          <br>CCR5 and HIV
+		     
+		     <dt><font color=red>*</font>Modiano et al
+		     <dd><a href=papers/Modiano_etal01.pdf><i>Haemoglobin C protects against clinical
+		     Plasmodium falciparum malaria</i></a>
+		     <br>Nature 414, 305-8 (2001) 
+		     <br>HbC and malaria
+
+		     <dt><font color=red>*</font>The International FMF Consortium"  
+		     <dd><a href=papers/IFMFC.pdf><i>Ancient Missense Mutations in a New Member
+		     of the RoRet Gene Family Are Likely to Cause
+		     Familial Mediterranean Fever</i></a>
+		     <br>Cell 90, 797-807 (1997) 
+		     <br>Familial Mediterranean Fever
+
+</dl>
+
+<p><br>
+<b><font size=+1 color=red><a name=may3>May 3</a></b></font>
+<br>No class
+
+<p><br>
+<b><font size=+1 color=red><a name=may10>May 10</a></b></font>
+<br>Genome stability and epigenetic effects: Prader Willi and the biology of imprinting, microdeletions, triplet repeats, recent large-scale duplications 
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture7Notes>WikiWiki Notes</a>
+<li><a href=notes/188tripletrepeat2004upload.ppt>PowerPoint Notes</a>
+
+<p><br>
+<b><font size=+1 color=red><a name=may17>May 17</a></b></font>
+<br>Transposition: types and distribution of transposons, switching systems, Neurospora RIP, mobile elements and the human genome 
+<p><b>Notes:</b>
+<br><a href=wiki/index.cgi/Lecture8Notes>WikiWiki Notes</a>
+
+<p><b>References:</b>
+<dl>
+<dt><font color=red>*</font>Lander et al
+<dd><a href=papers/Lander_etal01.pdf><i>Initial sequencing and analysis
+of the human genome</i></a>
+<br>Nature 409: 860-921 (2001)
+<br>The draft human genome sequence
+</dl>
+
+
+
+<p><br>
+<b><font size=+1 color=red><a name=may24>May 24</a></b></font>
+<br>Gene transfer and gene therapy - Theory, practice, future considerations. 
+Ethical issues in genomics and gene therapy 
+
+<p><b>Notes:</b>
+<li><a href=wiki/index.cgi/Lecture9Notes>WikiWiki Notes</a>
+<li><a href=notes/bi188genetherapyupload04.ppt>PowerPoint Slides</a>
+
+<p><b>References:</b>
+<dl>
+<dt><font color=red>*</font>Caldecott, K.
+<dd><a href=papers/bi188brca1brca2proteinint.pdf><i>The BRCT Domain: Signaling with Friends?</i></a>
+<br>Science 302: 579-580 (2003)
+<br>A perspective on the King et al article
+
+<dt><font color=red>*</font>King, M. et al
+<dd><a href=papers/bi188brca1brca2risk2004bi188.pdf><i>Breast and ovarian cancer risks due to inherited mutations in BRCA1 and BRCA2</i></a>
+<br>Science 302: 643-646 (2003)
+
+<dt><font color=red>*</font>Holden, Constance
+<dd><a href=papers/bi188race_genomics_medicine.pdf><i>Race and Medicine</i></a>
+<br>Science 302: 594-596 (2003)
+<br>A news article on the same topic
+
+</dl>
+
+
+<!--#include file="foot.html" -->
+
+
+
+

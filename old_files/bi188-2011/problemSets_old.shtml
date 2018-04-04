@@ -1,0 +1,104 @@
+<!--#include file="head.html" -->
+
+<h1>Bi 188 Spring 2007 - Extra Credit</h1>
+<hr>
+<p> Extra credit is optional, but can be helpful to both focus your studying and gain a few extra points here and there. Extra credit should be completed individually.
+<p>There is no limit to the number of problem sets you can do nor a ceiling for the number of points you can earn. Partial completion of extra credit assignments will still earn partial credit. Full credit on a problem set is worth 2.5% of your final grade, meaning a quarterly maximum of 25% of your final grade. 
+<p>
+<dt>
+<br><li> <b>Week 1:</b> 3/26         <dd> <i> Noonan Lecture </i> - Short answers (1-2 sentences) are fine. Due 4/2 
+<dt> <dd> 1. What is the importance of sequencing cave bear?
+<dt> <dd> 2. Enhancers for what group/type of proteins showed the highest divergence between humans and other primates?
+<dt> <dd> 3. How were they able to determine experimentally that the cis-regulatory enhancers functioned differently in humans?
+<dt> 
+<br><li> <b>Week 2:</b> 4/2 <dd> <i> Using Mussa</i> - Due 4/9 in lecture      
+<dt> <dd> 1. Download the Mussa GL program from the <a href="http://mussa.caltech.edu"> Mussa website</a>.
+<dt> <br>
+<dt> <dd> 2. Download the sequence for the human genes HOXA5, HOXB5, and HOXC5 from the <a href="http://genome.ucsc.edu/"> UCSC genome browser</a>. Be sure to include the upstream and downstream sequence, all the way up to the next upstream and downstream genes (use the HOX4 and HOX6 genes as the nearest neighbors). <b>Save the gene browser image</b> of the HOXA5 region for which you downloaded the sequence.
+<dt> <br>
+<dt> <dd> 3. Run a Mussa comparison of these three genes. Save and use this <a href="EC2.annot"> annotation file</a> for all of the sequences. Start with a window size of 30 and a threshold of 21. <b>Take screenshots</b> (File -> Save to image...) at 23/30 and 29/30.
+<dt> <br>
+<dt> <dd> 4. Download the sequence for mouse gene Hoxa5 and the frog (<i>Xenopus tropicalis</i>) gene hoxa5 (when downloading the frog sequence, select to have the sequence reverse complemented). Again, be sure to include the upstream and downstream sequence up to the nearest neighbors (use the Hoxa4 and Hoxa6 genes as the nearest neighbors). <b>Save the gene browser image</b> of the mouse Hoxa5 region for which you downloaded the sequence.
+<dt> <br>
+<dt> <dd> 5. Run a Mussa comparison of the three Hoxa5 genes (human, mouse, and frog). Save and use this <a href="EC2.annot"> annotation file</a> for all of the sequences (this file is the same as the above annotation file). Start with a window size of 30 and a threshold of 21. <b>Take screenshots</b> at 23/30 and 29/30.
+<dt> <br>
+<dt> <dd> 6. Did you have any difficulties identifying the relevant region in frog? What do you notice about the two different comparisons? What conclusions can you draw from this?
+<dt> <br>
+<dt> <dd> Submit the screen shots from 2, 3, 4, and 5 (6 images in total) as well as a short written response to 6. Partial completion of this assignment will be given partial credit.
+<dt>
+<br><li> <b>Week 3:</b> 4/9      <dd> <i>Sequencing Genomes</i> - Short answers (2-3 sentences) are fine. Due 4/16 in lecture.
+<dt><br>
+<dt> <dd> 1. Why are BAC's better tools for sequencing mammalian genomes than YAC's? Be sure to address this in the context of HGS and WGS. As with all your answers, be certain to define all of the relevant terms, especially abbreviations. 
+<dt><br>
+<dt><dd> 2. Why was paired end sequencing critical for mapping of the Human genome (Ch. 10)?
+<dt><br>
+<dt><dd> 3. There are two novel ultra high-throughput sequencing methods described in the text on pages 385-386. Find out which companies provide these techniques.
+<dt><br>
+<dt><dd> 4. Go to <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM"> OMIM</a> and search for NRSF. Using what you find, write a brief (3 sentences) description of NRSF. (Hint: NRSF is also known as REST) 
+<dt>
+<br><li> <b>Week 4:</b> 4/16 <dd> <i> Orthologs, paralogs, and annotations </i> - Due 4/24 (Tuesday after the lecture)
+<dt><dd> 1. Search for 'Twist1' on <a href="http://genome.ucsc.edu/"> UCSC</a>. When the genome browser image comes up, click on one of the exons of Twist1 in the top track. You should arrive at the "Human Gene TWIST1 Description and Page Index" webpage. Scroll down to the "Sequence" section and click on "Protein (202 aa)." This should bring you to a Fasta file. Copy the sequence, go back, and click on the <a href="http://genome.ucsc.edu/cgi-bin/hgBlat?command=start&org=Human&db=hg18&hgsid=90848266"> BLAT </a> link. Paste in your sequence and perform a BLAT search on Mouse. How many results do you get? Which of these results are likely meaningful?
+<dt><br>
+<dt><dd> 2. Now go to the <a href="http://www.ncbi.nlm.nih.gov/BLAST/"> NCBI Blast </a> webpage. Choose a "protein blast" and then paste in the human TWIST1 sequence you copied above. You will want to perform a blast search in human (you will select human in the "Choose Search Set - Organism" section of the search page). <b> Save a screenshot of the alignment graphic. </b>
+<dt><br>
+<dt><dd> 3. Using the results from these BLAT and BLAST searches, identify the nearest ortholog and paralog for human TWIST1. (Hint: For the NCBI Blast, you will want to look only at entries labeled with "ref | NP_ . . . ") Explain why we needed to perform a BLAST search on human rather than a BLAT search, even though the BLAT search worked fine on the mouse.
+<dt><br>
+<dt><dd> 4. Using the <a href="http://genome.ucsc.edu/cgi-bin/hgGene?hgg_gene=uc003sum.1&hgg_prot=Q15672&hgg_chrom=chr7&hgg_start=19121615&hgg_end=19123820&hgg_type=knownGene&db=hg18&hgsid=90848266%20TITLE="> Human Gene TWIST1 Description and Page Index</a> webpage that you used above, find the GO annotations for TWIST1 and look at the Microarray expression data. What correlations can you identify between these two sets of data and what was mentioned about TWIST1 in lecture? 
+<dt><br>
+<dt><dd> 5. See if you can find the relevant webpages for the human TWIST1 ortholog and paralog (which you identified in question 3). Look at the GO annotations and microarray expression data for these genes as well. Can you draw any conclusions about these genes and their possible functions? If you had any trouble finding a Description and Page Index webpage, why might that be?
+<dt>
+<br><li> <b>Week 5:</b> 4/23     <dd> <i> Diseases </i> - Due 5/2 (Wednesday after the lecture)
+<dt><dd> 1. Go to the <a href="http://meetings.cshl.edu/meetings/abstracts/2007genome_absstat.html"> Biology of Genomes Conference website</a> and pick out one talk that interests you. Write 1-2 sentences regarding why that talk interests you.
+<dt><br>
+<dt><dd>2. Describe several differences between mice and humans for both the effectiveness of cancer treatments and the propensity to contract cancer.
+<dt><br>
+<dt><dd>3. Define cachexia. Argue whether an in depth single gene approach or a broad gene regulatory network approach is better for determining the underlying causes of cachexia as well as identifying a treatment.
+<dt><br>
+<dt><dd>4. Describe how siRNA works in mammals. 
+<dt>
+<br><li> <b>Week 6:</b> 4/30      
+<dt><dd><i> Midterm - no extra credit </i>
+<dt>
+<br><li> <b>Week 7:</b> 5/7       <dd> <i>Various forms of gene regulation </i> - Due 5/18
+<dt><dd> 1. For an experiment, you want to be able to turn a certain gene in mouse brain on and off. Describe in detail how you would set up such an experiment. (Hint: Think of Cre/Lox)
+<dt><br>
+<dt><dd> 2. Plant growth is largely controlled by various hormones that are moved around by proteins such as PIN2. You want to create a line of bean plants that respond to light stimuli much faster than usual, so you decide to try up-regulating PIN2 in a transgenic plant. Instead of responding faster to light, the plants seem to barely respond to the light. You use a Western blot to determine how much more PIN2 is expressed, but it turns out that PIN2 concentration has been significantly reduced! What is going on? If you crossed this plant with a wildtype bean plant, what characteristics would you expect to observe in the offspring?
+<dt><br>
+<dt><dd> 3. Generate a Mussa annotation file for coding sequence of the gene for your project. Instructions can be found on the <a href="http://woldlab.caltech.edu/~king/mussagl_manual/"> mussa webpage </a> if you go down to the Annotation File Format entry. Include the file for your gene (or just the first three exons if it is a very large gene). 
+<dt><br>
+<dt><dd> 4. What is the evolutionary motivation for maternal and paternal genes competing epigenetically in a developing embryo? Give at least two specific examples.
+<dt>
+<br><li> <b>Week 8:</b> 5/14 <dd> <i>Motifs</i> - Due 5/21 in lecture (Same time the projects are now due)      
+<dt><dd> 1. Using the provided <a href="extracredit.fsa"> sequences</a>, go to the <a href="http://meme.sdsc.edu/meme/meme.html">Meme website</a>. Enter in your email address, upload the sequence file, and click 'start search'. After a while (roughly 15 minutes) you will receive three emails, one of which (the important one) starts "Meme job results . . . " Do all of the sequences have one motif?
+<dt><br>
+<dt><dd> 2. Look at the raw sequences by clicking on the 'View RAW' button for each of the three motifs. Copy these raw motif sequences (don't copy the "width=" line) into three separate files. Go to <a href="http://weblogo.berkeley.edu"> weblogo.berkeley.edu</a> and generate a weblogo for each motif. Save the weblogo images and turn these in.
+<dt><br>
+<dt><dd>3. Compare these three motifs. Do you notice anything interesting? (Hint: Think about reverse complements)
+<dt><br>
+<dt><dd>4. Using the provided <a href="motif.txt"> raw motif sequences</a> generate an additional weblogo. Save this weblogo image as well and then compare it to the other motifs. What can you say about its relation to the other three motifs?
+<dt><br>
+<dt><dd>5. From these weblogos, come up with the consensus sequence by rewriting each weblogo in just IUPAC symbols. Why is this notation far less helpful than the weblogo? How informative are PWM's versus weblogos vs. consensus sequences? And how does this affect how data should be reporterd?
+<dt>
+<br><li> <b>Week 9:</b> 5/21       
+<dt>
+<br><li> <b>Week 10:</b> 5/28       
+
+
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

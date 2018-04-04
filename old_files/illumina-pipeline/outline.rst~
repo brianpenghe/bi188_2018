@@ -1,0 +1,122 @@
+* Purpose
+
+ * Explain how the pipeline goes from images to locations on a genome
+ * Picture of tile
+ * Picture of eland results
+
+* Real Purpose
+
+ * Running the pipeline is boring, dull, time consuming, and wastes what little buffer for keeping track of details exists in my tiny brain
+ * Thus, this real purpose, is to explain how I don't have to keep running the pipeline
+
+* Problems
+
+  * The sequencer generates about 500 MiB of images
+  * Analyzing said images takes about 80-120 CPU hours.
+  * And about 700-900 GiB of disk space for one analysis
+  * We have small computers and we were running low on disk space
+
+* Enter CACR
+
+  * Cellcenter is an 8-core machine with 64 GiB RAM
+  * Cellthumper currently has a 17 TiB disk array for me to slowly fill up.
+  * Running a full analysis on cellcenter takes 10-16 hours
+
+* The catch
+
+  * Cellcenter is in a machine room across campus
+  * There were a couple of 100 Mibit  bottlenecks between here and there.
+  * Starting max transfer rate 80 Mibit.
+  * About 14 hours to send one analysis
+
+* Upgrade One
+
+  * CACR upgraded some of their network hardware
+  * Resulting in a 100 Mibit transfer rate
+  * About 11 hours
+
+* Upgrade Two
+
+  * We got a gigabit ethernet card
+  * Now we get about 210 Mibit
+  * Or 5.4 hours
+
+* But users want answers NOW
+
+  * The sequencer controller can only copy during a chemistry cycle
+  * It is hard to make guarantees about transfer times over the campus network
+
+    * (especially when we were limited to 100 Mibit) 
+
+  * So run is being buffered on an external hard disk on Jumpgate
+
+* Automation
+
+  * Using inotify, jabber, and rsync I added a bot that notices when the sequencer stops writing files to jumpgate and tells cellthumper to start copying files
+
+    * Needs xmppy, benderjab, pyinotify and workflow
+
+  * Now that 5.4 hours of transfer happens during the run
+  * That's pretty close to NOW
+
+* Caveats
+
+  * There's some inefficiency as rsync keeps checking the same directories to see if any of the files have changed
+  * Several chemistry cycles can happen before one transfer finishes
+  * So their might be a few cycles of images at the end that need to be transferred after the sequencer finishes.
+
+* Running Analysis
+
+  * Once every thing is over on the analysis machine we can configure the analysis
+
+* SolexaPipeline
+
+  * I've gotten my copies by asking techsupport@illumina.com for help with bugs I run accross.
+  * I'm still not convinced they'll tell people about new versions when released
+
+* SolexaPipeline 0.2.2.2
+
+  * It couldn't finish anything other than their example run
+
+* SolexaPipeline 0.2.2.5
+
+  * Sometimes ran correctly
+  * Still would sometimes fail
+
+* SolexaPipeline 0.2.2.6
+
+  * Hey, this one usually finishes
+  * Not guaranteeing that its finishes correctly
+
+* Installing
+
+  * Available on the woldlab cluster in my home directory
+
+    cp ~diane/proj/solexa/SolexaPipeline-0.2.2.6.tar.gz ${SOMEWHERE}
+    tar xzvf SolexaPipeline-0.2.2.6.tar.gz
+    cd SolexaPipeline-0.2.2.6
+
+  * Read SolexaPipeline-0.2.2.6/docs/Pipeline installation.html for the rest
+
+* Running a basic analysis
+
+  * Make your config file
+  * Run goat_pipeline.py
+  * Go to the “right” directory and run make
+  * (wait)
+
+* GERALD Config file
+
+  * docs/GERALD User Guid and Faq.html
+ 
+GENOME_DIR /data-store01/compbio/genomes
+CONTAM_DIR /data-store01/compbio/genomes
+READ_LENGTH 32
+12345678:READ_LENGTH 32
+12345678:ANALYSIS eland
+12:ELAND_GENOME /data-store01/compbio/genomes/elegans170
+12:USE_BASES nnnnnYYYYYYYYYYYYYYYYYYYYYYYYYYY
+SEQUENCE_FORMAT --scarf
+#<more>
+
+* 

@@ -1,0 +1,120 @@
+<!--#include file="head.html" -->	
+
+<h1>Syllabus for Human Genetics and Genomics </h1> <h2>Bi 188</h2>
+<p>
+<em>Instructors:</em> 
+  <ul>
+    <li> Barbara Wold - woldb at caltech.edu 
+    <li> S. Scherer - sscherer at caltech.edu 
+<br><br>
+    <li>TA: 
+       <ul>
+         <li>Tracy Teal - tracyt at caltech.edu<br>              
+      </ul>
+  </ul>
+
+<em>Times and Location:</em> 
+  <ul> 
+    <li>Lectures: Monday 1:00-3:00PM,  024 Kerckhoff
+<br><br>
+    <li>TA Office hours: Thursday 4:00 - 5:00,  0010 N. Mudd
+</ul>
+<hr>
+
+
+<h3>General Notes:</h3>
+
+<ol>
+<li>There is no text that covers current content of the lectures well.  The
+book and lectures will not be highly redundant.  The book is intended as 
+background material for which you will be responsible.  For this reason, 
+especially in the early part of the course, we recommend that you review the 
+background chapters as early as possible with the aim of filling in parts you 
+do not know.
+<li>Most lectures will include additional reference reading from the literature.  These will accompany the lecture (distributed by e-mail or the course web site).  Most papers, with the exception of preprints, will be from journals accessible on-line.
+<li>There will be a midterm project/paper and a final exam.
+</ol>
+
+<h3>Course Schedule</h3>
+
+<table cellpadding=8>
+<tr valign=top><td width=15%>
+<li>March 29</td>
+<td>Sequence analysis: statistical analysis of sequences, alignment algorithms, gene prediction
+<br><i>Instructor: S Scherer</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>April 5</td>
+<td>
+Comparitive genomics and informatics tools: basic properties of genomes, non-coding RNAs, cis-acting regulatory sequences, unusual gene families, analysis tools in current use
+<br><i>Instructor: Barbara Wold</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>April 12</td>
+<td>
+Global gene expression studies: tools for analysis, ordering and clustering, data quality and statistics, practical considerations
+<br><i>Instructor: Barbara Wold</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>April 19</td>
+<td>
+Microbes and other model genomes: genome organization and evolution, large-scale gene disruption
+<br><i>Instructor: S Scherer</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>April 26</td>
+<td>
+Human genetics: gene mapping and discovery, results from population genetics, susceptibility to infection, analysis of pathways
+<br><i>Instructor: S Scherer</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>May 3</td>
+<td>
+Somatic cell genetics, mutation and cancer: somatic and germline mutations leading to cancer, translocations, oncogenes, environmental effects
+<br><i>Instructor: Barbara Wold</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>May 10</td>
+<td>
+Genome stability and epigenetic effects: Prader Willi and the biology of imprinting, microdeletions, triplet repeats, recent large-scale duplications
+<br><i>Instructor: Barbara Wold</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>May 17</td>
+<td>
+Transposition: types and distribution of transposons, switching systems, Neurospora RIP, mobile elements and the human genome
+<br><i>Instructor: S Scherer</i>
+</td></tr>
+
+<tr valign=top><td>
+<li>May 24</td>
+<td>
+Gene transfer and gene therapy - Theory, practice, future considerations.  Ethical issues in genomics and gene therapy
+<br><i>Instructor: Barbara Wold</i>
+</td></tr>
+
+
+</table>
+
+
+
+
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+

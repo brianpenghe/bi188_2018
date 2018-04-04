@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.4: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>Using SolexaPipeline</title>
+<meta name="author" content="Diane Trout" />
+<style type="text/css">
+
+/*
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2005-12-18 01:56:14 +0100 (Sun, 18 Dec 2005) $
+:Revision: $Revision: 4224 $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin-left: 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left {
+  clear: left }
+
+img.align-right {
+  clear: right }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font-family: serif ;
+  font-size: 100% }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em ;
+  background-color: #eeeeee }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+tt.docutils {
+  background-color: #eeeeee }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/default/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+
+</div>
+<div id="footer">
+<h1>Using SolexaPipeline</h1>
+
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">Using SolexaPipeline</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>Diane Trout</td></tr>
+</tbody>
+</table>
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Incremental Display
+=================== -->
+
+</div>
+<div class="slide" id="purpose">
+<h1>Purpose</h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div align="center" class="align-center"><img alt="s_4_100_a.png" class="align-center" src="s_4_100_a.png" /></div>
+</div>
+<div class="slide" id="id1">
+<h1>Purpose</h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="tiny container">
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="26%" />
+<col width="5%" />
+<col width="3%" />
+<col width="5%" />
+<col width="6%" />
+<col width="8%" />
+<col width="9%" />
+<col width="3%" />
+<col width="7%" />
+<col width="6%" />
+<col width="6%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>:1:1:562:177
+:1:1:777:483
+:1:1:767:493
+:1:1:993:196
+:1:1:502:249</td>
+<td>GTTTCCGAGGCTTAACTCCN
+GGTGGCGATTTTCTTGGTTN
+GGGGGACCCTGCAGTTATAN
+GCTCTACTGATGTCCTCTTN
+GCCCTGGACACCACTGCTGN</td>
+<td>U2
+U0
+NM
+R0
+NM</td>
+<td>0
+1
+0
+2
+0</td>
+<td>0
+0
+0
+24
+0</td>
+<td>1
+0
+0
+124
+0</td>
+<td>chr11
+chr9</td>
+<td>32455
+72980</td>
+<td>F
+R</td>
+<td>..</td>
+<td>17A</td>
+<td>22A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="slide" id="real-purpose">
+<h1>Real Purpose</h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Explain how to run the pipeline</p>
+</div>
+<div class="slide" id="overview">
+<h1>Overview</h1>
+<blockquote>
+<ul class="simple">
+<li>Logistic problems</li>
+<li>Installing</li>
+<li>Running</li>
+<li>Problems</li>
+<li>Getting ready for a new run</li>
+<li>Automation</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="problems">
+<h1>Problems</h1>
+<blockquote>
+<ul class="simple">
+<li>500 MiB images</li>
+<li>Analysis takes ~80-120 CPU hours.</li>
+<li>150 GiB for analysis and intermediate results</li>
+</ul>
+<p class="incremental">We have small computers and we were running low on disk space</p>
+</blockquote>
+</div>
+<div class="slide" id="enter-cacr">
+<h1>Enter CACR</h1>
+<p class="center">Cellcenter</p>
+<div align="center" class="align-center"><img alt="cellcenter.gif" class="align-center" src="cellcenter.gif" /></div>
+</div>
+<div class="slide" id="cellcenter">
+<h1>Cellcenter</h1>
+<blockquote>
+<ul class="simple">
+<li>8-core machine with 64 GiB RAM</li>
+<li>Cellthumper has 17 TiB disk array</li>
+<li>Running takes 8-16 hours</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="the-catch">
+<h1>The Catch</h1>
+<blockquote>
+<ul class="simple">
+<li>Cellcenter is across campus</li>
+<li>There was a 100 Mibit bottleneck</li>
+</ul>
+<ul class="incremental simple">
+<li>transfer rate was ~80 Mibit.</li>
+</ul>
+<ul class="incremental simple">
+<li>About 12.8 hours to send one analysis</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="first-upgrade">
+<h1>First Upgrade</h1>
+<blockquote>
+<ul class="simple">
+<li>CACR router upgrade</li>
+<li>Resulted in a 100 Mibit transfer rate</li>
+</ul>
+<ul class="incremental simple">
+<li>A transfer then took about 10.2 hours</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="second-upgrade">
+<h1>Second Upgrade</h1>
+<blockquote>
+<ul class="simple">
+<li>We bought a gigabit ethernet card</li>
+<li>Now we get about 210 Mibit</li>
+</ul>
+<ul class="incremental simple">
+<li>takes about 4.8 hours</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="id2">
+<h1>Second Upgrade</h1>
+<blockquote>
+<ul class="simple">
+<li>well really 4.8+(0-10) hours</li>
+</ul>
+<ul class="incremental simple">
+<li>I do sleep...</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="but-users-want-answers-now">
+<h1>But users want answers <em>NOW</em></h1>
+<blockquote>
+<ul class="simple">
+<li>Sequencer can only copy during a chemistry cycle</li>
+<li>Hard to make guarantees about transfer times
+over the campus network</li>
+</ul>
+<ul class="incremental simple">
+<li>(especially when we were limited to 100 Mibit)</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="jumpgate">
+<h1>Jumpgate</h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div align="center" class="align-center"><img alt="jumpgate.jpg" class="align-center" src="jumpgate.jpg" /></div>
+</div>
+<div class="slide" id="automation">
+<h1>Automation</h1>
+<blockquote>
+<ul>
+<li><p class="first">Wrote two little daemons</p>
+<ul class="handout">
+<li><p class="first">The python daemons use:</p>
+<ul class="simple">
+<li>pyinotify</li>
+<li>xmpppy</li>
+<li>~diane/src/benderjab (my own personal project)</li>
+<li>~diane/proj/solexa/workflow (contains the source to the demons</li>
+</ul>
+</li>
+<li><dl class="first docutils">
+<dt>The copy daemon runs on cellthumper and starts rsync to copy</dt>
+<dd><p class="first last">files from a rsyncd process on jumpgate</p>
+</dd>
+</dl>
+</li>
+</ul>
+<ul class="simple">
+<li>one runs on jumpgate and watches for files</li>
+<li>the other listens for messages and copies files over</li>
+</ul>
+</li>
+</ul>
+<ul class="incremental simple">
+<li>Now that 4.8 hours of transfer happens during the run</li>
+<li>That's pretty close to NOW</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="caveats">
+<h1>Caveats</h1>
+<blockquote>
+<ul class="simple">
+<li>rsync keeps rescanning directories</li>
+<li>Several chemistry cycles can happen before one transfer finishes</li>
+</ul>
+<ul class="incremental simple">
+<li>Might be a &quot;few&quot; cycles left to copy after the run finishes</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="running-analysis">
+<h1>Running Analysis</h1>
+<blockquote>
+<ul class="simple">
+<li>Once everything is over on the analysis machine we can configure
+the analysis</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="solexapipeline">
+<h1>SolexaPipeline</h1>
+<blockquote>
+<ul class="simple">
+<li>techsupport at illumina gives me new versions</li>
+</ul>
+<ul class="incremental simple">
+<li>I'm still not convinced they'll tell people about new versions
+when released</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="solexapipeline-0-2-2-2">
+<h1>SolexaPipeline 0.2.2.2</h1>
+<blockquote>
+<ul class="simple">
+<li>It couldn't finish anything other than their example run</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="solexapipeline-0-2-2-5">
+<h1>SolexaPipeline 0.2.2.5</h1>
+<blockquote>
+<ul class="simple">
+<li>Sometimes ran correctly</li>
+</ul>
+<ul class="incremental simple">
+<li>Sometimes would not complete</li>
+<li>had trouble with READ_LENGTH</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="solexapipeline-0-2-2-6">
+<h1>SolexaPipeline 0.2.2.6</h1>
+<blockquote>
+<ul class="simple">
+<li>This one usually finishes</li>
+</ul>
+<ul class="incremental simple">
+<li>Though I'm not guaranteeing that finishes correctly</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="installing">
+<h1>Installing</h1>
+<ul class="simple">
+<li>Available on the woldlab cluster in my home directory</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+cp ~diane/proj/solexa/SolexaPipeline-0.2.2.6.tar.gz ${WHEREVER}
+tar xzvf SolexaPipeline-0.2.2.6.tar.gz
+</pre>
+</div>
+<ul class="simple">
+<li>Read SolexaPipeline-0.2.2.6/docs/Pipeline installation.html for the rest</li>
+</ul>
+</div>
+<div class="slide" id="running-a-basic-analysis">
+<h1>Running a basic analysis</h1>
+<blockquote>
+<ul class="simple">
+<li>Make your config file</li>
+<li>Run goat_pipeline.py</li>
+<li>Go to “right” directory and do make</li>
+<li>(wait)</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="gerald-config-file">
+<h1>GERALD Config file</h1>
+<ul class="simple">
+<li>docs/GERALD User Guide and Faq.html</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+GENOME_DIR /data-store01/compbio/genomes
+CONTAM_DIR /data-store01/compbio/genomes
+READ_LENGTH 32
+12345678:READ_LENGTH 32
+12345678:ANALYSIS eland
+12:ELAND_GENOME /data-store01/compbio/genomes/elegans170
+12:USE_BASES nnnnnYYYYYYYYYYYYYYYYYYYYYYYYYYY
+# &lt;etc&gt;
+SEQUENCE_FORMAT --scarf
+</pre>
+</div>
+</div>
+<div class="slide" id="id3">
+<h1>GERALD Config file</h1>
+<blockquote>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">GENOME_DIR</span></tt></dt>
+<dd>Not sure</dd>
+<dt><tt class="docutils literal"><span class="pre">CONTAM_DIR</span></tt></dt>
+<dd>Holds the &quot;contamination&quot; files like hayward_11_42bases.fa</dd>
+</dl>
+</blockquote>
+</div>
+<div class="slide" id="id4">
+<h1>GERALD Config file</h1>
+<blockquote>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">READ_LENGTH</span> <span class="pre">32</span></tt></dt>
+<dd>&quot;top&quot; level <tt class="docutils literal"><span class="pre">READ_LENGTH</span></tt> is required
+or else goat dies</dd>
+</dl>
+</blockquote>
+</div>
+<div class="slide" id="id5">
+<h1>GERALD Config file</h1>
+<ul class="simple">
+<li>You can specify which lanes get which parameters</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+12345678:READ_LENGTH 32
+12345678:ANALYSIS eland
+12:ELAND_GENOME /data-store01/compbio/genomes/elegans170
+</pre>
+</div>
+</div>
+<div class="slide" id="id6">
+<h1>GERALD Config file</h1>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">12:ANALYSIS</span></tt></li>
+</ul>
+<div class="small container">
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">default</span></tt> - runs phageAlign</li>
+<li><tt class="docutils literal"><span class="pre">none</span></tt> - ignores the lanes</li>
+<li><tt class="docutils literal"><span class="pre">eland</span></tt> - aligns sequence to a genome</li>
+<li><tt class="docutils literal"><span class="pre">monotemplate</span></tt> - haven't used</li>
+<li><tt class="docutils literal"><span class="pre">expression</span></tt> - for &quot;counting occurrence of sequence tags&quot;</li>
+<li><tt class="docutils literal"><span class="pre">sequence</span></tt> - doesn't align, just returns sequence</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id7">
+<h1>GERALD Config file</h1>
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">12:USE_BASES</span> <span class="pre">nnnnnYYYYYYYYYYYYYYYYYYYYYYYYYYY</span></tt></p>
+<div class="small container">
+<ul class="simple">
+<li>the number of N/Ys must match READ_LENGTH</li>
+<li>allows one to ignore specific bases</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="slide" id="id8">
+<h1>GERALD Config file</h1>
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">SEQUENCE_FORMAT</span></tt></p>
+<div class="small container">
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">fasta</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">fastq</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">scarf</span></tt> (solexa machine specific)</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="slide" id="id9">
+<h1>GERALD Config file</h1>
+<blockquote>
+<ul class="simple">
+<li>There are more options, which I haven't used</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="goat">
+<h1>Goat</h1>
+<ul>
+<li><p class="first">docs/Goat documentation - Firecrest, Bustard.html</p>
+</li>
+<li><p class="first">the minimal goat command</p>
+<div class="tiny container">
+<pre class="literal-block">
+~/proj/SolexaPipeline-0.2.2.6/Goat/goat_pipeline.py \\
+--GERALD=config32dt.txt  \\
+--phasing=auto1 \\
+--cycles=auto \\
+--make .
+</pre>
+</div>
+</li>
+</ul>
+</div>
+<div class="slide" id="id10">
+<h1>Goat</h1>
+<ul>
+<li><p class="first">where is the executable</p>
+<div class="small container">
+<p>~/proj/SolexaPipeline-0.2.2.6/Goat/goat_pipeline.py</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="slide" id="id11">
+<h1>Goat</h1>
+<ul>
+<li><p class="first">pathname to the config file you created</p>
+<pre class="literal-block">
+--GERALD=config32dt.txt
+</pre>
+</li>
+</ul>
+</div>
+<div class="slide" id="id12">
+<h1>Goat</h1>
+<ul>
+<li><p class="first">The image processor needs to estimate &quot;phasing&quot; paramaters:</p>
+<pre class="literal-block">
+--phasing=auto1
+</pre>
+</li>
+<li><p class="first">Uses lane 1 to try and estimate</p>
+</li>
+</ul>
+<p class="incremental"><tt class="docutils literal"><span class="pre">--phasing=auto4</span></tt> for lane4</p>
+</div>
+<div class="slide" id="id13">
+<h1>Goat</h1>
+<ul class="simple">
+<li>Let goat guess how many cycles the sequencer ran for</li>
+</ul>
+<pre class="literal-block">
+--cycles=auto
+</pre>
+<pre class="incremental literal-block">
+--cycles=3-10
+</pre>
+<p class="incremental"><tt class="docutils literal"><span class="pre">--cycles=4</span></tt> - only uses one cycle</p>
+</div>
+<div class="slide" id="id14">
+<h1>Goat</h1>
+<ul class="simple">
+<li>actually tell goat to generate all of the makefiles</li>
+</ul>
+<blockquote>
+<pre class="literal-block">
+--make
+</pre>
+</blockquote>
+</div>
+<div class="slide" id="id15">
+<h1>Goat</h1>
+<ul>
+<li><p class="first">Tell goat where to put the Data directory</p>
+<pre class="literal-block">
+.
+</pre>
+</li>
+</ul>
+<ul class="handout">
+<li><p class="first">I usually run goat from the root of the analysis directory</p>
+</li>
+<li><p class="first">On cellcenter that ends up being something like
+/zpool1/compbio/diane/sequencer/070815_USI-EAS44_0016_FC7284/</p>
+<p>(meaning I was running goat in the analysis directory written out by the sequencer)</p>
+</li>
+</ul>
+</div>
+<div class="slide" id="make">
+<h1>Make</h1>
+<ul class="simple">
+<li>Make is a tool commonly used by unix programmers</li>
+<li>It encodes &quot;dependencies&quot; between files</li>
+<li>For instance</li>
+</ul>
+<pre class="literal-block">
+homework1: homework1.c
+    gcc -o homework1 homework1.c
+</pre>
+<ul class="handout simple">
+<li>When you change the homework1.c make knows it needs to run
+gcc to turn the source file (homework1.c) into an executable (homework1)</li>
+</ul>
+</div>
+<div class="slide" id="id16">
+<h1>Make</h1>
+<ul>
+<li><p class="first">Having the pipeline use make makes it easy for them to use parallel machines with</p>
+<pre class="literal-block">
+make -j&lt;number of simultaneous commands to run&gt;
+</pre>
+</li>
+<li><p class="first">On cellcenter with 8 cpus I typically do</p>
+<pre class="literal-block">
+make -j8
+</pre>
+</li>
+</ul>
+</div>
+<div class="slide" id="id17">
+<h1>Make</h1>
+<ul class="simple">
+<li>The pipeline is actually made up of at least  3 seperate processing steps<ul>
+<li>Firecrest - image processing</li>
+<li>Bustard - base calling</li>
+<li>GERALD - runs sequence analysis</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="id18">
+<h1>Make</h1>
+<blockquote>
+<p class="handout">Each pipeline step goes into a subdirectory of the previous</p>
+<ul class="simple">
+<li>Firecrest/Bustard/GERALD</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="id19">
+<h1>Make</h1>
+<div class="small container">
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">070815_USI-EAS44_0016_FC7284/</span></tt></p>
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">Data/</span></tt></p>
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">C1-36_Firecrest1.8.28_18-08-2007_diane/</span></tt></p>
+<ul>
+<li><p class="first"><tt class="docutils literal"><span class="pre">Bustard1.8.28_18-08-2007_diane/</span></tt></p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">GERALD_18-08-2007_diane</span></tt></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id20">
+<h1>Make</h1>
+<ul class="simple">
+<li>To actually get the SolexaPipeline to generate everything I do</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+$ cd 070815_USI-EAS44_0016_FC7284
+$ .../goat_pipeline ...
+$ cd Data/C1-36_Firecrest1.8.28_18-08-2007_diane
+$ make -j8 recursive ; xsend diane&#64;... make stopped
+</pre>
+</div>
+</div>
+<div class="slide" id="id21">
+<h1>Make</h1>
+<ul class="simple">
+<li>Each of those directories contains thousands of files<ul>
+<li>Firecrest - 3,221</li>
+<li>Bustard - 6,430</li>
+<li>GERALD - 22,495</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="id22">
+<h1>Make</h1>
+<ul class="simple">
+<li>Each tile produces one &quot;image&quot; file</li>
+<li>Each pipeline step might produce several files for each tile</li>
+<li>The subsequent pipeline steps depend on the files in the previous directory</li>
+</ul>
+</div>
+<div class="slide" id="breakage">
+<h1>Breakage</h1>
+<ul class="simple">
+<li>when a command aborts<ul>
+<li>&quot;make tidy&quot;<ul>
+<li>cleans files that were started but not actually generated (empty)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="id23">
+<h1>Breakage</h1>
+<ul class="simple">
+<li>Sometimes your config file has the wrong options</li>
+<li>Easy way to fix...<ul>
+<li>Fix the config file</li>
+<li>Blow away the Firecrest directory and everything under it</li>
+<li>start over with goat</li>
+</ul>
+</li>
+</ul>
+<ul class="incremental simple">
+<li>Unfortuantely that takes the full 12-16 hours to rerun everything</li>
+</ul>
+</div>
+<div class="slide" id="id24">
+<h1>Breakage</h1>
+<ul class="simple">
+<li>The harder way to fix</li>
+<li>Make a new config file or fix your first config file</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+cd  ..Firecrest../..Bustard..
+</pre>
+</div>
+<ul class="simple">
+<li>Run GERALD directly</li>
+</ul>
+<div class="tiny container">
+<pre class="literal-block">
+${SPP}/GERALD.pl config.txt ../../config10dt.txt \
+                 --EXPT_DIR $(pwd) \
+                 --FORCE
+cd GERALD_&lt;new date&gt;_diane
+</pre>
+</div>
+<div class="small container">
+<ul class="simple">
+<li>Hope the new directory name differs from the previous name</li>
+</ul>
+</div>
+<div class="tiny container">
+<pre class="literal-block">
+make -j8
+</pre>
+</div>
+</div>
+<div class="slide" id="id25">
+<h1>Breakage</h1>
+<ul class="simple">
+<li>Now you have a second GERALD directory in your Bustard directory</li>
+<li>That adds another 28 GiB to your analysis directory</li>
+<li>750 GB drives currently have the best GB/$</li>
+</ul>
+</div>
+<div class="slide" id="id26">
+<h1>Breakage</h1>
+<ul class="simple">
+<li>750 GB drives actually hold 699 GiB</li>
+<li>The images are about 451 GiB</li>
+<li>The analysis is about 153 GiB</li>
+</ul>
+<ul class="incremental simple">
+<li>451+153 = 604</li>
+</ul>
+<ul class="incremental simple">
+<li>699 - 604 = 95</li>
+</ul>
+<ul class="incremental simple">
+<li>95 / 28 ~= 3</li>
+</ul>
+<ul class="incremental simple">
+<li>not much room for partial re-runs</li>
+</ul>
+</div>
+<div class="slide" id="sharing-the-analysis">
+<h1>Sharing the Analysis</h1>
+<ul class="simple">
+<li>I started off copying all the results back</li>
+<li>153 GiB = 1.6 hours</li>
+<li>Now I copy the eland results files back over first</li>
+</ul>
+</div>
+<div class="slide" id="id27">
+<h1>Sharing the Analysis</h1>
+<ul class="simple">
+<li>The GERALD directory has several html files in it</li>
+</ul>
+<div class="tiny container">
+<tt class="docutils literal"><span class="pre">All.htm</span></tt> <tt class="docutils literal"><span class="pre">Hist.htm</span></tt> <tt class="docutils literal"><span class="pre">IVC.htm</span></tt> <tt class="docutils literal"><span class="pre">Summary.htm</span></tt>
+<tt class="docutils literal"><span class="pre">Error.htm</span></tt> <tt class="docutils literal"><span class="pre">Info.htm</span></tt> <tt class="docutils literal"><span class="pre">Perfect.htm</span></tt> <tt class="docutils literal"><span class="pre">Tile.htm</span></tt></div>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">Summary.htm</span></tt> is safe</li>
+<li>Several of the others try loading an image for every tile in the analysis</li>
+<li>This makes my computer unhappy as Firefox tries to eat all my ram</li>
+</ul>
+</div>
+<div class="slide" id="id28">
+<h1>Sharing the Analysis</h1>
+<ul class="simple">
+<li>Save the results to the external drive</li>
+<li>Put the drive on myod<ul>
+<li>Share them off of a &quot;private&quot; webserver</li>
+</ul>
+</li>
+</ul>
+<ul class="incremental simple">
+<li>It's only secure through obscurity</li>
+<li>Should probably add user/name password</li>
+</ul>
+</div>
+<div class="slide" id="id29">
+<h1>Sharing the analysis</h1>
+<ul class="simple">
+<li>rsync everything from cellcenter to here</li>
+<li>catch any changes the pipeline made</li>
+<li><tt class="docutils literal"><span class="pre">cellcenter</span> <span class="pre">$</span> <span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">070815</span></tt></li>
+<li>Put the drive in a box and back on the shelf</li>
+</ul>
+<p class="incremental">(this part could be worked out better)</p>
+</div>
+<div class="slide" id="prepping-the-hard-drive">
+<h1>Prepping the hard drive</h1>
+<blockquote>
+<ul class="simple">
+<li>Plug it in to jumpgate</li>
+<li>Turn off power management</li>
+<li>Change partition table</li>
+<li>Reformat</li>
+<li>Mount</li>
+<li>possibly restart samba</li>
+<li>change permissions</li>
+<li>test writing from the sequencer</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="id30">
+<h1>Prepping the hard drive</h1>
+<blockquote>
+<ul class="simple">
+<li>We're using Seagate Freeagent Pro 750 GB drives</li>
+<li>They have an annoying tendancy to spin down and make linux cranky</li>
+</ul>
+</blockquote>
+</div>
+<div class="slide" id="id31">
+<h1>Prepping the hard drive</h1>
+<ul>
+<li><p class="first">Turning off the drives power management</p>
+<ul class="simple">
+<li>plugged in via a SATA</li>
+</ul>
+<div class="small container">
+<pre class="literal-block">
+hdparam -S 0 /dev/sd?
+</pre>
+</div>
+<ul class="simple">
+<li>when it's plugged in via USB</li>
+</ul>
+<div class="small container">
+<pre class="literal-block">
+sdparam --clear STANDBY -6 /dev/sd?
+</pre>
+</div>
+</li>
+</ul>
+</div>
+<div class="slide" id="id32">
+<h1>Prepping the hard drive</h1>
+<ul class="simple">
+<li>change the partition table<ul>
+<li><tt class="docutils literal"><span class="pre">fdisk</span> <span class="pre">/dev/sd?</span></tt></li>
+<li>toggle type from NTFS to Linux</li>
+<li>t 83</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="id33">
+<h1>Prepping the hard drive</h1>
+<ul class="simple">
+<li>Reformat<ul>
+<li><tt class="docutils literal"><span class="pre">mkfs</span> <span class="pre">-t</span> <span class="pre">xfs</span> <span class="pre">/dev/sd?1</span></tt></li>
+<li>xfs says
+&quot;hey there's a filesystem here&quot;</li>
+<li>if it says NTFS we have a new drive</li>
+<li><tt class="docutils literal"><span class="pre">mkfs</span> <span class="pre">-t</span> <span class="pre">xfs</span> <span class="pre">-f</span> <span class="pre">/dev/sd?1</span></tt></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="id34">
+<h1>Prepping the hard drive</h1>
+<ul>
+<li><p class="first">mount</p>
+<pre class="literal-block">
+mount /dev/sd?1 /gec/jumpgate/ext0
+</pre>
+</li>
+</ul>
+</div>
+<div class="slide" id="id35">
+<h1>Prepping the hard drive</h1>
+<ul>
+<li><p class="first">change permissions</p>
+<pre class="literal-block">
+chmod 1777 /gec/jumpgate/ext0
+</pre>
+</li>
+</ul>
+<ul class="handout simple">
+<li>those are the permissions used for the /tmp directory</li>
+</ul>
+</div>
+<div class="slide" id="id36">
+<h1>Prepping the hard drive</h1>
+<ul class="simple">
+<li>go to the sequencer<ul>
+<li>load explorer</li>
+<li>Location: <tt class="docutils literal"><span class="pre">\\192.168.126.2\ext0</span></tt></li>
+<li>try make a file and try to save it</li>
+<li>username: <tt class="docutils literal"><span class="pre">sequencer</span></tt></li>
+<li>password: <tt class="docutils literal"><span class="pre">********</span></tt></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="slide" id="yay">
+<h1>Yay</h1>
+<ul class="incremental simple">
+<li>If you've been following along...</li>
+<li>you now know as much I know about the pipeline</li>
+<li>(At least close enough)</li>
+</ul>
+</div>
+<div class="slide" id="diy">
+<h1>DIY</h1>
+<ul class="simple">
+<li>request an account on cellcenter</li>
+</ul>
+<div class="small container">
+<a class="reference" href="http://www.cacr.caltech.edu/resources/accounts/index.cfm">http://www.cacr.caltech.edu/resources/accounts/index.cfm</a></div>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">/zpool1/compbio/diane/sequencer</span></tt> for the solexa files</li>
+<li><tt class="docutils literal"><span class="pre">/data-store01/compbio/diane</span></tt> for the genome files</li>
+</ul>
+</div>
+<div class="slide" id="id37">
+<h1>Automation</h1>
+<ul class="simple">
+<li>Shoveling around large chunks of data is dull</li>
+</ul>
+<ul class="incremental simple">
+<li>Maybe someone else can do it</li>
+<li>More likely, no one will</li>
+<li>Perhaps automation will save me</li>
+</ul>
+</div>
+<div class="slide" id="id38">
+<h1>Automation</h1>
+<ul class="simple">
+<li>Tool to generate config files</li>
+<li>Probably on jumpgate</li>
+<li>And add the config file to the package sent to cellcenter</li>
+</ul>
+</div>
+<div class="slide" id="id39">
+<h1>Automation</h1>
+<ul class="simple">
+<li>once there hopefully I can get goat and make to run automatically</li>
+</ul>
+</div>
+<div class="slide" id="id40">
+<h1>Automation</h1>
+<ul class="simple">
+<li>Then send the files back</li>
+</ul>
+</div>
+<div class="slide" id="id41">
+<h1>Automation</h1>
+<ul class="simple">
+<li>I'm not sure I want to automate deleting the analyses</li>
+</ul>
+</div>
+<div class="slide" id="automating">
+<h1>Automating</h1>
+<ul class="simple">
+<li>I don't think I can automate moving the hard drives around</li>
+</ul>
+<p class="incremental">(at least on our budget)</p>
+</div>
+<div class="slide" id="id42">
+<h1>Automating</h1>
+<ul class="simple">
+<li>There's still the problem of rerunning an analysis when something goes wrong.</li>
+</ul>
+</div>
+<div class="slide" id="done">
+<h1>Done</h1>
+</div>
+<div class="slide" id="binary-units">
+<h1>Binary units</h1>
+<ul class="simple">
+<li>KB  = kilobyte which if you're using SI units should mean 1000 bytes</li>
+<li>But computers work in powers of two, not ten.</li>
+</ul>
+<ul class="incremental simple">
+<li>2 ^ 10 ~= 10 ^ 3</li>
+<li>1024 ~= 1000</li>
+</ul>
+</div>
+<div class="slide" id="id43">
+<h1>Binary units</h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="21%" />
+<col width="35%" />
+<col width="21%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Name</td>
+<td>Base 2</td>
+<td>Size</td>
+<td>Base 10</td>
+</tr>
+<tr><td>megabyte</td>
+<td>2 ^ 20</td>
+<td>1048576</td>
+<td>10 ^ 6</td>
+</tr>
+<tr><td>gigabyte</td>
+<td>2 ^ 30</td>
+<td>1073741824</td>
+<td>10 ^ 9</td>
+</tr>
+<tr><td>terabyte</td>
+<td>2 ^ 40</td>
+<td>1099511627776</td>
+<td>10 ^ 12</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="slide" id="id44">
+<h1>Binary Units</h1>
+<ul class="simple">
+<li>To resolve the ambiguity the IEC invented &quot;Binary SI&quot;</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Name</td>
+<td>Power of 2</td>
+</tr>
+<tr><td>Kibi</td>
+<td>2 ^ 10</td>
+</tr>
+<tr><td>Mebi</td>
+<td>2 ^ 20</td>
+</tr>
+<tr><td>Gibi</td>
+<td>2 ^ 30</td>
+</tr>
+<tr><td>Tebi</td>
+<td>2 ^ 40</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="slide" id="hard-disk-units">
+<h1>Hard Disk Units</h1>
+<ul class="simple">
+<li>Hard disk manufacturers always use the powers of 10
+never 2 ^ (x * 10)<ul>
+<li>It makes their drives sound bigger</li>
+</ul>
+</li>
+<li>Computers always report 2 ^ (x * 10)</li>
+<li>Thus the computer always says its smaller than whats on the box</li>
+<li>Plus the filesystem has some overhead</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

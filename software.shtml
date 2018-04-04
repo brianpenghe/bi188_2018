@@ -1,0 +1,24 @@
+<!--#include file="head.html" -->
+
+<h1>Bi 188 Spring 2013 - Recommended software</h1>
+<hr>
+<p>This list of software will be constantly updated. Platform-specific software will be noted as such.
+<p>
+<p><b><i>Software to download</i></b><br><br>
+<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html"><b>Putty</a> - Windows terminal for accessing Unix/Linux systems (Use built-in terminal for Mac/Linux)</b><br><br>
+<a href="https://filezilla-project.org/download.php?show_all=1"><b>Filezilla</a> - Cross-platform FTP, for uploading/downloading files from server securely</b><br><br>
+<a href="http://sourceforge.net/projects/jtreeview/files/jtreeview/1.1.6r4/"><b>Treeview</a> - Visualize and compare multiple datasets, gene-by-gene, showing pre-calculated clusters</b><br><br>
+<a href="http://imss.caltech.edu/software"><b>Caltech IMSS software</a>: Where you get your Matlab. Optional.</b><br><br>
+<a href="https://pythonhosted.org/spyder/"><b>Spyder IDE for Python</a> - While many find a text editor to be totally adequate for coding in Python, as a coding amateur I find an IDE essential (along with a browser window open at all times). </b><br><br>
+<a href="http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/"><b>Seqmonk</a> - Handy tool for visualizing and analyzing post-mapping data</b><br><br>
+<p>
+<p><b><i>Tools on the web - Essentials</i></b><br><br>
+<a href="http://genome.ucsc.edu/"><b>UCSC Genome Browser</a> - Where you visualize and zoom into your genome-wide data at various stages</b><br><br>
+<a href="https://www.encodeproject.org/"><b>ENCODE Project Main Page</a> - Where you download data from genome-wide experiments performed in the ENCODE project</b><br><br>
+<a href="http://www.gencodegenes.org/"><b>Gencode</a> - Where you download the latest in RNA transcriptions</b><br><br>
+<a href="https://usegalaxy.org/"><b>Galaxy Project on the Web</a> - Free site to process your sequencing data</b><br><br>
+<a href="https://woldlab.caltech.edu/bi188/wigs/translate_tsv_genes.py"><b>Custom tsv "translate" script for translating .tsv into usable gene names, via a matching Gencode annotation file</b></a><br><br>
+
+<b>Updating... </b>
+
+<!--#include file="foot.html" -->

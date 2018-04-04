@@ -1,0 +1,365 @@
+<!--#include file="head.html" -->
+
+<h1>Relevant literature, web links and class readings</h1> 
+
+<UL>
+<li> <h2>Transcriptional Control</h2>
+   <ul> 
+     <li> <h3>Some Biolgical References</h3>
+
+   <table>
+   
+   <tr valign=top><td align=right> <A NAME="Ptashne92"></A></td> <td>
+     Mark Ptashne.
+       <i>A Genetic Switch</i>.
+       Cell Press and Blackwell Scientific Publications, second edition
+       edition, 1992.<BR>
+    </td>
+
+
+   <tr valign=top> <td align=right> <A NAME="Vo_Goodman01"></A></td>
+   <td>
+      N. K. Vo and R. H. Goodman. Cbp and p300 in transcriptional regulation.
+      <i>J Biol Chem</i>, Mar 2001. ENG).
+      <BR>
+      Available from the<A HREF="http://www.jbc.org/cgi/content/abstract/R000025200v1">Journal Website</A> or
+                        <A HREF="references/Vo_Goodman01.pdf">local PDF</A><p>
+      <blockquote><font size=-1>
+          CBP (CREB-binding protein) and p300 are believed to participate in
+	  the activities of hundreds of different transcription factors. Current
+	  models suggest that the binding of these coactivators to transcription
+	  factor activation domains positions histone acetyltransferases (HATs) near 
+	  specific nucleosomes in target gene promoter regions. Interactions with 
+	  components of the general transcriptional machinery, such as TFIID, TFIIB, 
+	  and the RNA polymerase II holoenzyme (RNAPII) have also been suggested to 
+	  contribute to CBP/p300 function. The simultaneous interaction of multiple 
+	  transcription factors with CBP/p300 has been proposed to contribute to 
+	  transcriptional synergy. Conversely, competition for CBP/p300 binding has 
+	  been suggested to mediate some examples of signal-induced transcriptional 
+	  repression. This review deals with some of the more controversial aspects 
+	  of CBP/p300 function. In particular, we will ask whether CBP and p300 have 
+	  distinct functions, review the evidence for their regulation by 
+	  phosphorylation, and ask whether they function primarily by acetylating 
+	  histones or other proteins. We will also revisit the evidence for the role 
+	  of CBP/p300 as transcriptional ïntegrators.Finally, we will attempt to 
+	  localize CBP/p300 function within the complex series of processes involved 
+	  in transcriptional activation.</font></blockquote>
+	  <p>
+
+    </td>
+
+Q
+    <tr valign=top> <td align=right> <A NAME="Arnosti_etal96"></A></td>
+    <td>
+       
+       D. N. Arnosti, S. Barolo, M. Levine, and S. Small. The eve
+       stripe 2 enhancer employs multiple modes of transcriptional synergy.
+       <i>Development</i>, 122(1):205-14, Jan 1996.  (eng).<BR>
+
+       
+       Available from the<A HREF="http://www.cob.org.uk/Development/122/01/dev7450.html">journal website</A> or
+                         <A HREF="references/Arnosti_etal96.pdf">local PDF</A><p>
+       <blockquote><font size=-1>
+            Previous studies have provided a detailed model for the regulation
+	    of even-skipped (eve) stripe 2 expression in the Drosophila embryo. The 
+	    bicoid (bcd) regulatory gradient triggers the expression of hunchback (hb);
+	    these work synergistically to activate the stripe in the anterior half of
+	    the embryo, bcd also coordinates the expression of two repressors, giant
+	    (gt) and Kruppel (Kr), which define the anterior and posterior borders of
+	    the stripe, respectively. Here, we report the findings of extensive cis-
+	    and trans- complementation analyses using a series of defective stripe 2
+	    enhancers in transgenic embryos. This study reaches two primary
+	    conclusions. First, the strip 2 enhancer is inherently 'sensitized' for
+	    repression by gt. We propose that gt specifies the sharp anterior stripe
+	    border by blocking two tiers of transcriptional synergy, cooperative
+	    binding to DNA and cooperative contact of bound activators with the
+	    transcription complex. Second, we find that the synergistic activity of hb
+	    and bcd is 'promiscuous'. For example, a maternally expressed Gal4-Sp1
+	    fusion protein can functionally replace hb in the stripe 2 enhancer. This
+	    finding challenges previous proposals for dedicated hb and bcd interactions
+	    in the segmentation process.</font></blockquote>
+	    <p>
+	 </td>
+      </table>
+
+<li><h3>Modeling</h3>
+     <p>
+     <table> <tr valign=top> <td align=right>
+     <A NAME="Elowitz_Leibler00"></A>
+     </td>
+     <td>  M. B. Elowitz and S. Leibler.A synthetic oscillatory network of transcriptional regulators.
+          <i>Nature</i>, 403(6767):335-8, Jan 2000.<BR>
+	  <p>
+          Available from a <A HREF="references/Elowitz_Leibler00.pdf">local PDF</A><p>
+	  <blockquote><font size=-1>
+	           Networks of interacting biomolecules carry out many
+                   essential functions in living cells, but the 'design
+                   principles' underlying the functioning of such
+                   intracellular networks remain poorly understood,
+                   despite intensive efforts including quantitative
+                   analysis of relatively simple systems. Here we present
+                   a complementary approach to this problem: the design
+                   and construction of a synthetic network to implement a
+                   particular function. We used three transcriptional
+                   repressor systems that are not part of any natural
+                   biological clock to build an oscillating network,
+                   termed the repressilator, in Escherichia coli. The
+                   network periodically induces the synthesis of green
+                   fluorescent protein as a readout of its state in
+                   individual cells. The resulting oscillations, with
+                   typical periods of hours, are slower than the
+                   cell-division cycle, so the state of the oscillator has
+                   to be transmitted from generation to generation. This
+                   artificial clock displays noisy behaviour, possibly
+                   because of stochastic fluctuations of its components.
+                   Such 'rational network design may lead both to the
+                   engineering of new cellular behaviours and to an
+                   improved understanding of naturally occurring
+	           networks.
+           </font></blockquote>
+	   <p>
+         </td>
+
+        <tr valign=top>
+        <td align=right>
+        <A NAME="Mjolsness99"></A> 
+        </td>
+        <td>
+	  Eric Mjolsness.  <i>Computational Methods in molecular and
+	  Cellular biology: From genotype to phenotype</i>, <u>chapter:
+	  Gene Regulation Networks for Modeling Drosophila
+	  Development.</u> In J. Bower and H. Bolouri, editors.
+	  <i>Computational Methods in molecular and Cellular biology:
+	  From genotype to phenotype</i>. MIT press, 1999., 1999.
+	  Pre-print release.<BR>
+	  <br>
+	  Available from a <A HREF="references/Mjolsness99.pdf">local PDF</A><p>
+        </td>
+        </table> 
+</ul>
+
+
+<li><h2>Mathematical Methods </h2>
+<ul>
+ <li> <h3> Simulating Annealing </h3>
+ 
+<table>
+
+<tr valign=top>
+<td align=right>
+<A NAME="Lam_Delosme88"></A>[1]
+</td>
+<td>
+Jean-Marc Delosme Jimmy Lam.
+  Performance of a new annealing schedule.
+  In <i>25th ACM/IEEE Design Automation Conference</i>, 1988.<BR>
+   Available from a <A HREF="references/Lam_Delosme88.pdf">local PDF</A><p>
+<p>
+
+<blockquote><font size=-1>
+  A new simulated annealing schedule has been
+                  developed its application to the standard cell
+                  placement and the traveling salesman problems
+                  results in a two to twenty- four times speedup over
+                  annealing schedules currently available in the
+                  literature. Since it uses only statistical
+                  quantities, the annealing schedule is applicable to
+                  general combinatorial optimization problems. 
+                 </font></blockquote>
+<p>
+</td>
+</table>
+
+</ul>
+
+
+
+<li><h2>Bioinformatics Software References</h2>
+
+      <table>
+      <tr valign=top> <td align=right> <A NAME="Achard_etal01"></A> </td>
+      <td>
+      F. Achard, G. Vaysseix, and E. Barillot. Xml, bioinformatics and data integration.
+	  <i>Bioinformatics</i>, 17(2):115-25, Feb 2001. (eng).<BR>
+	    Available from the <A HREF="http://bioinformatics.oupjournals.org/cgi/content/abstract/17/2/115"> journal website</A> 
+	              or local PDF <A HREF="references/Achard_etal01-screen.pdf"> (for screen reading)</A> 
+		      |  <A HREF="references/Achard_etal01-screen.pdf"> (for printing)</A><p>
+	    <blockquote><font size=-1>
+	    Motivation: The eXtensible Markup Language (XML) is an emerging
+	    standard for structuring documents, notably for the World Wide Web. In this
+	    paper, the authors present XML and examine its use as a data language for 
+	    bioinformatics. In particular, XML is compared to other languages, and some
+	    of the potential uses of XML in bioinformatics applications are presented.
+	    The authors propose to adopt XML for data interchange between databases and
+	    other sources of data. Finally the discussion is illustrated by a test case
+	    of a pedigree data model in XML. Contact: Emmanuel.Barillot@infobiogen.fr
+	    </font></blockquote>
+	    <p>
+       </td>
+       </table>
+
+<br>
+
+<li><h2> Microarray Technologies </h2>
+
+         <table>
+	 	 <tr valign=top> <td align=right>
+		 <A NAME="Chipping_forcast00"></A>
+		 </td>
+		 <td>
+		 The chipping forecast.
+		 <i>Nature Genetics</i>, 21(suppliment):1-60, January 2000.<BR>
+		 <A HREF="http://www.nature.com/cgi-taf/DynaPage.taf?file=/ng/journal/v21/n1s/index.html">Available here</A>
+		 </td>
+		 <br>
+		 <br>
+		 <tr valign=top><td align=right>
+		 <A NAME="Spellman_etal98"></A>
+		 </td>
+
+		 <tr><td></td>
+
+		 <td>
+		  P. T. Spellman, G. Sherlock, M. Q. Zhang, V. R. Iyer, K. Anders, M. B. Eisen,
+		   P. O. Brown, D. Botstein, and B. Futcher. Comprehensive identification of cell cycle-regulated genes of the
+		    yeast saccharomyces cerevisiae by microarray hybridization.
+		     <i>Mol Biol Cell</i>, 9(12):3273-97, Dec 1998.
+		      <BR> Available from a <A HREF="references/Spellman_etal98.pdf">local PDF</A> or <A HREF="http://www.molbiolcell.org/cgi/content/full/9/12/3273">the journal website </A><p>
+		      <blockquote><font size=-1>
+		      We sought to create a comprehensive catalog of yeast genes whose 
+		      transcript levels vary periodically within the cell cycle. To this end, we 
+		      used DNA microarrays and samples from yeast cultures synchronized by three 
+		      independent methods: alpha factor arrest, elutriation, and arrest of a 
+		      cdc15 temperature-sensitive mutant. Using periodicity and correlation 
+		      algorithms, we identified 800 genes that meet an objective minimum 
+		      criterion for cell cycle regulation. In separate experiments, designed to 
+		      examine the effects of inducing either the G1 cyclin Cln3p or the B-type 
+		      cyclin Clb2p, we found that the mRNA levels of more than half of these 800 
+		      genes respond to one or both of these cyclins. Furthermore, we analyzed our
+		      set of cell cycle-regulated genes for known and new promoter elements and
+		      show that several known elements (or variations thereof) contain 
+		      information predictive of cell cycle regulation. A full description and 
+		      complete data sets are available at http://cellcycle-www.stanford.edu
+		      </font></blockquote>
+		      <p>
+
+		      </td>
+		      </table>
+  
+
+<li><h2>Background Material / Software Documention / Primers </h2>
+
+  <ul>
+     
+     <li>  <h3>Biology</h3>
+     	   <table> <tr valign=top> 
+           <td align=right>  <A NAME="Hunter93"></A>  </td>
+	   <td>
+	   Lawrence Hunter, editor.
+	   <i>Artificial Intelligence And Molecular Biology</i>. 
+	   <u> Chapter 1:  An introduction to biology for computer scientists</u> AAAI, 1993.<BR>
+	   <A HREF="http://www.aaai.org/Library/Books/Hunter/hunter.html">The whole Text</A> or
+	   <A HREF="references/Hunter93/01-Hunter.pdf">Just Chapter 1</A>
+	   </td>
+	   </table>
+	   
+	   <p> Here is <a href="http://www.nmsu.edu/~molbio/bioABACUShome.htm"> bioABACUS: <a/> a nice searchable database of abbreviations and acronyms in Biotechnology
+
+	   
+ 
+     <li> <h3> Math </h3>
+        <p> For those who might need a quick freshening of some rusty
+        math <a href="http://www.sosmath.com/"> SOS MATH </a> might be
+        helpfull.  Of particular interest are the quick reviews of:
+	    <ul>
+	      <li> <a href="http://www.sosmath.com/matrix/matrix.html"> Matrix Algebra </a>
+	      <li> <a href="http://www.sosmath.com/calculus/calculus.html"> Calculus </a>
+	      <li> <a href="http://www.sosmath.com/diffeq/diffeq.html"> Differential Equations</a>
+	    </ul>
+
+	 <p> Here is a nice <a
+	 href="http://vismod.www.media.mit.edu/~tpminka/statlearn/glossary/">a
+	 statistical learning/pattern recognition glossary </a>
+
+	 <p> This might be a nice reference for statistical methods <a
+	 href="http://www.itl.nist.gov/div898/handbook/index.htm">
+	 Engineering Statistics Handbook </a>
+	 
+	 <p> This write up on <a
+	 href="http://www.scienceatlas.com/potthast/tutorial/ode/odescript/node13.html">
+	 Taylor, Euler and Runge-Kutta Methods </a> is a fairly
+	 complete discussion of numerical integration (<em> ala
+	 4-06-2001's Class </em>)
+
+     <li> <h3>Programming Stuff and Computer Science</h3>
+          <a name=programming></a>
+         <p> Although we haven't started any of the projects or
+         homeworks yet, chances are that they will require some use of
+         atleast a little basic programming. 
+
+	 <ul> 
+	   <li> Python Stuff
+	   <a name="python"></a>
+	        <p> I'm a big fan of <a href="http://www.python.org"> python
+		</a> and we'll probably be using it for some of the projects.
+		 Getting started is pretty easy:
+		 <ul>
+		     <li> <a href="http://www.python.org/download/">
+		     Download python </a> if you need it (most
+		     unix/linux systems already have python installed
+		     - ITS does) 
+
+		     <li> Go through the <a
+		     href="http://www.python.org/doc/current/tut/tut.html">
+		     the python tutorial </a>
+
+		     <li> Grab the <a
+		     href="http://www.pfdubois.com/numpy/"> numeric
+		     python module </a> to gain matlab like
+		     functionality
+
+		     <li> Grab the <a
+		     href="http://starship.python.net/crew/hinsen/scientific.html">
+		     scientific python </a> module for some more nice
+		     things.
+
+		</ul> 
+           <br>
+
+           <li> Matlab Stuff
+	   <a name="matlab"></a>
+	        <p> Here are some matlab links:
+		    <ul>
+		       <li><a href="http://www.cns.nyu.edu/~eero/math-course/primer.pdf">Matlab Primer</a> <br>
+		       <li><a href="http://www.math.siu.edu/matlab/tutorials.html">Matlab Tutorials </a> <br>
+		       <li><a href="http://www.mathworks.com/access/helpdesk/help/helpdesk.shtml">Mathworks Helpdesk </a> Don't forget that when you are in matlab you can type helpdesk <br>
+		  </ul>
+           <br>
+	   <li> Mathematica Stuff 
+	   <a name="mathematica"></a>
+	       <p> Here are some links which may be helpful for basic mathematica interaction
+	       <ul> 
+	           <li><a href="http://www.wolfram.com/products/mathematica/"> Wolfram's Mathematica Site </a>
+		   <li><a href="http://documents.wolfram.com/framesv4/frames.html">Wofram's Mathematica Documentation</a> |
+		       <a href="http://documents.wolfram.com/v4/">(a no-frames version) </a>
+		   <li><a href="http://saaz.lanl.gov/math/Math_Home.htm">What seems to be a nice tutorial on using mathematica </a>
+		   <li><a href="mathfonts.shtml">How To add the right fonts to your X-server </a>
+		   <li><a href="references/celleratorArrows.pdf">A quick references to the cellerator arrows </a>
+	       </ul>
+
+      
+  </ul>
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+

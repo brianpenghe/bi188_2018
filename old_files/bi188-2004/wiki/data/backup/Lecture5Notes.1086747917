@@ -1,0 +1,683 @@
+##language:en
+#pragma section-numbers off
+
+== Bi 188 Notes  Lecture 5  April 26 ==
+
+S. Scherer Lecturing
+
+in 1st lecture, I incorrectly stated something, should have said:
+[[BR]]CTAG underrepresented, thus is of interest
+
+bacterial antisymbiants, live in gut, strange but true, not a lot more known
+
+focus today: 
+[[BR]]1st part: more genetics, less genomics
+[[BR]]2nd part: human genetics, resistance/suceptibility to infectious disease
+
+genetics, need 3 things:
+[[BR]]missing any, causes problems
+
+* mutants
+[[BR]]* complementation testing
+[[BR]]* linkage analyis
+
+lots of people to work with
+[[BR]]humans - diploid
+[[BR]]people not nearly as outbred as they could be,
+recessive mutations not to difficult to find,
+mutants causing problems are "self-identifying" 
+[[BR]] [ joe notes inverse, non-problem causing mutants, aren't self-identifying! ]
+
+sub-populations, extensive family records, 
+extracting linkage data not that bad given all the records
+
+technology for human genetics is applicable for other genomes
+[[BR]]plants - polypoloid
+
+genetics of trees: not easy because of long generation time, 
+phenotypes not observed in a dish, rather in full-grown tree
+
+large overlay of statistics
+[[BR]]statistics started in genetic analysis
+[[BR]]can't do all expts we'd like to do 
+[[BR]]drosophila, can do lots of expts, 
+lots of statistical methods used
+
+bi-122, how much not much [ statistics ? ]
+
+looking for genetic evidence to support your midterm project
+* theta, recombination fraction
+[[BR]]two markers, heterozygous at 2 loci
+[[BR]]how many are crossovers, how many aren't 
+[[BR]]theta varies 0 -> 0.5
+
+* phase, are the haplotypes known?
+[[BR]]marker 1   marker 2
+[[BR]]2 alleles
+[[BR]]heterozygous at 2 loci
+
+
+  M1a  M2a
+
+  M1b  M2B
+
+expected, observed, log ratio 
+
+LOD score
+
+
+pedigree i
+
+z (theta,i) = log base 10   ( f (i,theta) ) / ( f (i, 1/2) )
+
+get as many combinants as recombinants
+
+denominator: unlinked phase
+
+theta: proposed, that you'll test
+
+apply some models, see what odds ratio turns out to be
+
+is it dominant, recessive, penetrance, excessivity
+
+you have some segregation data, 
+[[BR]]I think theta should be 0.2, apply model to data, 
+[[BR]]what's probablility of getting observed result given theta and model
+
+pedigree when unlinked and take log ratio
+
+really simple case: 
+
+2 genes, and we know the phase,
+
+hetero at both loci, both go thru miosis
+
+m1a -> m2a
+
+m1b -> m2b
+
+f is proportional to theta^X ( 1 - theta)^Y
+
+weighted coin toss
+
+X would be how many underwent recomb event
+
+Y how many prodegy did original retain
+
+LOD score Z can be positive or negative
+
+x 0 -> 0.5
+
+y f
+
+if theta 0.5 LOD score has to be zero.
+
+if genes unlinked in real life, and you try to apply model that says 
+they're linked, get graph that looks like
+
+{{{
+    | 
+    | 
+----------
+    |  /
+    | /
+}}}
+
+otherwise:
+
+{{{
+    |   -
+    |  / \
+----------
+    | /
+    | 
+}}}
+
+max is at theta = x / (x+y)
+
+
+if following 2 markers, or real world case
+
+phenotyp e P
+[[BR]]marker trying to establish linkage to, M
+
+marker 2 types
+
+phenotype P has 2 values A & B
+
+double heterozygote, as before
+
+from one individual, 
+[[BR]]PA  MA
+[[BR]]PB  MB
+
+but don't know the phase
+[[BR]]single generation of single family, one generation 
+
+{{{
+S  P_A   M_B
+4  P_B   M_A
+1  P_A   M_A
+0  P_B   M_B
+}}}
+
+are they linked or not?
+
+if assume correct, 1 recombinant and 9 parentals
+
+take 2 possibilities for which are recombinants and which parentals, 
+do both ways, and average them..
+
+in case original was 
+[[BR]]PA  MB  
+[[BR]]PB  MB
+
+more likely 9 Y and 1 X
+[[BR]]but in case wrong, calculate the other configuration and average both
+
+likelihood is a function of this configuration and the reverse
+the more likely is going to give you a larger probability [ ali: frequency? 
+might need to normalize to do the probability, just a technical point ], 
+the unlikely gives you a bit.
+
+
+dataset likely to be incomplete
+for any individual
+
+first marker
+[[BR]]PA  M1A  M2A
+[[BR]]PB  M2B  M2B
+
+don't have all possible datapoints for doing this multipoint 
+
+so likelihood becomes extremely complicated, 
+and max likelihood is not trivial
+
+another problem: phenotype may not be easy to score
+[[BR]]flies with red eyes or blue eyes, would be easy
+
+otherwise: height & weight
+colesterol, blood pressure, etc.
+many continuous variables
+
+
+graph
+[[BR]]x : quantitative trait we're measuring
+[[BR]]y : number of individuals
+
+
+phenotype AA vs Aa vs aa
+[[BR]]3 gaussians overlapping 
+
+that's our model we're throwing into the system
+in middle, quantitative trait, overlaps all 3 distributions
+
+problem linke this in gene finding, don't know if intron, exon, etc.
+use HMM to try to untangle what's going on
+
+do the same: HMM for picking the combination, so pick middle Aa 
+as most likely
+
+trying to predict data based on some model, 
+comparing to the unlinked case
+
+alternative: family, some prodgeny in next generation, 
+share some piece of some chromosome
+must have something in common
+
+build up totally different way of probabilities:
+[[BR]]there is no model at all (non-parametric, or model free analysis)
+
+some locus must control the trait
+near some marker that you can follow
+
+parent 1: square, parent 2 circle (MA, MB) 
+[[BR]]4 sibling kids
+
+light circle
+[[BR]]dark square: MA
+[[BR]]dark circle: MB
+[[BR]]light square 
+
+only worry about the affected, don't worry about penetrance any more
+
+what's degree of sharing at particular marker
+[[BR]]observed degree of sharing 
+[[BR]]expected degree of sharing 
+
+divide it by the standard error you calculate for 
+
+(obs - exp) / std err
+
+you get a score
+which is different from Z score, 
+it's on different scale
+
+how many stdev you're distant from some value
+
+all aspects of this, not just test 1 phenotype against 1 marker
+to scan genome, will do several hundred markers
+observe tails of distribution by chance
+because so many repetitions of an experiment
+
+generally accept models when LOD > 3, reject when LOD < -2
+but gets more complicated 
+following a pedigree
+resessive 
+
+if penetrance not 100%, if dominant mutation not seen in parent 
+apply many models, see which gives highest LOD score
+then subtract for applying model many times
+
+LOD score says if done with various models
+
+if do the other way, no model
+
+if model OK, LOD score better
+if model inaccurate, other way is better
+
+software will spit out both
+
+scores required with model free approach scores around 3 are suggestive, 
+around 4 are more likely to be applied
+
+need to know which kind of score are you looking at
+
+Question: anova-like approach too 
+[[BR]]yes: look at contributions of part of model
+or cross-validation approach
+but ususally amount of data is scarce 
+
+model: gene controlling trait is [ dominant? recessive? ... ]
+plus penetrance
+
+once following multiple markers simultaneously, math becomes 
+fantastically complex, but 
+
+maximum likelihood if try to follow all at the same time
+
+couple-of-dozen individuals needed for 1 marker analysis
+
+genetic map derived from males vs. females, is different 
+constructed of male vs. female myoses, is different
+must be thrown into 
+
+nice rule of thumb number..
+
+key fact: how much recombination in human genome?
+[[BR]]1 cM or 1M bp DNA
+
+when screening genome, use a couple-hundred markers, 
+plenty enough 
+
+3000 cM all total
+
+genome project
+[BR]]1st thing the genome business has changed... 
+not the phenotypes to follow, the problem is the markers, and where they are
+
+simple sequence repeats that vary in length, 
+enable to get arbitrary polymorphic markers anywhere you wnat them
+
+find markers in family you're trying to follow
+
+need variable repeat markers
+polymorphic everywhere, 
+uniformly spread around genome
+
+2nd change: what happens when you get linkage?
+how many genes are in that interval?  Most are known
+if map gene to particular place, have list to look up what the candidates are
+last part of finding favorite gene, final battle
+narrowed to 1/2 million to 1 million bases, haplotype analysis, minus a [...]
+
+3rd change: 
+
+familial mediterranean fever
+
+actually sequence the individuals to see what polymorphism, 
+what's main issue
+to decide if that's causing the phenotype or not?
+
+people havent' been around long, mutations around less often
+trait arose in some number of polymorphisms around
+same linkage 
+
+5 polymorphisms in a row correlate with phenotype, 
+if founder effect, 
+get more unaffecteds from same population 
+
+in paper: mutations arisen independently several times
+
+also, the biology: does the gene make sense for the phenotype you're observing
+
+if polymorphisms not in coding region, now have lots of 
+non-coding sequence to look through, pain to do
+
+what's driving this, how common are they?
+my disease is more common than your disease
+usually depends on the population
+
+what are the common human polymorphisms:
+
+
+* sickle-cell anemea  (betaglobin)
+
+* cystic fibrosis 3% heterozygotes
+
+* muscular distrophy, duschennes, male, X-linked
+
+* LDL receptor, south africa, heterozygote approx 1%
+
+* GDPDH 1st step  10% polymorphisms!
+
+* hemachromotosis - brittain 10% polymorphic
+
+why so high? 
+[[BR]]when trying to get an allele increase
+[[BR]]hetero or homozygous?
+[[BR]]knock down initially, but won't get rid of it
+if not strong selection, 
+[[BR]]won't go up if rare allele
+
+2nd half of lecture, what are the main selections acting on people?
+in 21st century different
+
+nutrition, infectious disease are main drivers
+survive long enough to reproduce
+
+some genes that are clearly implicated by these processes, 
+some are suspect
+
+with some rare genetic disorders, can analyze pathways in entirety 
+
+[ class break ]
+
+malaria - geographically distributed
+correlate with where malaria found
+multiple kinds
+vivax, discuss less, different organisms
+
+complicated life cycle, several stages in human
+[[BR]]earliest: in liver
+[[BR]]then red blood cell
+[[BR]]sexual cycle completed [on the insect side ?]
+
+malaria
+[[BR]]HbS is easy to demonstrate
+[[BR]]sickle-cell anemia
+[[BR]]heterozygotes are resistent to effects of malaria
+[[BR]]homozygous are barely viable, so don't see many 
+
+major cause of mortality in children
+hospitalized adults genotypes
+
+many many hemoglobin alleles, related to HbS in various ways
+HbC, same residue, but different amino acid
+
+experiment, want to demonstrate a particular allele of a gene 
+is conferring disease resistance
+
+what's the experiment going to look like?
+[[BR]]in this paper, looking at all possible combined genotypes as well
+
+HbS - we know about, not seeing homozygotes, discard from study
+[[BR]]HbC - 
+[[BR]]HbA - wild type
+
+hospital in logaduga, whichy is capital of ???
+
+so we have AA, AC, CC
+
+what looking for in hospital:
+
+Question: do these genotypes in malaria patients have same frequencies as 
+  in general population?  Are they at Hardy-Weinberg equilibrium?
+
+(often done as a refinement) compare to other hospitalized patients
+with another infectious disease
+
+but problem, if 10% of population:
+
+CC are 1% of the population, looking for chnage in that number
+hope there's an effect on the heterozygous,
+
+OR design an enormous study
+
+they did the latter, and verified something was going on
+
+to study CC homozygotes, put in thousands of people
+
+reduced oxygen pressure in red blood cells
+
+hemoglobin C is particularly interesting, theyr'e in reasonable shape, 
+growth of HbC in this population, there's a variant in human population 
+involved in resistance to disease, can see gradient in resistance, 
+suceptability as you move away from malaria centers
+
+G6PDH
+[[BR]]first step in pentose shunt
+where you see deficiencies, 
+maps out areas where malaria is known
+
+300 alleles of this, stunning
+dozens of these risen above 1% in certain populations
+[[BR]]point mutaions cause varying degrees of loss of function
+[[BR]]x-linked disease, lots of stuff going on, 
+sometimes in >10%
+in n. europe or japan, <1%
+[[BR]]correlation hits you in the head
+
+sensitivity to anti-malarial drug
+
+cut level of enzyme down by order of magnitude
+complete knock out causes severe anemia
+
+mechanism for resistance
+related to malaria
+[[BR]]g6pdh is NADPH in cell, so reducing transport
+cells not stressed, this pushes them over the edge, but then cells are cleared
+so clearing parasite as you clear the problem cells
+
+another major area in human genetics, where there's a high degrees of
+polymorphism
+
+immunology, histocompatability locus, many many alleles of mhc
+
+antigen presentation 
+
+allele HLA-Bw53
+[[BR]]hospital, control
+[[BR]]severe malaria (west africa, common allele, not rare) 16.9%
+[[BR]]mild malaria (clinic) 22.6%
+[[BR]]mild controls (at clinic, not for malaria) 25.4%
+[[BR]]healthy adults 26.4%
+
+see change in allele frequency
+
+typed for many markers, including class II antigen also
+
+homozygots rare
+
+
+alphaglobin locus, normally 2 genes, deleted between tandem 
+duplication, have 1 not 2, these are called alpha-plus thallasemia's
+alpha-minus are mutants that are not making
+
+alpha-plus making, just less of it.
+
+affecteds vs. healthy population are different
+but look at case controls, alpha-thallasemia protects against being 
+in hospital, so doing other things as well.
+
+maybe other advantages we don't know about, what the alpha-thalls are doing in the beginning is not clear
+
+many other genes, associations with malaria
+
+duffy-blood-group-antigens, absent in africa, 
+protects against malaria
+
+tnf
+[[BR]]cn40
+
+lots known about genetic variation and resistance in malaria
+
+diseases:
+
+cystic fibrosis, 
+[[BR]]homozygotes have severe problem
+[[BR]]heterozygotes are succeptible to infections
+ 
+some advantage to heterozygotes, the protein encoded at 
+cystic fibrosis, is receptor used by salmonella typhae to 
+enter cells
+
+heterozygotes have greatly reduced resistance to Salmonella typhae or typhoid fever
+[[BR]]aren't getting typhoid fever was once getting 
+
+receptor for pathogen
+[[BR]]When get pseudomonas infections, usually get rid of them by internalizing the bacteria
+
+
+suspected, not confirmed:
+
+hemochromatosis
+[[BR]]carrier rates approx 10% common
+[[BR]]gene linked to histocompatability locus, HLA
+[[BR]]took forever to find this gene, although easy to map
+[[BR]]people are storing too much iron, taking up way more than you need
+[[BR]]iron load becomes deleterious
+[[BR]]suspected it's a regulatory gene 
+[[BR]]iron not soluable in nature, so organisms develop mechanisms to scavenge 
+[[BR]]same gene causing too much iron uptake
+[[BR]]iron exported from macrophages
+[[BR]]many pathogens survive in macrophages, and can be disseminated there
+[[BR]]macrophages in these people explain what's going on in plague? 
+[[BR]]maybe causing iron t be exported from macrophages, then iron defficient marcophages could cause the problem
+
+familial meditteranean fever
+[[BR]]clone a gene , mapped the gene 
+[[BR]]common gene in meditteranean area
+[[BR]]map location, take the rest of the way to finding the mutaitons 
+that are responsible 
+kind of thing you see looking at disease genes in the class project
+[[BR]]people have fever at varying intervals of time, over and over again
+some kind of infection going on - 
+lots of the damage sustained during infection
+immune systems collateral damage
+destroy own tissue
+laying down amyloid 
+recurrs over and over again
+[[BR]]link to infectious process?
+complement pathway, C5A, chemoattractant for white cells
+people with this disease can't turn down this peptide, 
+can't shut off inflamatory response correctly
+low-grade infections of sub-clinical behavior, over and over again
+overreacting, not underlying infection itself
+[[BR]]lots of variability in disease, they had slightly different phenotypes 
+probably different alleles
+[[BR]]some mutant alleles, that is the wild type allele in other organisms; mutant is actually wild type version in other organisms, these organism keep it in a higher state of readiness
+[[BR]]for our purposes, turning down the immune response is the thing to do 
+other organisms decided not to do this, that is the amino acid sequence for other organismss
+
+Question: maybe allele will disappear 
+[[BR]]1/7 are carriers, not going away fast
+from paper, it's arisen independently
+complicated, don't know how frequent it was earlier
+pathogen selection going on in background, interesting
+
+switch from common diseases to rare diseases 
+[[BR]]analyze pathways from available human mutants even though rare
+
+complement pathway first, 
+[[BR]]give 1 minute description of complement pathway, many proteins involved
+complement, kill bacterial cells, 
+activated 2 ways, 
+ * IgM & IgG
+   [[BR]][ pathway diagram: many proteins C1->C9, proteases, steps in cascade ]
+
+ * Alternate pathway, repeating structures on surface of bacterial cells
+  [[BR]]fraction of population missing the many many proteins in the cascade
+
+fmf gene doing other things other than down-regulating the signals
+
+people missing these proteins are interesting... get infections
+[[BR]]missing key c3, they get diverse infections
+[[BR]]missing IgG, get encapsulated (polysaccaride) bacteria 
+[[BR]]missing alternate, get meningococal infections, e.g. lyceria [sp?]
+[[BR]]missing last c9, have almost no problems at all
+
+signal out of c3, or e.g. c5: makes protease to attack strep throat, 
+so for some we know what they do
+
+protein NRAMM 1 
+[[BR]]natural resistance, macrophages
+[[BR]]route through the mouse
+[[BR]]resistance locus for lots of thigns, e.g. salmnonella
+intracellular pathogens
+
+Chediak-Higachi
+[[BR]]lack of pigmentation 
+[[BR]]beige locus in mouse
+[[BR]]protein involved in intracellular protein sorting
+[[BR]]causes numerous defects in cells
+[[BR]]using mouse is the way in
+
+white blood cells, extracellular matrix, 
+shared subunit,
+LADS lucophyte [?] dissusion syndrome
+
+read marker biology text book
+[[BR]]phagocytic cells, kill through free radicals, 
+oxidated chemistry looks like...
+[ reaction diagram ]
+if you can't get this pathway off the ground, 
+[[BR]]CGD: chronic granulosis [sp?] disease
+simple things like staf cause huge problems
+
+NADPH: make O2-, so get free oxygen radicals
+[[BR]]SOD: most ALS is not inherited, but there is a 
+[[BR]]MP: making bleach, peroxidase
+
+IGA: antibody in secretion, important because microbes 
+like lyceria, strep, ... proteases for IGA, if mutant 
+not making it, not that big a deal
+
+HIV: some people aren't going to get sick, exposed over and over
+to the virus, but infection not getting established, not getting 
+into the cells? Not getting far, not getting in
+[[BR]]HIV is complicated, because it mutates during infection cycle
+macrophage-trophic ones, early in process, receptor situation for 
+HIV is complicated, receptor + co-receptor(s), some more important 
+than others, cell lines and macrophages for people exposed but 
+not infected, 32 bp deletion in a co-receptor
+
+again a surprise, look in normal population (in paper, in Europe)
+[[BR]]found allele is quite common in general population
+also at hardy-weinberg equilibrium, conferring obvious advantage 
+to its population
+[[BR]]found in prostitutes, drug users, high-likelihood of exposure over 
+long period of time
+[[BR]]note the allele not found in africa or asia
+
+finish up: different ways to be resistant to infection
+immune system multilayered, rare genetic disorders, take out 
+late complement steps, not a big deal, but move away from 
+world of infectious disease, study heart disease, obeisity, 
+etc. many genes involved in the process don't produce much 
+of the pheontype
+
+when constructing model for a complex trait, then go back 
+to do mapping, hard problem, much more to be done.
+
+S. Scherer: won't be back for 3 weeks
+
+
+
+
+
+
+
+
+
+

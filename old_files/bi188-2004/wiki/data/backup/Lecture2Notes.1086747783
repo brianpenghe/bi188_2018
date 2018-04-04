@@ -1,0 +1,481 @@
+##language:en
+#pragma section-numbers off
+
+= Bi188 Notes  Lecture 2  April 5 =
+
+Course web site
+http://woldlab.caltech.edu/bi188
+
+Tracy: 
+
+handing out assignment next week
+mck sequence comparison
+to get familiar with blast, seq comparison, working with genomes
+
+could be on your final, could have a sequence analysis question on your final
+introduce you to the kinds of things that are important in working w/ genomes
+
+Barbara: 
+
+assignment's to get you to interact with genome browsers
+use as a warm-up exercise, optional
+it will be useful
+
+in 1st hour: underpinnings of bio/data from whole genome analysis
+
+last week: tools, algs, for seq comp; 2 classes of biology:
+large general feaetures, base pair statistics; other is finding a 
+gene, knowing when 1 gene/genome is an ortholog, where protein 
+coding sequence is.
+
+how you find the cis-regulatory elements that run genes and dictate 
+where/when they'll be expressed
+
+tried to get most recent paper on the human genome, rather than 
+the paper from 2yrs ago, but couldn't
+The mouse genome paper offers some comparison also.
+another newer paper being written now, done by end of course, will 
+give to you later
+
+'''slide: reference genome sequences 4/03'''
+
+mycoplasma (paracitic bacterium) 400 genes  (done)
+it's the simplest/smallest self-conatined cell in terms of gene number
+
+E. coli + 100    4.6 Mb  (done)
+
+(Slides will be on the web!)
+
+yeast  12.5 Mb  (done)
+plus small intergenic info, operator sites, promotors, 
+6300 genes
+
+now 5 other yeast species done to lower quality
+
+mustart weed, arabadopsis  (done)
+classic model organism for plant development
+
+worms 1 & 2: c. elegans, c. briggsae (less well),   (done)
+17,000 genes 97 Mb
+
+fruitfly 120 Mb  (done)
+13,000 
+
+mouse & rat  3000 Mb  (done)
+30,000 
+
+Human 3,300 Mb  (done)
+23,000 genes (that are protein coding)   (maybe 22,500)
+
+recently discovered it includes a large segment duplication, 
+hard to deal with in sequencing, learning about why this happens
+
+First draft of Chimp
+
+chicken (draft)
+
+sea urchin (almost draft)
+highly polymorphic individuals can be utterly limiting
+paternal & maternal chromosomes differ quite a bit
+mismatches- due to different genes or 2 different individuals?
+
+sea squirt, 25x coverage, still couldn't assemble the genome 
+because it's too polymorphic
+
+dog genome (draft in a few months)
+went to trouble to pick inbred boxers, strains, an individual, 
+engaging in ill-advised inbreeding, then selected least polymorphic 
+of all, now the source of the dog genome.
+
+Now looking for an elephant like that.
+african less polymorphic than indian elephants??? (Barbara can't recall)
+chosen based on relative polymorphism
+
+chicken genome almost done
+
+
+'''Slide: Genome Project History'''
+
+The post-human-genome sequence era, go get genes
+
+
+'''Slide: how human genome first draft was done (twice)'''
+
+public strategy vs. private/celera strategy
+
+public approach:
+
+150-350 Kb BACs
+bacterial artificial chromosome
+mel simon, hiraki shazoya
+recombination pathways, defeat them, 
+origin of replication
+generate vectors that can clone large (repeated) sequences
+any novel recombination apparatus that sees all the repeats is 
+going to get confused 
+
+physical map, overlapping clones
+(except for centromere) 
+to get tiling path
+whole genome, take each clone, chop into small pieces, 
+sequence them, overlap them, put it all together
+
+private approach:
+
+500 base runs lots and lots of times, 5x coverage OK, 
+10-15x coverage statistically gets you everything.
+
+Then put together computationally all at the end
+
+old approach: 
+had the machines but didn't have the algorithms, but had the guy:
+gene myers, ex caltech undergrad, had been thinking about the algorithms
+$100M+ to buy the machines and get the system up and running
+
+but how do you combine pieces that are smaller than length of repeat?
+complicated decisions to make, 
+use clones of differing lengths, to get enough info
+
+500bp info, 
+both ends, know how far apart they are, 
+series that are 2Kb appart, or 10Kb apart, or 50Kb apart, 
+can puzzle together things that are otherwise ambiguous
+
+now, getting other genomes sequenced, the biggest challenge 
+is polymorphism
+(See notes above that I inserted within the "genomes sequenced" section 
+on polymorphism issues)
+
+
+'''Slide: Genome browsers'''
+
+EMBL, UCSC, NCBI? etc.
+lots of tracks of comparisons, 
+lineups, other creatures related or orthologous
+human, mouse, fugu (pufferfish) (cool for other reasons than sushi!)
+
+maps of mRNAs sequenced, 
+ESTs long piece of dna
+
+e.g. enter name of a gene
+
+interested in some gene by name, often takes to right place, 
+but as often will take you to another gene with similar/related name
+
+should instead enter by e.g. genbank accession number 
+
+mouse genes & human genes sometimes given same name, different names, 
+
+the rule is, if you want to go someplace with assurance, start with 
+some sequence and blast it.
+sometimes a name PLUS accession number.
+
+
+'''Slide: Global CpG island survey'''
+
+CpG islands are an interesting feature, look globally at genomes, 
+within vertebrates, these CpG islands have some functional significance 
+
+localized, highly enriched around the beginning of genes, 
+
+while they may not define a part of a promotor, they do tend to localize 
+near promotors
+
+numbers/maps of cpg islands match genes pretty well
+what happens with CpG islands is that they're the subjects of 
+methylation, for making open or closed chromatin
+
+
+'''Slide:  % of sequence that's coding:'''
+
+3% of sequence is protein coding , pretty small fraction
+thus a large fraction is introns, repeats, intergenic (including 
+islands of regulatory info)
+
+> 70% of yeast is protein coding, much more compact, but do have 
+full splicing apparatus
+
+> 45 % of human sequnece is repeated sequence
+
+sequence length?
+
+complexity of genes?
+
+while one goes down, another goes up
+
+repeats, long interspersed, short 
+transposable elemetns
+
+in mouse genome, 
+still have lots of elaboration of repeat families
+bouncing into new sites & joining mouse genome
+
+humans things are slowing down, not adding repeats as rapidly
+
+repeats hopping around is a mutagen
+
+
+'''Slide: repeat incidence'''
+
+used to identify functionally special reginos of the genome where
+repeats cannot go
+
+e.g. HoxD  (homeobox) gene cluster in human, 
+not allowed to be invaded by repeats
+
+hole in frequency of repeats is, probably important, i.e. gene rich
+
+
+'''Slide: terminology'''
+
+paralogous genes = Highly similar genes within a genome derived from a
+common ancestral gene
+
+e.g. histone genes, 
+e.g. betaglobin genes, alphaglobin genes
+also have some with no discernable paralog
+(how related to declare a paralog vs. just related protein domains)
+paralagous also implies similar kind of function
+
+
+orthologous genes = "same" gene in two different genomes 
+
+consider how to distinguish a true ortholog from .... where there has
+been gene loss or .... power of choromomal position ... same
+chromosomal neighborhood
+
+one gene in same neighborhood, ortholog
+if rearrangement then may be "at sea" about which of 2 is *the* ortholog, 
+e.g. the superior blast sequence, unless curated
+
+Homologous = 100% similarity as in small polymorphisms
+% homology loosely = % similarity
+
+
+'''slide: biggest human gene known  dystrophin = 1.4Mb hnRNA'''
+
+skeletal muscle just below the membrane
+muscular distrophy
+
+mutated in Duchenne Muscular Dystrophy
+
+Located in X
+thus males are affected
+the lead disease for telethon foundataion
+
+2.4 M base pairs long, 
+transcription occurs over the space of hours (sort of amazing)
+incredibly large target, lots of ways to mutate it
+some ways the gene doesn't care about
+large insertinos/deletions in introns, make no difference
+but lots of ways to stop it or cause disfunction
+
+
+the mRNA for this is ~6000 bp long
+
+Average human gene:
+  * ORF on order of 450 AA, 1350 bases  including 
+  * mRNA = 1600 bases  including 5' & 3' UTR
+  * distributed over 30KB
+
+gene rich domains, and gene poor deserts
+
+
+'''Slide: complex gene anatomy - distant and multiple regulatory elements'''
+
+regulatory elements can operate over ~100 Kb  and skip over gene X 
+(or 2 or 3 genes away) 
+to site e.g. between MRF5 and myf5
+
+as well as simpler control of downstream gene control, MRF5 -> myf5
+
+can't be sure about regulation over distances within 3-5 genes
+
+Q: how regulation over 100Kb? 
+DNA looping to transactivate by promoting formation and action 
+of the proximal / initiator complex
+how does it *know* how to interact with the gene 2 genes down the road?
+
+1 or 2 now.... 
+take 2 promotors and swap them, still works, preferential
+(not all/none), additional specificity
+
+(in *this* example case, all 3 of these *are* expressed in similar cells)
+
+But... also multiple cases where gene x and mrf4 are exclusive in 
+transcription patterns, from myf5, e.g. chromatin opening/closing  
+methylation of CpG islands, can play a role
+
+paper included, by stubbs people
+
+Hu CHR 19, 
+mouse genome, pull out all sequences corresponding to genes on hu chr 19
+all these interesting papers that do agnostic genome scan start with 
+everything on 1 chromosome: Y, 21, 22, 19
+high numbers implies small chromosome
+rather than e.g. 1 or 7 which are large
+
+most gene dense chromosome
+highest packing ratio of genes per unit length
+chromosomes in other organisms: representatives of a number of 
+complex gene families
+protein coding genes that occur once per genome, large paralogous families, 
+medium paralogous families
+
+gene dosage to make the same protein
+
+family of zink finger transcription factors, over 1000 of them, 
+repressing expressors, all use co-expressor protein
+
+also olfactory receptor family
+
+t-cell receptors
+all highly-represented on 19
+
+(other creb-class zinc finger on other chromosomes, also olfactory on 
+others)
+
+1 sadd vomeronasal (sp?) receptor
+
+degree to which synteny is operating
+
+look at 1/2 of chromosome
+color coded
+
+
+Missing Slide: the interesting appearance of the junctions
+not surprisingly at sites of repeated genes, multiply within 
+a choromosome, semi-homologous mediators of chromosomal 
+translocations, happen to have occurred in germ line, 
+generating novel genes at the junctions
+
+'''Slide: finding conserved elements, using to map conserved features'''
+
+mussa (I presume) software we want to get into your hands
+mouse/human
+
+mouse/human/cat/dog/cow 70%
+
+muscle-creatin-kinase (MCK) exons
+one tiny green box, non-coding exon, 
+
+output from interactive viewer designed to highlight conserved regions 
+
+more user friendly than a dot plot
+
+30 bp sliding window across a 30 KB region of MCK, "simple" gene
+
+simple sequence repeats (only) masked
+
+leverage protein coding part, disallowing frame shifts, etc.
+
+cis-acting regulatory elements
+
+trying to find other genes we're less familiar with, e.g. micro-rna's
+
+(not sure ???)
+black  complements
+red reverse complements
+
+lots of mammals "radiated" 80-100 M years ago
+(mouse, human, cat, dog, cow)
+
+by chance between 2 genomes, now across 5 resolve much more clearly
+
+evolutionary tree is your friend in these comparisons, 
+esp. if multiple species that are distant from your reference 
+genome, rather than just 1
+
+5-7 yeast genomes, 
+
+release of dog will get nicer
+
+understand the anatomy of a gene, 
+silencer or enhancer
+find candidate binding sites 
+for transcription factors, enhancers, silencers
+
+several occur
+bunch of tiny features
+becoming clear that 1 tf binding site 
+not heavily selected against occurring randomly in the genome
+used to be will find in front of genes you want, and not in other genes.
+occupancy can be transient, or require multiple-factors, or more likely 
+a mix of both issues
+
+if in conserved domain, and binding, candidate factors, 
+computationally infer what tf or combination are regulating 
+a given gene without doing a bio experiment
+
+you can infer / hypothesize, but may not be ironclad hypothesis
+so still large role for confirmatory experiments
+
+but still an enormous gift for comparative genomics
+
+
+'''Slide: characteristics of protein coding genes in 3 genomes'''
+
+
+
+fly, worm, human
+moving in direction of more uniform, shorter exons, 
+interrupted by large introns
+
+prevailing idea: through differentioal splicing or 
+transpositions, 
+exon defines prote-prot interaction site, widely used 
+site, ring-finger proteins, luceine zippers, sitting on a
+single exon with ... on either side, big invitation if you put element 
+into some other gene, to get p-p interactions that previously didn't 
+exist
+
+'''slide: low on short introns'''
+
+'''slide: functional group distribution for protein coding genes'''
+
+look across prokaryotes, esp. those out in the environment, 
+pathways represented by bacteria, which live in which envoronment.
+
+all eukaryotes, but out to include arabadopsis
+
+???? 
+high for us, low for others
+
+also immunity and defense has big differences, 
+human more elaborated t-cell b-cell recognition
+can do sweep of funcitonal groups
+
+'''Slide: recent duplications:'''
+
+inter(red) and intra(blue) chromosomal duplications
+positive positional bias for centromere and telomere... why?
+concequences?
+
+impression: positional biases / frequency dep. on distance to 
+end of chromosome or centromere, no understanding of this fact.
+
+some of these very recent duplications in human since chimp, 
+are fodder for being interesting difference, are 
+intra chromosomal , not inter-chromosomal 
+
+how many genes (what fraction) are about being a cell, 
+and have simpler requirement for having them.
+
+.. say 30% of known human disease genes have an identifiable candidate
+ortholog in yeast
+
+this is higher than everyone predicted, (predicted approx 10% only)
+
+but so many things like map kinase are in all of these species
+
+'''Slide: conserved squence elements between mouse & human 19'''
+
+repeated & varied over/over again 
+
+'''slide: mouse mutation rate approx twice as high as human'''
+
+for next week, read chapter 10 for background, and 11 will be relevant
+soon also
+
+
+

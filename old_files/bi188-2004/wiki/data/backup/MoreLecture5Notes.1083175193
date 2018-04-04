@@ -1,0 +1,286 @@
+##language:en
+#pragma section-numbers off
+
+== Bi188 Notes  Lecture 5  April 26 ==
+
+Bi188
+
+Error in palindromic sequence in first lecture
+
+* Human genetics 
+  * Genetics requires 3 things
+    * with all 3 you have a genetic system
+    * mutants 
+      * can't introduce mutations into human germ-line
+    * complementation testing
+      * can't arrange crosses
+    * Linkage analysis
+      * ?
+  * human genetics isn't as hard at sounds
+    * there are a lot of people
+      yeast screens goes up to 10^8 individuals 
+      about the population of the US, the
+    * people are helpful because mutants are self-identifying.
+      * people who have diseases will go to their doctor.
+      * mutants ID themselves
+    * Complementation testing
+      * do everyone who has the disease have the same issue
+      * good to use the same large family, preferably with long family
+        histories 
+    * human genetic techniques can transfer to other species
+      * crops are high ploidy which makes mutant isolation hard
+      * don't necessarily know the sexual reproduction of some species
+      * trees have long generation times
+    * statistics
+      * most genetics texts have a great deal of statistics. (helped
+        drive development of stats)
+      * $\theta \implies$  recombination fraction varies between [0, .5]
+      * Phase -> are the haplotypes known
+        * heterozygous between two individuals
+         m1a - m2a    
+         m1b - m2b
+      * LOD score (log of the odds score)
+        * for the pedigree ith
+          $Z(\theta, i) = log10 (F(i,\theta) / f(i, 1/2))$
+          * 1/2 = unlinked trait
+          * theta - proposed recombination fraction that your testing
+          * f hides the biology, is it dominant, recessive, etc.
+          * basically doing a weighted coin-toss
+
+          $F \proportion \theta ^ x ( 1- \theta) ^ y$
+          
+          x is the number of crosses
+          y parental types (# of generations?)
+
+          LOD score can be positive or negative
+
+{{{
+            |        x
+            |   x         x        < - $\theta = (x/x+y)$
+            |x                x
+          z 0------------------.5 (theta)
+            |      .      . 
+            |   .       <  when model is unlinked
+            | .
+
+}}}
+
+            when theta = .5 z = 0
+
+
+       * Example...
+         Assume phenotype P, marker M, with double heterozygote
+         with 10 kids, are they linked?
+
+         5   Pa  Mb
+         4   Pb  Ma
+         1   Pa  Ma
+         0   Pb  Mb
+         
+         not likely, as it seems Pa Mb and Pb Ma are linked on the
+         chromosome
+
+         test by using the formula, testing for the either combination
+           5+4 = y
+           1+0 = x   (in above formula)
+
+         trying to compute probability of event happening, so add both
+         possibilities together. 
+
+         this is for the simple case, gets more complicated as markers
+         increase. Unfortunately data set is frequently incomplete
+         which makes calculation more complicated. Also phenotype may
+         be hard to score.
+
+       * many traits are not discrete
+         * quantitative traits are height/weight, blood pressure, etc.
+         * eg simple model 
+           {{{
+                     |
+           # of Indv |
+                     |---------------- < quantitative trait }}}
+                     
+           aa is bell curve with smallest mean
+           Aa is medium mean
+           AA is biggest mean
+           Assume individual in the center of graph
+           Can't really determine which group individual is in, but
+           can determine likelihoods of membership in each class.
+
+       * another way of doing it, parametric or model-free analysis
+         * assume family with some number of progeny, 
+         * affected individuals must share a common chunk of chromosome.
+
+           (Observed - Expected) / std error 
+           
+           this formula is different from LOD score (different scale)
+
+         * to do experiment need hundreds of markers
+
+       * LOD scores, model greater than 3 tend to be accepted, 
+         reject less than -2 
+         * cross validate looking at different models with the highest
+           probability.
+         * if you have a correct model it's more helpful than
+           non-parametric 
+         * non-parametric scores should probably be more than 4 to be
+           suggestive 
+
+       * following multiple markers will tax even the best computers
+         today
+       * best case, 100 % penetrance, dominant trait, needs a couple
+         dozen
+       * genetic maps for male or female meiosis does not look the
+         same
+       * how much recombination is present in the human genetics
+         * centiMorgan = 100 million bp in humans
+         * 3000 cover the human genome
+         * using variable repeat markers are polymorphic everywhere
+         * next question after determining linkage, is how many
+           genes there are. radically changed by genome project
+           ( detailed map is now available )
+         * textbook has a good analysis of haplotype analysis
+         * eventually problem shifts from genetics to biology problem
+           * if there are multiple polymorphisms, you can try and
+             figure out which gene is broken by how much it makes sense
+
+     * classic human polymorphisms
+       * sickle cell 10% heterozygote
+       * cystic fibrosis 3%
+       * muscular dystrophy
+         * x linked, large gene with many targets
+       * LDL receptor south africa 1%
+       * G6 PDH
+       * Hemochromatosis, Briton has 10% are heterozygous for the gene
+       * selection must happen at the heterozygotes as homozygotes
+         can't change population.
+       * main human selection pressure (historically)
+         * infectious disease
+         * eating
+
+* human infections diseases
+  * malaria
+    * polymorphisms are geographically linked
+    * has several stages in the human
+      * takes place in liver, then blood, sexual reproduction happens
+        in the insect
+    * HbS - sickle cell heterozygotes are resistant to malaria
+      * homozygotes HbS were barely viable.
+    * Many hemoglobin alleles related to malaria resistance
+      HbC is another. HbA is wild-type
+      * how to design a study to see if a genotype helps provide
+        resistance. 
+        * check to see if the alleles are in harvey-weinberg equilibrium
+        * problem is homozygotes is rare enough that it's hard to to
+          detect changes (variance of a number that's only 1%)
+          * solution is to design a large study that counts thousands
+          of people.
+     * G6PDH receptor
+       * geography is concordant with malaria
+       * 300 alleles known
+         * dozens above 1% throughout the population
+       * in affected areas can find deficiencies greater than 10%
+       * knockouts is a severe phenotype (anemia)
+       * main source PDH, affecting reducing potential of cell
+         producing different response with oxygen stress
+         This one causes cell death which kills the parasite
+     * MHC most variable gene allele in immune system
+        * HL-A-Bw53
+          severe malaria 16.9%  (hospitalized)
+          mild malaria 22.6%  
+          mild controls 25.4% ( going to hospital for other things)
+          healthy population 26.4% 
+     * $\alpha$ globin 
+       * \alpha + thallasemia
+         * reduced amount of \alpha globin 
+         * usually the \alpha globin repeat is deleted.
+       * not only protects against malaria, but actually protects
+         against going to the hospital
+  * other common genes promoting resistance
+    * cystic fibrosis
+      * homozyogotes are severely impaired
+      * heterozygotes
+        * great resistance to typhoid fever, salmonella typhoid(sp?)
+        * receptor for the pathogen is the gene
+    * others where details aren't known
+      * hemochromatosis
+        * people are storing more iron they need
+          * iron load becomes deleterious
+          * causes macrophages to decrease amount iron
+          * perhaps the plague? 
+      * familial Mediterranean fever
+        * recurrent fever, destroying body tissue
+        * C5A chemoattractant for white blood cells
+          * people with this disease can't shut off the infection
+            response. 
+        * apparently the "mutant" type in humans is the wild type in
+          other organisms
+  * rare diseases
+    * analyze pathways from available human mutants
+      * complement pathway - kills bacterial cells
+        * {{{
+          IgM IgG  ( classic pathway )   repeating structures on
+                                         bacterial cells ( alternate )
+           Clg                           D
+           Clr                            <
+           Cls                              \
+           C4                            D   |
+           C2                                |
+                 \                /         /
+                        C3     ---> signal / 
+                         v  (allows eating bactera)
+                        C5     ---> signal
+                         v
+                       C6-9 (directly kills bacteria) }}}
+
+           C3 is important, those people get lots of diseases
+           Missing classic pathway catch encapsulated bacteria
+           Alternate get mengiges infection
+           Tail end menegies infections
+           C9 missing yields almost no phenotype
+
+           only one of a number pathways for defense
+
+           strepp makes a protease to blocks the signal from C5
+
+      * NRAMMM 
+        * resistance locus to lots of things tb, 
+        * intra-cellular pathways 
+        * discovered through mouse 
+
+      * Chedrak-Higashi syndrome
+        * resembles beige locus of mouse (lack of pigmentation)
+        * intra-cellular protein sorting
+
+      * LADS (Leukycite adhesion deficiency syndrome)
+        * breaks multiple pathways, but the people are still walking
+
+      * Macrophages kill pathogens through free radical burst
+
+{{{
+             O2 + NADPH -> O2-
+     
+             2O2 - ---> H2O2 + o2
+                   SOD
+     
+             H2O2 + Cl- ---------> OCl- + H20
+                        myloperoxidase
+
+}}}
+         you can find mutants in every component of this pathway
+         pathway cant kill 
+
+         Inherited form of lou gerigs disease are missing SOD
+         
+       * IgA 
+         * selected IgA deficiencies 
+
+    * HIV
+      * 32 bp deletion in Co-receptors confers an advantage for
+        resistance  in CC5? gene
+        * common in general population
+          * it's currently in harvey-weinburg equilibrium in unexposed
+            individuals in western Europe. Not found in Africa and
+            Asia.
+     
+    * complex trait mapping is difficult on humans 

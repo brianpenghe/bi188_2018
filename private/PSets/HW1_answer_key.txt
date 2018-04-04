@@ -1,0 +1,65 @@
+bi188 Spring 2013 HW1 answer key
+
+
+1) Multiple answers accepted.  Here is a typical answer:
+ Promoter, in vicinity of the TSS, where the transcription initiation complex assembles to enable gene transcription.
+ Enhancer, known to sit anywhere up to ~1Mb away from the gene, presence dramatically increases transcription level.
+ Insulator, elements that prevent other long-range regulation mechanisms and epigenetic markers from spreading across them. 
+
+2) Candidate maps:  Assume each copy of a gene gives you 5 sensitivity units (this is an arbitrary number; as long as the 
+     math adds up, the number of copies per sensitivity unit doesn't really matter)
+
+Gina: M and P alleles unknowable:  5 x OR-L; 1 x OR-T; 1 x OR-G
+
+Rose: M: 1 x OR-L; 1 x OR-T; 1 x OR-G
+      P: 7 x OR-L; 0 x OR-T; 1 x OR-G
+
+George: M and P alleles unknowable:  1 x OR-L; 1 x OR-T; 2 x OR-G
+
+Sue:  M: 7 x OR-L; 0 x OR-T; 1 x OR-G
+      P: 1 x OR-L; 0 x OR-T; 1 x OR-G
+
+Rick: M: 1 x OR-L; 1 x OR-T; 1 x OR-G
+      P: 1 x OR-L; 1 x OR-T; 1 x OR-G
+
+Jeff: M: 1 x OR-L; 1 or 0 x OR-T*; 1 x OR-G  
+      P: 0 x OR-L; 0 or 1 x OR-T*; 1 x OR-G
+      *The OR-T gene could have been from either parent
+
+Tom:  M: 3 x OR-L**; 1 x OR-T; 1 x OR-G
+      P: 1 x OR-L**; 1 x OR-T; 1 x OR-G
+      ** This part has variable answers.
+
+Explanation for Tom:
+     There are multiple correct answers here.  Tom's mother has one allele
+with 7 OR-L copies and one with 1.  Tom's dad has 1 and 0.  If Tom inherited the
+alleles as they are, he would have a lemongrass sensitivity of 0, 5, or 40.  To have
+a sensitivity of 20 means that he either lost some copies from the 7-copy maternal allele or 
+gained some from a 0- or 1- copy allele.  One way this could happen is by the same way CNV
+occurs in the first place: there are "slip and slides" during DNA replication resulting in more
+or fewer copies of OR-L in Tom.  Another explanation is that there was cross-over between the
+maternal 7-copy allele and the paternal allele, resulting in Tom inheriting an allele with 3 
+or 4 copies of OR-L.
+
+Predicting how the three people will like the dishes:
+Rose: lemongrass is pungent, tamarind is bland, and garlic tastes good
+Sue: tamarind is bland and garlic is good
+Jeff: lemongrass is bland, tamarind is bland, and garlic is good
+
+
+
+3) USX is a piece of DNA (not a gene).  The question says that mutating USX causes a phenotype that looks like what happens if you 
+	delete the shh product in the limb only (meaning that shh acts in other tissues).  
+
+	Based on this information, USX is an enhancer that acts upon the shh gene.  Since mutating USX
+		gives a phenotype that looks like shh has been deleted in the developing limb, USX is a
+		limb-specific enhancer: i.e. it is involved in regulating shh in the proper timing and location
+		for limb development.  
+
+	It would not be likely for a homozygous deletion of shh to have the same phenotype.  The reason we know
+		this is because the deleted USX phenotype is only similar to when deleting the protein coding 
+		capacity of shh in limbs -- shh has roles elsewhere.  It is possible for shh to act normally
+		at a basal level and in times/places in development when enhancers other than USX regulate it.
+
+
+	

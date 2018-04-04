@@ -1,0 +1,43 @@
+<!--#include file="head.html" -->
+
+<h1>Bi 188 Projects</h1>
+<hr>
+<br>
+  <b>Optional Project #1</b>
+ <br> <a href=http://issola.caltech.edu/~t/bi188/>Comparative Sequence Analysis</a>
+
+<p><br><b>Midterm Project</b>
+<p>
+<a href=BI188_midterm_project.pdf>PDF version of the midterm project</a>
+<p>
+<a href=bi188-project.html>A handy web page</a> that was used in the tutuorial,
+that includes links to web sites that you will need to use for the project,
+as well as some information on how to use them.
+
+<p><b>Due date:</b>The midterm project is due before the start of class on Monday, May 10.  If you turn it in by Friday, May 7 at 5pm, you get an extra 3 points.
+
+<p><b>Topics:</B>You must select a topic by April 26, and send e-mail to Tracy (tracyt at caltech.edu) to let her know what you've picked.  The <a href=http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=OMIM>Online Mendelian Inheritance in Man</a> is an excellent resource to help you select a topic.
+<br>Please do not choose cystic fibrosis as a topic, as we will be covering it in class.
+
+<p><b>Repeat masking:</b>
+<br>You need to do repeat masking to get rid of repetitive sequence and low complexity DNA.  This will help in your comparative sequence analysis to mask out uninteresting regions that might have a lot of similiarity.  A good program to use for repeat masking is <a href=http://www.repeatmasker.org>RepeatMasker</a>.
+
+
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

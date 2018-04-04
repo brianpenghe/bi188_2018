@@ -1,0 +1,195 @@
+<!--#include file="head.html" -->
+
+<H1> Bi 188 Reading</H1>
+<hr>
+<p> Here will be posted the recommended reading for each class.  Papers for a particular class should be posted a few days in advance.
+<p>
+<b>Textbook:</b> <i>Gentics: From Genes to Genomes, Second Edition</i> - Leland Hartwell, Leroy Hood, Michael L. Goldberg, Lee M. Silver, Ruth C. Vernes and Ann Reynolds
+<br>The book is available in the Caltech book store and is intended as background material for which you will be responsible.
+
+<h2> Classes </h2>
+
+<font color=blue>
+<a href=#march29>March 29</a> | <a href=#april5>April 5</a> | <a href=#april12>April 12</a> | <a href=#april19>April 19</a> 
+| <a href=#april26>April 26</a> | <a href=#may3>May 3</a> | <a href=#may10>May 10</a> 
+| <a href=#may17>May 17</a> | <a href=#may24>May 24</a>
+</font>
+
+<br><br><br>
+<b><font size=+1><a name=march19>March 29</font></a></b>
+     <dl>
+     <dt>No required reading 
+     </dl>
+
+
+<p><br>
+<b><font size=+1><a name=april5>April 5</font></a></b>
+<dl>
+<dt>Chapter 10 in Hartwell textbook
+<dd>&nbsp;
+
+<dt>Waterston R, et al
+<dd><a href=papers/bi188mousegenome2002.pdf><i>Initial sequencing and 
+comparitive analysis of the mouse genome</i></a>
+<br>Nature, v. 420 pp. 520-562; December, 2002.
+
+<dt>Dehal, P., et al
+<dd><a href=papers/stubbsH19chromcompbi188.pdf><i>Human Chromosome 19 and
+Related Regions in Mouse: Conservative and Lineage-Specific Evolution</i></a>
+<br>Science, Vol 293, pp. 104-112; July 6, 2001.
+
+<dt>Shannon, M. et al
+<dd><a href=papers/stubbsznfingerH19bi188.pdf><i>Differential Expansion of 
+Zinc-Finger Transcription
+Factor Loci in Homologous Human and Mouse   
+Gene Clusters</i></a>                       
+<br>Genome Research 13: 1097-1110; 2003.
+</dl>
+
+<p><br>
+<b><font size=+1><a name=april12>April 12</a></b></font>
+
+<dl>
+          <dt>
+	            Ross, D.T. et al
+		    <dd><a href=papers/bi188_3/trichebotsteintumorclass.pdf><i>Systematic variation in gene expression
+		    patterns in human cancer cell lines</i></a>
+		    <br>Nature Genetics, Volume 24, March 2000
+		    <br>The Botstein 60 tumor cell lines paper
+
+		    <dt>
+		    Lee, T.I. et al
+		    <dd><a href=papers/bi188_3/leeyoungchrmatinipchipchip.pdf><i>Transcriptional Regulatory Networks in Saccharomyces cerevisiae</i></a>
+		    <br>Science Vol 298 25 October 2002
+		    <br>Lee et al microarray chip/chip paper
+
+		    <dt>
+		    Bergmann et al
+		    <dd><a href=papers/bi188_3/barkaimultiorganismplos2004.pdf><i>Similarities and Differences in Genome-Wide Expression Data of Six Organisms</i></a>
+		    <br>PLoS Biology, January 2004, Volume 2, Issue 1, Page 0085
+		    <br>Barkai multiple organism paper
+
+		    <dt>
+		    Eisen, M.B. et al
+		    <dd><a href=papers/bi188_3/eisenbotsteinpnasxclust.pdf><i>Cluster analysis and display of genome-wide expression patterns</i></a>
+		    <br>Proc. Natl. Acad. Sci. USA
+		    Vol. 95, pp. 14863-14868, December 1998
+		    <br>Eisen and Botstein X clust paper
+		    
+</dl>
+
+<p><br>
+<b><font size=+1><a name=april19>April 19</a></b></font>
+
+<dl>
+          <dt>Welch et al
+	  <dd><a href=papers/Welch_etal02.pdf><i>Extensive mosaic structure revealed by the complete
+	  genome sequence of uropathogenic Escherichia coli</i></a>
+	  <br>PNAS 99, 17020-4 (2002)  
+	  <br>E.coli genomes
+	  
+	  <dt>Waters et al
+	  <dd><a href=papers/Waters_etal03.pdf><i>The genome of Nanoarchaeum equitans: Insights into early archaeal evolution and derived parasitism</i></a>
+	  <br>PNAS 100 12984-8 (2003) 
+	  <br>very small archaeon genome
+	  
+	  <dt>Kellis et al
+	  <dd><a href=papers/Kellis_etal04.pdf><i>Proof and evolutionary analysis of
+	  ancient genome duplication in the
+	  yeast Saccharomyces cerevisiae</i></a>
+	  <br>Nature 428 617-24 (2004)
+	  <br>genome duplication
+
+	  <dt>Giaever et al
+	  <dd><a href=papers/Giaever_etal02.pdf><i>Functional profiling of the
+	  Saccharomyces cerevisiae genome</i></a>
+	  <br>Nature 418 387-391 (2002) 
+	  <br>Saccharomyces deletion set
+	  
+</dl>
+
+<p><br>
+<b><font size=+1><a name=april26>April 26</a></b></font>
+
+
+<dl>
+   <dt>Samson et al
+   <dd><a href=papers/Samson_etal96.pdf><i>Resistance to HIV-1 infection in 
+   caucasian individuals bearing mutant alleles of the CCR-5 chemokin receptor
+   gene</i></a>
+   <br>Nature 382, 722-5 (1996)   
+   <br>CCR5 and HIV
+   
+<dt>Modiano et al
+<dd><a href=papers/Modiano_etal01.pdf><i>Haemoglobin C protects against clinical
+Plasmodium falciparum malaria</i></a>
+<br>Nature 414, 305-8 (2001) 
+<br>HbC and malaria
+
+<dt>The International FMF Consortium"  
+<dd><a href=papers/IFMFC.pdf><i>Ancient Missense Mutations in a New Member
+of the RoRet Gene Family Are Likely to Cause
+Familial Mediterranean Fever</i></a>
+<br>Cell 90, 797-807 (1997) 
+<br>Familial Mediterranean Fever
+
+</dl>
+
+<p><br>
+<b><font size=+1><a name=may3>May 3</a></b></font>
+
+<dl>
+<dt>No class
+</dl>
+
+<p><br>
+<b><font size=+1><a name=may10>May 10</a></b></font>
+
+<dl>
+<dt>No references yet
+
+</dl>
+
+
+<p><br>
+<b><font size=+1><a name=may17>May 17</a></b></font>
+<dl>
+<dt>Lander et al
+<dd><a href=papers/Lander_etal01.pdf><i>Initial sequencing and analysis 
+of the human genome</i></a>
+<br>Nature 409: 860-921 (2001)
+<br>The draft human genome sequence
+</dl>
+
+
+<p><br>
+<b><font size=+1><a name=may24>May 24</a></b></font>
+<dl>
+<dt>Caldecott, K.
+<dd><a href=papers/bi188brca1brca2proteinint.pdf><i>The BRCT Domain: Signaling with Friends?</i></a>
+<br>Science 302: 579-580 (2003)
+<br>A perspective on the King et al article 
+
+<dt>King, M. et al
+<dd><a href=papers/bi188brca1brca2risk2004bi188.pdf><i>Breast and ovarian cancer risks due to inherited mutations in BRCA1 and BRCA2</i></a>
+<br>Science 302: 643-646 (2003)
+
+<dt>Holden, Constance
+<dd><a href=papers/bi188race_genomics_medicine.pdf><i>Race and Medicine</i></a>
+<br>Science 302: 594-596 (2003)
+<br>A news article on the same topic
+
+</dl>
+
+
+
+
+
+</ul>
+
+
+<!--#include file="foot.html" -->
+
+
+
+

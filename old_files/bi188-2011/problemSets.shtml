@@ -1,0 +1,24 @@
+<!--#include file="head.html" -->
+
+<h1>Bi 188 Spring 2011 - Problem Sets</h1>
+<hr>
+<br><li> <b>Problem Set 1:</b> (due by 3pm Friday 4/08)
+<dd><a href="PSets/UCSC_browser_HowTo.pdf"> UCSC How To snapshot</a><dt>
+<dd><a href="PSets/PSet1 final version.pdf"> Problem Set 1</a><dt>
+<dd><a href="PSets/PSet1 answers.pdf"> Problem Set 1 Answers</a><dt>
+<dd><a href="PSets/Pset1 grades.pdf"> Problem Set 1 Grade distribution</a><dt>
+
+<br><li> <b>Problem Set 2:</b> (due by 3pm Friday 4/22)
+<dd><a href="PSets/Pset2.pdf"> Problem Set 2</a><dt>
+<dd><a href="PSets/PSet2 RNA-Seq bjw final answers.pdf"> Problem Set 2 Answers</a><dt>
+<dd><a href="PSets/Pset2 grades.pdf"> Problem Set 2 Grade distribution</a><dt>
+
+<br><li> <b>Midterm Exam:</b> (due by 5pm Monday 5/02 in paper form or by 11:59pm Monday 5/02 eletronically)
+<dd><a href="PSets/Bi188 2011 Midterm Exam.pdf"> Midterm Exam</a><dt>
+<dd><a href="PSets/Bi188 2011 Midterm Exam answers.pdf"> Midterm Exam Answers</a><dt>
+<dd><a href="PSets/Midterm grades.pdf"> Midterm Exam Grade Distribution</a><dt>
+
+<br><li> <b>Midterm Exam:</b> (due by noon Sunday, June 5th for Seniors and by noon Saturday, June 11th for everyone else)
+<dd><a href="PSets/final_questions_compiled_penultimate.pdf"> Final Exam</a><dt>
+
+<!--#include file="foot.html" -->

@@ -1,0 +1,34 @@
+<!--#include file="head.html" -->
+
+<h1> Bi 188 Spring 2007 - Projects</h1>
+<hr>
+<p> For the course you will need to pick a specific research topic for the Genome Analysis Project. You will need to notify one of the TA's of your topic by <font color=red>Monday, April 16</font>. Everyone must have a different project and different gene, so the sooner you come to the TA's with your project, the more likely you are to get your first choice. 
+
+<p><b>Project Topic:</b> Pick a heritable genetic trait identifyable in humans for which an underlying gene or gene family has been identified. 
+<p> <b> Project Description:</b> The project should be 10 pages long (double-spaced), not including references and figures. It can be broken down into three main suggested parts, which do not necessarily have to be equivalent in length:
+<ol>
+<li><b>Description of the gene:</b> Give a concise but thorough description of what is known about the gene and its associated heritable trait. Be certain to cite the relevant literature, which should be predominantly original research papers.
+<li><b>Computational predictions:</b> Using the available data on the gene, such as genome sequence, annotations, gene ontology, expression microarrays, etc., generate computational predictions on how the gene might function and what may be causing the problems and/or changes associated with the heritable trait.
+<li><b>Proposed future experiments:</b> Propose a series of experiments that would be both informative and practical to help illuminate how the gene works and what modifications do to its function to give the heritable phenotype. These proposed experiments should be of the magnitude that could be completed if you had your own average sized lab at your disposal.
+</ol>
+
+<p><b>Due Date:</b> All projects are due by <font color=red>Friday, May 18</font> at 14:00
+
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

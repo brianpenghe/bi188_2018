@@ -1,0 +1,226 @@
+##language:en
+#pragma section-numbers off
+
+= Bi188 Notes  Lecture 9  May 24 =
+
+Bi188 May 24
+B. Wold lecturing
+
+* huningtons disease, has ethical issues well worked out. ELSE
+  * paper to read on ethical legal social issues
+
+* Triplet repeat diseases (cont)
+
+  * many of these triplet repeat disease show mitotic and miotic
+    sources.
+    * B cells show an increase on repeats even above the rest of their
+      tissues. 
+
+* Myotonic Dystrophy
+  
+  * different drugs are needed to treat each of the phenotypes.
+  * highly variable age of onset and severity
+  * 4 mechanisms have been proposed, and it seems like there's
+    evidince that there are really are 4 different mechanisms
+
+    * RNA processing defect, defect is in the 3' UTR, leads to
+      defective protein & less protein. 
+
+      * unprocessed RNA tends to build up and become toxic in the
+        nucleus
+
+    * Repeat structure alters local chromatin structure affecting
+      nearby genes and their expression 
+    * CUG repeats interact with RNA binding proteins to alter normal
+      activity of RNA binding proteins
+    * CUG repeats in RNA can serve as  binding sites for a subset of
+      DNA binding proteins that include specific transcription factors
+  
+      * in general RNA can bind up and look like a hairpin but usually
+        isn't a good binding site.
+
+  * experimental approaches to test these there possibilities
+  
+    * altered splicing.
+
+      * not infrequently the knockout mouse model doesn't express the
+        same phenotype
+      * in the mouse model of the myotonic dystrophy
+
+        * heterozygous knockout - mouse has no muscle phenotype
+        * homozygotes - 
+
+          * mild skeletal myopathy in adult
+          * no cataract
+          * good phenocopy of cardiac conductance deficit
+          * partial recapitualation of human at best and only in
+            homozygotes
+
+    * neighborhood position effect variegation (through chromotain
+      alterations perhaps)?
+
+      * Is there a specific candidate gene?
+
+        * yes SIX5 - transcription regulatory gene
+
+      * how to test? Do a knockout of SIX5 in mouse
+
+        * many of the earlier knockout techniques in the 80s and 90s
+          have other effects because the selection casset was left in
+          place. can have a profound impact on nearby genes
+        * review paper describes this hypothetical problem
+        * Cre-Lox system is useful because you can remove the
+          selection cassette
+
+      * after knockout...
+
+        * no muscle phenotype
+        * recapitulation of cataract phenotype in both homo &
+          heterozygotes
+
+   * Toxic gain of function
+
+     * mouse model is transgenic carrying gene encoding RNA with a
+       high copy repeat
+     * design so repeats embedded in an actin RNA not a DMPK RNA,
+       instead in actin
+     * Result myotonia & myopathy phenocopy of human disease
+
+   * supporting evidence from cultured cell studies
+
+     * high CUG repeat transcripts accumulate in foci within the
+       nucleus of transfected cells
+     * High CUG repeat RNA inhibit muscle differation
+     * Protein that preferentially binds to CUG RNA CUG-BP1 is implicated in
+       RNA procesing
+     * Hairpin structure formed by high cug rna activates a double
+       stranded RNA dependendent kinase called PKR
+
+   * transcription factor sponge theory looks good
+
+     * looked good, but only done in cell culture
+
+   * All four hypotheses may be correct in some degree, leads to
+     additive model of myotonic dystrophy
+
+   * Consider DM2 locus on chromosome 3
+
+     * has all diverse features of DM phenotype, including
+       anticipation (4 base sequence repeat CCUG?, also has a couple
+       of other spots that can expand) expands in first intron instead
+       of 3' UTR.
+     
+       * phenocopies almost all of the DM1 locus, not even a kinase
+         it's a zinc finger transcription protein
+
+* ELSI ethical legal social implications
+  
+  * insurance DNA knowledge vs family history
+  * who wants to be tested
+  * implication of 20 year old child being tested for 40 year old
+    parent who doesn not want to know
+
+    * you should have the right not to know
+
+* Cancer genetics
+
+  * somatic
+
+    * oncogenes - 
+
+      * tend to be more of a somatic problem. 
+       
+        * Kras, Hras, N-ras
+
+          * point mutations that break kinases? (missed details)
+          * has a viral heritage
+
+        * C-Myc N-Mycs
+        
+          * transcription factors, upstream of a varity of cell 
+          * gene dosage effect, achieved through amplification
+
+            * double minutes "episomes", 100s of Kbase, high copies of
+              flecs?
+            * HSRs - homogenous staining region, many copies of a gene
+              and its neighbors
+
+          * neuroblastoma, amplification of N-myc, 100s of copies
+          * other tumors have C-myc activated only about 10 fold
+          * other ways of upping dosage, translocation
+           
+            * fuse Ig-NIRD (non immuglobin rearanged dna), discovered
+              to be c-myc
+            * happens in B cell and fuses the coding region of c-myc
+              to immunioglobin - burkintte lymphoma
+            * fusion of Forkhead with PAX3/7 rhabdomyocarcoma
+
+              * arrise in muscle progenitor cells
+            
+  * germline
+
+    * tumor suppressors - 
+
+      * negative regulators of cell proliferation
+
+        * P16/ARF is a Cdk inhibitor
+
+          * tumor supressor for familial controls
+          * has frameshift overlapping coding regions
+
+        * Retnal blastoma 
+    
+          * when both eyes are mutated you can now it was inherited 
+          * RB is expressed in many other cells but only has the
+            cancer phenotype in the retina. (Loss of function that
+            leads to the tumor)
+          * Loss of Heterozygosity (LOH) 
+
+            * point mutation
+            * chromosome segregation
+            * mitotic recombination (big 
+            * epigenetic (methylation, chromosomal silencing)
+
+              * environmental issues for some genes 
+              * some aerosols e.g. p53 in lung cancer
+
+         * p53 is a checkpoint mediator, important in many cancers
+
+           * regulates Bcl2 ( families of proteins regulating
+             apoptosis )
+
+{{{
+
+  +-------->  BAX
+  |            |
+ p53 -| Bcl2-| |
+               |
+               v
+         caspaise (cell death) 
+
+}}}
+        
+      * neg regulators of negative regulators of apoptosis
+      * DNA repair
+      
+        * BRCA1, BRCA2 responsible for familial breast/ovarian cancer, 
+          but not for sporadic cancer. Risk assessment
+          
+          * BRCA1 - 85% by 80 years
+          * BRCA2 - lower penatrance for breast, but much higher for
+            ovarian 
+
+  * philidelphia chromosome
+
+    * generates chronically active able tyrosine kinase
+    * has highly effective drug
+    * worked out by david baltimore in the early 80s
+    * glevac, inhibits this kinase
+      
+      * thought it was specific, but wasn't
+      * if they'd known more they wouldn't have tested it.
+
+  * what to know
+
+    * know what's an oncogene/tumor suppressor
+    * what changes to mutate cell e.g. the LOH section

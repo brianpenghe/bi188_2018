@@ -1,0 +1,522 @@
+##language:en
+== Bi188 Notes  Lecture 4  April 19 ==
+
+bi 188 
+2004-04-19
+S. Scherer lecturing
+
+Microbial genetics 
+
+pyrmidine biosynthetic pathway
+[[BR]]needed in the urea cycle in yeast
+
+-> CP -> VS -> DHO -> O -> OMP -> UMP
+
+CP = carbonyl phophate - two subunit enzyme
+
+complex regulation of CP in bacteria
+
+consider example pathway, 
+and its conservation of this pathway across diverse genomes
+
+yeast, bacteria, human - some cases only 1 enzyme needed, vs. 2 or more enzymes to do the job
+in some cases enyzmes produced are similar but the regulation varies 
+  dramatically 
+also: yeast has 2 genes for lots of things- later we'll explain why
+
+also explained that genes can fuse
+
+gene fused in human
+fused poly-peptide
+rudamentary-like locus
+making small wings
+
+famous locus in drosophila, rudamentary, makes small wings 
+missing 1st 3 enzymes in the chain
+
+3rd step in chain is not functional in yeast
+structure is conserved, but not doing anything
+
+looking at diverse organisms is more challenging because 
+there is so much biochem diversity
+
+trees constructed witih ribosomal rna sequence 
+typical 60% identity from 1 yeast gene to human 
+trees constructed witih ribosomal rna sequence *may* not apply to 
+your particular gene
+
+switch gears, to larger scale, genomes
+
+bacterial genome organisation
+textbooks not showing the diversity of microbial world that truly exists
+
+e.coli K12 circular dna chromosome 
+
+lots of secondary metabolism
+some are 2x length of e.coli, up to smallest fungal genomes
+often variation of size
+
+bacterial genomes need not be circular
+
+best linear ... lymes disease - hairpin ends
+others linear without hairpin ends
+
+animal virology strategies for end of chromosomes
+alternates to telomeres
+
+barillia (sp?)
+plasmids, 20 kinds, extra 60% more coding 
+
+species w/ more than 1 chromosome
+
+what's a chromosome in bacterial word?
+ribosomal rna genes, essential functions, housekeeping genes
+
+eukaryotes, linear is the norm
+big advantage: reciprocal combination, 
+
+bacterial, prokaryotes
+odd crossovers lead to multiple centromeres, problems
+
+normally bacterial have 1 copy of info 
+ecoli, theta type replication, 2-4 copies of dna seq 
+normally, maintain 1 chromosome
+
+dinococcus
+near nuclear reactors, radiation resistant
+stationary phase, multiple copies of chromosome
+survive double-strand breaks, templates to repair them
+they're the exception
+
+genome duplication 
+[[br]]more than 1 chromosome
+segments, whole genomes, what?
+
+organism: rhodobacter
+fully sequenced
+photosynthetic bacterium
+2 chromosomes, + 5 small plasmids
+3.2MB, 0.9MB
+but also lots of duplicated sequences, 
+within chromosomes & between chromosomes
+how? look for exact duplicated sequences that did not diverge
+lots of short ones, how long on average? interchromosomal, 
+duplications are quite a bit smaller, so older.
+intra-chromosomal duplications are newer. 
+
+[double check inter vs. intra above]
+
+2 kinds of trees produced
+type a's tree a bit different than type b
+X is that gene in another related species
+ancient chromosome association vs. recent duplication within chromosomes 
+you see 35/44 are type A
+so has had 2 chromosomes for a long time
+also GC content on both is quite similar, etc.
+they look similar
+bacterium evolved differently from e coli, maintaining 2 sizeable 
+chromosomes that are essential for their function
+
+though most bacteria don't do this, this one does
+
+what do you need to make an organism grow?
+micoplasma genetalium
+580KB genome, smaller than e coli
+gc low organism
+470 genes (estimate at the time)
+
+e coli, 4.6MB
+
+how does genome get small?
+throw out lots of metabolism
+can't synthesize nucleotides or amino acids
+gene families start to compact
+
+e coli family factors has 4
+this has 1
+
+1 operon for ribosomal rna, 
+missing parts of 
+
+does have lots of transporters to bring them in from the environment
+price: bring molecules into cell
+
+pathogen, repeats involved in surface antigens, 
+thrown away lots
+
+buchnera
+related to e coli but small genome
+antisymbiums of insects
+live inside incect cells in symbiotic 
+~600KB but details don't matter
+strategy to shrink genome
+does have essential amino acid pathways, and feeds them to the host
+some it doesn't bother to make things it doesn't need
+making essential amino acids
+limits to metabolism 
+
+buchnera lives in e.g. an aphid
+other antisymbiums live in e.g. termites
+
+dnaA missing
+rac A, bacterial recombination, missing 
+why disposing of function... 
+
+different thatn typicall bacteria
+synchronize with host cells
+recombination not essential anymore once hanging out 
+inside another cell, not many chnaces to do recombination
+does have rec repair , not rec A
+
+shared set of genes is now low 300's
+
+what's present int mycoplasma, buchnera, down to low 200's, 
+PRETTY SMALL NUMBER!
+
+nanoarchaeum (paper on web site)
+small genome, 490KB
+symbiotic relationship with hypothermaphile, called ???
+metabolism is GONE
+some dehydrogenase, 
+may get energy from organism it's living with
+looking at genome, it's very different from all other bacteria
+in many ways
+
+throw away things vs. very old deep branch on the phylogenetic tree
+ribosomal proteins, scattered in this organism
+hardly any operons at all
+but has more genes, estimate 552
+intergenic spaces smaller, packing them together
+
+split genes, 2 separate poly-peptides
+early biochem world might have looked like
+maybe fused early-on
+no pseudogenes here, everything's working
+adaptation to a niche causes pseudogenes, being obliterated
+NOT here.
+computer software for finding trna genes
+this software doesn't work well to find the full set of trna in this
+offers interesting clues about early life
+
+
+e coli in lab  K12
+is non pathogenic, not virulent by any stretch of the imaignation
+lots of e coli cause little/no harm
+
+but there are others not like K12
+
+0157:H7 - bad burgers!
+pathogenisis
+shows up other places as well
+causes severe diarreah
+toxin producing organisms
+
+other e coli
+europathogenic
+live as harmless but encode to attach, up through 
+urinary tract to bladder to kidneys cause systemic disease
+
+e coli relatives
+salmonella in lab, treated the same
+but as pathogen, very different
+invade cells, pass through, live in disseminated macrophages
+salmonella typhae
+
+chagella chagella, major element in dissentary
+
+studied intensively in the lab, important disease org's as well
+
+e coli early in sequencing project
+
+K12 studied for years
+
+looking at 0157, scientists expected to find small number of pathogen genes
+
+
+4.1MB backbone sequence
+1 inversion between 157 & K12, big invert, several hundred KB
+extra 1.3MB of dna, K12 has 0.5 divergence
+(are they the same species?)
+
+genes in backbone are 98% conserved
+
+lycogenic phage
+explains large number of blocks coming/going in genome
+islands, dna inserted > 50bases, 
+in 0157 there are 177 islands, not just a few places that have dropped in
+
+pieces all over the place!
+
+0157 has genes that K12 doesn't produce, but what's the extra sequence?
+how else are the organisms changing?  need change to live happily 
+in host
+
+3 genomes (salmonella, K12, 0157)
+given 90% similarity of dna
+find < 40% genes common between both!
+pathogens, commensils, lots of need to explain these gene's function!
+
+salmonella 4.8 MB
+2 large plasmids w/ lots of pathogenesis genes on them
+grow inside cells, resist death by macophages, etc.
+
+salmonella typhae, (typhoid)
+large number of pseudogenes, over 100, single stop, single frame shift
+
+with chagella, a bit more distant relative
+4.6 MB genome
+large IS elements moving around
+13 large rearrangements on backbone
+
+
+break
+
+gene order in distantly related organisms
+essentally scrambled (to 1st approximation)
+
+canda albicans
+sacromyces
+neighbors come together, reasonable 
+but frequently 1 of the genes had been inverted relative to each other!
+
+ignore not shared genes
+just easy orthologs, where are they
+gene on SC where on CA, 
+lots and lots of little local inversions
+contribute as much as big translocations
+
+same phenomena described in many organisms
+
+related genes may remain nearby but exact order and orientation 
+may not be preserved
+
+SC genome itself 
+done chromosome by chromosome, 
+large numbers of genes duplicated, often, blocks duplicated
+not exactly in order (coming, going, etc)
+find a bunch in order on SC chr 7.
+over time, looked at reginos around centromeres, 
+figured out which pairs go together
+had to be 8 things instead of 16 things
+many of the organisms in the SC branch also have 8 sets of chromosomes
+
+pick another org in SC branch, 
+completely sequence the genome, and compare
+recent work with Ashbea (7 chr), and Klivermyces (8 chr)
+in SC, early after diversion of species, number of chromosomes doubled
+after duplication happened, many disappeared on 1 or the other of pair
+now modern day pair of chromosomes, many genes only on 1 or other of 
+pair of chromosomes, have to look for the occasional conserved pair
+
+if you have one of the others to throw in the alignment, it becomes 
+easier.  can't thow away from both chromosomes, can use Klivermyces
+as guide to line up others, makes it easier
+
+get more things, also get new things
+another opportunity, given 2 copies of gene, 
+
+2 copies do the same thing
+impose differential regulation on them
+fermenting vs. perspiring (at regulatory level)
+also can change at primary sequence level, can have divergence
+
+lots of examples of that
+how many pairs to work with? high 5000 genes, 457 pairs to work with
+of those, 76 
+
+also can change the level of expression as well
+
+look at the DNA level, to figure out what the genes in genome are doing
+
+transcription arrays, correlate expression pattern, 
+to look like gene of knwn function, implicate it that way
+
+other strategies to figure these out
+
+genes with unknown function, know nothing at all.  your unknowns look 
+like others unknowns; 
+
+proteomic approaches also, not discussing
+
+know expression across large number of conditions is useful
+
+analogous in DNA, whole sequence from many organisms can be very 
+helpful as well... 
+
+first, make a null mutant to see what the phenotype of the null 
+mutant looks like
+
+one-by-one, delete every gene in genome IDd by sequencing project
+
+mark them individually to be indistinguishable when done
+put in molecular bar codes, delete YFG1, replace with 
+common sequences next to bar code sequences
+
+hyb to microarray that has the ... 
+
+fitness studies then use bar codes to deconvolve
+
+6000 strains, put through different conditions 
+
+standard rich medium
+
+SC grows as haploid or diploid 
+heterozygous, then sporulate them
+
+what fraction of genes are essential? 1100
+
+that experiment doubled the number of known essential genes
+
+15% of viables had growth defects in rich medium, so some other problem
+
+next, grow on rich or minimal media, antibiotics, whos groing 
+faster, slower, etc.
+
+yeast GAL genes studied to death, grow on galactose, large number 
+of strains reduced fitness, not previous implicated in prior studies
+
+amino acid biosynthesis
+
+experiment added all sorts of stuff
+
+implicated in particular processes, look at fitness vs. each other
+
+interesting variant- grow as haploid or diploid and have available 
+in heterozygous form
+
+industry: find drugs that kill fungi, not many of them so far, 
+not many ways.
+
+Essential functions
+
+haplo insufficiency
+
+knockout in heterozygous forms, grown in presence of antibiotics, 
+genes invovled in reduced fitness 
+
+find target of the drug to better understand
+
+only 1/2 genome avaialble, started trying antibiotics, 
+which heterozygoes have reduced fitness in presence of drug
+
+e.g. statins, get tthings in colesterol pathway
+gives confidence in the method
+
+most notable: phiphloroperimidines, sugar added if needed, 
+kinased up into nucleotides, 
+
+e.g. picked up CDC21, but MANY other genes, quite a shock, 
+including many in processing of ribosomal RNA
+
+can help explain side effects in humans
+
+antifungal, find pathway that fungi have that humans don't
+
+
+align whole genome
+scoring for matches, mismatches, spacing between genes, gap 
+penalties, 
+
+once built up complete scoring system, build up orthologs
+
+local region of genome with residual alignments
+
+say you have operon in 2 species, but order is scrambled, 
+not effective at finding that
+
+relies on genes being in order
+lots of limitations
+works better on closely-related genomes
+some useful predictions
+mentioning as another way to deal with whole genomes
+
+last way, most fruitful, avail of large number of genomic 
+sequences... genomic profiling
+
+supposed plot
+y axis down, genes
+x axis across top, species
+
+hunt for orthologs
+
+cluster genes across species pattern
+
+works with large number of species
+cluster rows, genes involved in same process
+cluster columns, global taxonomy based on gene complements in systems
+
+use same tools for microarray data to look at how genes are distributed 
+across large number of genomes
+
+in bacterial world, 50-100 sequences now
+eukaryotes, number growing rapidly
+in fungi, growing
+
+caveats:
+- decide what we're going to call a species
+  - if doing taxonomy, lump closely related together and take union of genes
+
+  - might vary what you mean by species in gene
+
+- protein fused in single gene: 1 gene or several?
+
+- work with orthologs, any homology, 
+
++/- reults, or scoring based on distance
+
+many variations on the idea
+
+but very powerful approach, used to look at human disease genes  
+for genes of unknown function, in bacteria, to know more about the gene.
+
+in eukaryotes, limited to small number of genome, so statistics not yet 
+valuable.
+
+take an ortholog found in more than 3 species (NIH group) 
+
+clusters of orthologos groups (COGs)
+
+buchnera, 99% of genes are in COGs
+
+berillia, only 43% of genes are in COGs
+
+need to see lots more genome sequences to fill in gaps and to get 
+represented across speces before we're done
+
+if 2 genes conserved across distantly related organisms
+it's a good bet they're doing something similar
+
+good complement to other approaches
+
+microarray expression data, if a gene's expression doesn't change much, 
+it wll be difficult to cluster
+
+fitness & expression need not correlate
+maybe not changing level of transcription, e.g. regulator. 
+
+idea, use of multiple sequenced genomes is MUCH better!
+
+
+tracy discussed project 
+
+a bit of genomics known about the disease you pick
+
+look in OMIM site, good, current site
+list of genes involved in genetic disorder
+
+
+pick one gene by next monday, email to Tracy
+
+noone pick cistic fibrosis
+
+use FR II to study
+
+how long is paper supposed to be?
+5-6 pages, don't go overboard
+
+Cite ANYTHING you find, don't copy/paste off of web, 
+that's standard honor code type stuff
+
+
+
+

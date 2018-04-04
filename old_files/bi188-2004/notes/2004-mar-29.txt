@@ -1,0 +1,236 @@
+Humen Genomics
+
+Barbara Wold
+Stu (commuting from northern california)
+
+Syllibus
+  * need a website
+  * book genetics
+    * genetics & biochem 110, didn't need
+    * bi 8/9 bit more work
+    * attach chapter headings lectures as recommended reading.
+  * grading based on
+    * paper, choice of topic
+    * final exam
+    * no formal problem sets
+      * but give out exercises for tools
+
+* Lecture 1 sequence analysis
+  * don't have to start with mendel, assume that enough sequence exists
+  * statistical analysis of sequence
+    * base composition
+      * watson/crick had access to this information
+      * G/C content does matter
+        * A/T rich makes it hard to clone
+        * G/C doesn't melt (above boiling point of water?)
+      * AT vs GC base composition doesn't have to match on local dna strang
+      * plot C-G/(G+G) for e.coli
+
+        -----          --------
+                                 - 0 pt
+             ----------
+                       ^
+                    origin of rep (likes more Gs on leading strand)
+
+       not all bacteria need to do this, though most common ones like G 
+       richness.
+
+    * dinucleotide frequency
+      * nearest neighbor anaylsis
+      * eukaryotic cells frequencies GC >> CG
+        * CG the C's are frequently methylated 
+        * frequently clustered in CPG islands
+          * isolated ones are usually methylated
+          * clusters are frequently used as regulatory
+        * yeast though modern literature claims it doesn't have methylation
+        * rules of thumb to determine which cpg island is interesting
+          * (arbitrary)
+            * 500 bp > 55%
+            * look at CG dinucleotied  observed/expected > 0.65
+            * at least 7 CG dinucleotieds in regon
+    * frequency comments
+      * can you ID bacterial DNA that was inserted into human DNA? yes
+      * DNA primers work better of tail triplet is rare
+      * GATC is symmetric and is used in e coli for repair
+        * A is methylated
+      * symmetric sequences tend to be reserved 
+        * GTAC is underrepresented in most bacteria
+    * trinucleotides/codon usage
+      * e.g. species name
+            TEF3   EN01   HSP    TRL1  MKC1   PKC1
+      CCT
+      CCC                        more mixed
+      CCA   almost entirely 
+      CCG
+      (proline)
+            (need to make lotsof  ( less amount needed )
+      CCA is much prefered in this organism for high transcription 
+
+      * amino acid index
+        AA[i]
+        Codon[j]
+        
+        W[i][j] = X[i][j]/ X[iMax]
+      
+      CAI = (Product n in 1..L:  W[n]) ^ 1/L
+
+        * weighting factors
+          yeast    ecoli  
+          .047     .007   CCT
+          .009     .012   CCC
+          1.0      .135   CCA
+          .002     1.00   CCG
+
+        * can be used to predict how much of a protein the cell will make
+        * why does the cell do this? which things are chosen?
+
+
+        Use of G
+
+                       % GC 
+
+             3rd position slopes up fastest
+             1st & 2nd slope up slightly 
+                 1st more frequently used
+             organisms will use different (but similiar protein seq)
+
+
+    * techniques for geneome analysis are good at finding known things not
+      new stuff
+
+  * DNA sequence alignment / sequence comparison
+    * "all you need to know about seq comparison can be learned from 
+      dot plot" comparison.
+      * what rule to use? 
+        1=1 2=2 3 out of 4 
+      * not all dots are equal
+        * some are much more important 
+      * rules for connect lines
+      * finding "a" best alignment as opposed to "the" best
+      * scoring rules
+        * DNA scoring rules are boring 
+          * look at blast for unit table
+        * protein scoring rules are extremely important
+          * used to use PAM matricies nice idea but doesn't work well
+            * point accepted mutations. (based off of closely related sequence)
+            * however distantly related sequences that have conservation 
+              work better.
+          * blocks db (aligned conserved regions)
+
+          A G Y W
+          A G F W
+          G G Y W
+
+          * look at all pairwise comparison for all aligned conserved regions
+          * called frequence of usage pairs
+            i, j are indicies in to each sequence
+            f[i][j]  frequences
+            q[i][j] = f[i][j] / Sum(i, Sum(j <= i, f[i][j])) (prob of a pair)
+
+            probability of seeing AG or AA or anything else
+
+            probability of seeing single amini acid among all the pairs
+
+            P[i] = q[i][i] + Sum(j != i, q[i][j])/2  (prob of seeing aminoacid)
+
+         we can ask to see ratio of observed vs expected
+
+         e[i][j] =     P[i]P[j] for j=i   (expectation values)
+                   2 * P[i]P[j] for j!=i
+           
+         Entropy (log of odds ratio)
+         
+         S[i][j] = log2 (q[i][j]/e[i][j])
+
+         the guts of scoring algoritm. (units of bits)
+           * to make comparable to old scheme, multiply by 2 and round 
+             to nearest int.
+         entropy is used as score.
+
+         * ?????
+           * take similar proteins and average them to reduce their weight
+             for the table to
+
+        H = Sum(i, Sum(j<=i, q[i][j] * s[i][j]))  (relative entropy)
+
+      * align sequence with scoring rules
+        * smith-waterson 
+          * local vs global alignment
+            * global start from one end of sequence and find best path 
+              through entire sequence
+          * global alignment algorithm.
+          (needleman-winch algorithm)
+                F   L   L
+            F  +1 > 0 > -1    (only need to remember one path)
+               v      \
+            F  0    0 > -1
+               v    v \
+            K  -1  -1   -1
+               v  \   \
+            L -2    0    0
+
+              (trace route along diaganal, guarentes there is no better)
+              ( going up/down = opening gap )
+
+         * local alignment
+           * don't allow negatives
+           * don't worry about getting to corner, only need to rember
+             highest score.
+             * start from highest score travel till you hit a 0
+             * need rules for penalties for gapping
+
+         * smith-waterman table construction N^2, 
+           * optimization to for storage to grow O(N)
+
+         * BLAST
+           * usually chunk that matches well, with lesser places around it
+           * pick places on dot plot with some dots together that goes
+             above a threshold
+           * blast 2 allows some space for the seed
+           * blast can then apply smith-waterson to combine matches that 
+             it'd already found.
+         
+      * probability of finding sequence increases as database grows but no 
+        change in biology
+
+  * Gene finding with new sequence
+    * current major computational problem
+    * bacteria are easy, find start site & stop site
+    * yeast are nearly as easy with few splices
+    * humans are very messy...
+
+    * need rules for putting boundaries.
+      * example rule was AT wasn't gene GC was Gene
+    * markhoff model (conditional probability of next base)
+    * hidden markhoff, uses two matricies.
+      * one is odds of switching state
+      * given our state, whats the odds of seeing what we're observing
+
+    * search through entire space computing probability of each path
+      find the most probability path
+
+      * current search alogrithm genescan has about 20 states
+        * some are not allowed, e.g. 3' before 5' UTR.
+
+    * also need to include a transition model
+      * can't have introns being to large or to small
+      * base pair composition influences this probability
+
+    * Genescan
+      * can report no gene found
+      * can't handle overlapping genes.
+      * can't handle alternative splicing.
+        * finds most probable path, not second most probable path
+      * interesting way of handling splice junctions
+        * introns are marked by GT (100%)
+      * given a position, pick a base pair, and select all donor sites that 
+        match into one class, through all the others in the other partition
+        then do a chi-square computation to find which partions matter.
+
+      * need to keep track of states for each of the 3 reading frames
+
+    * homologes help
+      * do alignment between mouse and human sequence
+      * what's the probablity of getting from current state to another
+        in both sequences.
+

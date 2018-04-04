@@ -1,0 +1,110 @@
+Bi 188
+
+Handing out assignment next week
+mck sequence comparison
+to get familiar with blast, seq comariosn, working with gnomes
+no grade just useful exercise
+2 year ago paper was to look at a human genetic disorder.
+
+* recommend reading: human genome paper
+* reference genome seq 4/03
+  * ~100 procaryotics done
+    * mycoplasma, simplest smallest self-contained cell
+  * "finished" means only a few gaps, errors in assembly
+    recent duplication, 
+  * chicken genome out, and would be useful compared to mammals
+* sequenceing the human genome
+  * working biologists didn't like the project 
+  * Baltimore pushed for the idea of a reference single 
+
+  * mel simone, hiraki ? invented the BAC to allow copying large 150 kb 
+    chunk DNAs
+    * needed to know replication of origin
+
+  * celera's plan
+    * much more aggressive
+      * gene myers, had the idea for the algorithm but hadn't written
+        them yet.  
+      * use bidirectional information of a known distance (2k, 5k,
+        10k, etc) apart to provide clues to deal with large repeats
+
+  * sequencing
+    * problem with polymorphic individuals 
+    * MIT did 25 X converage of a ocean creature but couldn't assemble
+      it with shotgun 
+    * used the most inbred dog
+    * is currently also looking for the most inbred elephant
+
+  * genome browsers
+    * 2 of them human, UCSC or Emble
+    * shows multiple species
+    * shows mRNA maps
+    * the common gene name can be wrong and go to a different gene
+      * sometimes same name is used for two different genes in two 
+        different species
+      * gene bank assession #, sequence & blast much more robust
+
+    * CpG islands are under expressed overall, but tend to cluster
+      around the start of promoters
+      * there about 28,000 CpG islands for 22,500 protein coding
+      regions
+      * CpG is used in methylation, which helps open & close chromitin
+    * human sequence
+     * ~3% is coding region
+       * small non-coding micro RNA counts have been climbing
+       * humans show more opportunity for splicing and regulation than
+         yeast
+    * shows picture of repeats
+      * repeat frequency insertion drop seems to indicate presence of
+        genes 
+    * terms
+      * paralogous genes - similar to each other within a genome
+        * questionable how similar a gene needs to be to be
+         "paralogous", should also have similar functionality
+      * orthologous genes - similar in different genomes
+        * hard to tell which gene is the "true" orthologoues
+      * homologous - 
+      * % homology - used loosely to mean % similarity
+
+    * gene averages
+      * Biggest human gene known: dystrophin = 2.4 mb hnRNA
+        * takes hours to transcribe
+        * mRNA isn't that long (perhaps 6kb)
+      * average gene 1600 bases
+      * avg ORF 450 aa
+      * average genomic extent ~30kb
+      * avg density 11.1 genes/megabase
+      * regulatory elements can be distant 100kb (can be on the other
+        side of a gene)
+
+    * gneomic agnostic tend to start with 1 chromosome
+      * usually Y 21,22,19
+        * because they're the smallest
+        * 21 interest in downs syndrom
+      * 19 is interesting ( shows map of human 19 to mouse syntenic regions)
+        * high density
+        * lots of  zinc finger, olfactory receptors (about 1/2)
+        * last vomeronasal receptor to be found in huamn
+
+    * shows mussa/FR plots
+      * FR, red compliment, black, reverse compliment (joe heard the
+        other)
+      * mammals radiated 80-100 MY ago
+
+      * single binding site isn't heavily selected against since it takes
+        several site to define specificity
+
+   * comparison in 3 diverse genomes
+     * vertabrates seem to have moved to smaller uniform exons with
+       big introns
+     * flys, etc seem to like larger exons with small introns
+
+   * functional group distributions by different species
+     * cell-cell interactions
+     * immune systems
+
+   * chromosome rearrangements
+   * comparative genomes
+     * 30% of known human disease genes have candidate orthologs in
+       yeast
+     * chap 10, 11

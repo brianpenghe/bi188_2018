@@ -1,0 +1,72 @@
+<!--#include file="head.html" -->
+
+<h1> Bi 188 Spring 2011 - Projects</h1>
+<hr>
+
+<p><b>Assignment Information:</b> </p>
+<dd><a href="PSets/BI188 termpaper_2011.pdf"> Bi 188 Spring 2011 Paper</a></dd>
+
+<dt>
+<p><b>Due Date:</b> All projects are due by <b><font color=red>Saturday, June 4</font> at noon.</b>  We strongly prefer that you email a copy to kfisher at caltech dot edu, georgi at caltech dot edu, and woldb at caltech dot edu (please address it to all three of us).  However, if you insist, we will accept a hard copy of the paper during class on June 3rd. 
+<dt>
+ 
+<p><b>Cufflinks RNA-Seq expression measurements for ENCODE cell lines and tissues.</b>  For these purposes, you can assume that FPKM = RPKM.  Note that terminology such as "rep1" and "rep2" refers to different replicate experiments. 
+<dd><a href="PSets/expression-GENCODE_V4.genes.cuff0.9.0.xlsx"> ENCODE RNA-Seq Cufflinks 0.9.0 Genes FPKMs</a></dd>
+<dd><a href="PSets/expression-GENCODE_V4.transcripts.cuff0.9.0.xlsx"> ENCODE RNA-Seq Cufflinks 0.9.0 Transcripts FPKMs</a></dd>
+<dd>You can view the actual transcripts from the second file by copying and pasting this link as a custom track to your genome browser (click the button that says "custom tracks" just below the browser picture 
+<dd>and paste the URL in the box where it requests a URL).  Note that this data is mapped onto the <b>hg19</b> build of the human genome, so it will only make sense if you use the test version of the UCSC genome browser 
+<dd>(see point 3 below under "Additional Information"):
+<dd><a href="http://woldlab.caltech.edu/~georgi/tracks/bi188/gencode.v4.annotation.GRCh37.gtf">http://woldlab.caltech.edu/~georgi/tracks/bi188/gencode.v4.annotation.GRCh37.gtf</a></dd>
+
+<p><b>Additional information:</b> 
+<ol>
+<li>You may not collaborate with others on the paper itself.  However, you may help each other learn to navigate the browser and look at the data using any gene that is not the subject of your papers. </li>
+<li>On the <b>regular ENCODE browser</b> (<a href="http://genome.ucsc.edu/">http://genome.ucsc.edu/</a>), the ENCODE data is under the <b>hg18</b> build of the human genome.  The RNA-Seq data is under "Expression" --> "Caltech RNA-Seq" 
+(best way to view this is to turn "Raw Signal" to full and all other views to hide.  You can see the raw and spliced reads by turning "Alignments" to squish).  The ChIP-Seq data is under "Regulation" --> "HAIB TFBS" and/or "Yale TFBS"
+(best way to view this data is to turn "Signal" or "Raw Signal" to full and "Peaks" (the informatically called regions that are enriched above background i.e. good candidates for that factor's occupancy) to squish).  
+The DNase hypersensitivity data is under "Regulation" --> "UW DNaseI HS" and the GWAS SNP's are under "Phenotype and Disease Association" --> "GWAS Catalog"</li>
+<li>The <b>test version of the ENCODE browser</b> (<a href="http://genome-test.cse.ucsc.edu/">http://genome-test.cse.ucsc.edu/</a>), contains all the information from the regular ENCODE browser plus additional data.  
+On the test browser, all of the ENCODE data is under the <b>hg19</b> build of the human genome.  The RNA-Seq data on the test browser is under "Expression" --> "ENC RNA-seq" --> 
+"Caltech RNA-seq" (best way to view this is to turn "Raw Signal" to full and all other views to hide.  You can see the raw and spliced reads by turning "Alignments" to squish).  The ChIP-Seq data is under "Regulation" --> 
+"ENC TF Binding" --> "HAIB TFBS" and/or "SYDH TFBS" (best way to view this data is to turn "Signal" or "Raw Signal" to full and "Peaks" (the informatically called regions that are enriched above background i.e. 
+good candidates for that factor's occupancy) to squish).  The DNase hypersensitivity data is under "Regulation" --> "ENC DNase/FAIRE" --> "UW DNaseI HS" and the GWAS SNP's are under "Phenotype and Disease Association" --> 
+"GWAS Catalog"</li>
+<li>Looking at either version of the browser (points 2 vs. 3 above) is fine since all the most relevant data are in both places.  Just be mindful not to use data that's been mapped to hg19 on the hg18 build and vice versa.</li>
+</ol>
+
+<dd>Some of you have had trouble opening the large .gtf file to look for your transcripts.  Here are some subsets of the large .gtf file containing the genes you are working on.  Please notify Katherine by email if a gene you want is not in one of these smaller files.</dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.BRCA.gtf">gencode.v4.annotation.GRCh37.BRCA.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.CDKN2.gtf">gencode.v4.annotation.GRCh37.CDKN2.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.CNTNAP2.gtf">gencode.v4.annotation.GRCh37.CNTNAP2.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.DMD.gtf">gencode.v4.annotation.GRCh37.DMD.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.FOXO.gtf">gencode.v4.annotation.GRCh37.FOXO.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.HBA.gtf">gencode.v4.annotation.GRCh37.HBA.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.HBB.gtf">gencode.v4.annotation.GRCh37.HBB.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.HBD.gtf">gencode.v4.annotation.GRCh37.HBD.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.HTT.gtf">gencode.v4.annotation.GRCh37.HTT.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.MECP2.gtf">gencode.v4.annotation.GRCh37.MECP2.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.MET.gtf">gencode.v4.annotation.GRCh37.MET.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.MYC.gtf">gencode.v4.annotation.GRCh37.MYC.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.PAX3.gtf">gencode.v4.annotation.GRCh37.PAX3.gtf</a></dd>
+<dd><a href="PSets/gencode.v4.annotation.GRCh37.PAX7.gtf">gencode.v4.annotation.GRCh37.PAX7.gtf</a></dd>
+
+
+
+<!--#include file="foot.html" -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

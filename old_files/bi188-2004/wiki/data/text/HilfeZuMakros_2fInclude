@@ -1,0 +1,32 @@
+##language:de
+##master-page:HelpOnMacros/Include
+##master-date:2003-04-25 16:25:13
+[[Navigation(siblings)]]
+
+Dieses Makro fügt den formatierten Inhalt der angegebenen Seite(n) ein und macht dabei ggf. auch rekursive Include-Aufrufe. Wenn die Rekursion einen Zyklus generieren würde, wird dies bemerkt und verhindert!
+
+'''Benutzung:'''
+ {{{
+[[Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n)]]
+}}}
+
+ pagename:: Name der Seite, die eingefügt werden soll - wenn er mit einem "`^`" anfängt, ein regulärer Ausdruck von Seiten, die eingefügt werden sollen.
+ heading::  Text für die generierte Überschrift (optional).
+ level::    Ebene (1-5) der generierten Überschriften (optional).
+ from::     Start-Markierung für teilweises Einlesen (optional).
+ to::       End-Markierung für teilweises Einlesen (optional).
+ sort::     Sortierreihenfolge, wenn `pagename` ein regulärer Ausdruck ist, also mit einem "`^`" anfängt (optional).
+ items::    Maximale Anzahl der einzufügenden Seiten.   
+
+Alle Parameter außer pagename sind optional, Sie müssen aber die angegebene Reihenfolge einhalten! Wenn Sie "`heading`" auslassen wollen, müssen Sie den zweiten Parameter leer lassen.
+
+'''Beispiele:'''
+ * `[[Include(FooBar)]]` -- fügt den Text der Seite `FooBar` in den aktuellen Absatz ein
+ * `[[Include(FooBar, )]]` -- hinzufügen einer H1 namens 'Foo Bar' gefolgt vom Text
+ * `[[Include(FooBar, , 2)]]` -- hinzufügen einer H2 namens 'Foo Bar'
+ * `[[Include(FooBar, 'Alles über Foo Bar', 2)]]` -- hinzufügen einer H2 namens 'Alles über Foo Bar'
+ * `[[Include(FooBar, , from="^----$")]]` -- nur den Inhalt nach dem ersten Horizontaltrenner einfügen
+ * `[[Include(FooBar, , to="^----$")]]` -- nur den Inhalt bis zum ersten Horizontaltrenner einfügen
+ * `[[Include(^FooBar/.*, , sort=descending)]]` -- die Seitenliste absteigend sortieren
+ * `[[Include(^FooBar/.*, , items=3)]]` -- maximal drei Seiten einfügen
+ * `[[Include(^BlogBase/.*,, to="^----$", sort=descending, items=7)]]` -- Anzeigen mindestens einer Woche eines Blogs

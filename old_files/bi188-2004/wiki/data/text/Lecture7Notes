@@ -1,0 +1,103 @@
+##language:en
+== Lecture 7 - May 10 ==
+
+Dr. Wold presenting
+
+* Gene therapy, difficulties with
+  * Beta thalasima, Cycle cell, seemed like we had good solution using
+    transfer 
+    * tried to do the experiment in israel. 
+    * took 25 years to get around to trying the experiment, but has
+      had problems
+  * Insertional mutagenesis
+    * everything except for homologous recombination has chance for
+      mutagenesis
+      * disrupt gene
+      * cis effects (disrupt regulation)
+        * therapy for SCIDX1, solves immune problem while causing
+          leukemia
+      * homologous recombination works nicely in mice
+        * recombination is inefficient in any model organism. 
+          very low chances compared to random integration
+          even in yeast you need to do a selection critera
+          * ethical issues for humans
+            * worldwide ban on germ line research
+            * though its easier in the embryo than adult so perhaps we
+              should reconsider germ line.
+            * technically possible to do IVF and insert gene into
+              blastocyst, select which one uptook the gene and then
+              create new embryo from it.
+        * many other cells will integrate it randomly anyway.
+        * target cell access
+          * need to access a large enough number of cells to uptake
+            gene and provide a selection pressure to filter out the
+            cells without the modified gene.
+        * engineering apropriate place/amount of expression
+        * permanance
+          * if you miss the stem cell, the treatment will wear out
+        * evading the immune system
+          * presenting new protein can bring up immune response
+            against targeted gene
+        
+[ Q: what about using bacterial symbiots to produce a replacement protein? ]
+
+
+* Beta thalassemia gene therapy
+  * old goal not realized, first work 1979
+  * hematopoetic lineage is favorabel for gene therapy
+    * self marrow transplants can be done well
+  * getting gene expressed in physiological amounts in right cells but
+    not others
+  * LCR (locus control region)
+    * operationl definition without a complete molecular definiton
+    * site in DNA that covers 12 kb, has number of transcription
+      factors, chromitin is permanently remodeled within the LCR,
+      acts at a distance, on the order of 60 kb.
+      * LCR seems to control the total amount of transcription,
+        protects against position effects.
+  * Lentiviral vectors
+    * can only integrate into cell
+    * though there's an issue about whether or not virus can recombine
+      with a currently viable virus and make a new super virus
+    * lentivirus has limitations on total payload size
+    * cd34 seems to target largely hematopoetic progenitor cells
+    * lentivirus can integrate into a cell that is not currently going
+      through cell cycle, other retroviruses can't
+
+* Gene therapy mediated insertional mutagenesic hazard
+  * SCIDX1 severe combined imuni deficiency disorder
+  * codes for gamma-c cytokine receptor subuniit comon chain in
+    recepters for IL2,4,7,9,15
+  * the retrovirus for this study was a mouse maloney vector
+    * the LTR also codes to for something that encourages the gene to
+      be shut down probably by chromitan remodeling
+  * Trial was 11 and 8 months old
+    * isolate CD34+ cells
+    * get cells to start dividing in culture, (needed for the
+      retrovirus)
+    * infect repeatedly for 3 days with gammaC moloney
+    * 3 year latency, 2 people developed lymphoblastoid leukemia
+      T-cell leukemia
+    * in both cases triggered LMO2 oncogenes
+      * LMO2 is transcription factor of progenitor cells
+  * retroviruses insert "randomly"
+    * but have preferential neighborhoods
+      * genes currently expressed
+      * retroviruses like promoter region
+
+* Triplet repeat diseases
+  * went through several explanations of how they worked
+    * increasing severity with progression of generations
+  * molecular origins
+    * putative replication slippage of repeats
+    * huntingtons was expansion in a protein coding region
+    * myotonic dystrophy
+      5-38 repeats is normal
+      39-100 is mild disease alleal
+      disease alleles is up to 2000 for the most severe
+
+    
+
+
+
+

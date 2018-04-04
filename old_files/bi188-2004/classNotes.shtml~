@@ -1,0 +1,148 @@
+<!--#include file="head.html" -->
+
+<H1> Bi 188 Class Notes and References</H1>
+<hr>
+
+
+<p> Here I will attempt to keep an updated list of class notes.  Any
+projected material I can obtain will be posted (i.e. Powerpoint slides,
+overheads, etc.).  
+<p>
+If you questions (or corrections if you can find errors) regarding
+these notes, please ask. 
+<p>
+
+<h2> Classes </h2>
+
+<font color=blue>
+<a href=#march29>March 29</a> | <a href=#april5>April 5</a> | <a href=#april12>April 12</a> | April 19 | April 26 | May 3 | May 10 | May 17 | May 24
+</font>
+<br><br><font color=red>*</font> = recommended reading
+
+<p><br><br>
+<font size=+1 color=red><a name=march29><b>March 29</b></a></font>
+      
+     <br>Sequence analysis: statistical analysis of sequences, alignment algorithms, gene prediction
+
+     <p><b>References:</b>
+<dl>
+   <dt>Mrazek, J. and Karlin, S.
+   <dd><a href=http://www.pnas.org/cgi/content/full/95/7/3720><i>Strand compositional asymmetry in bacterial and large viral genomes</i></a>
+<br>Proc Natl Acad Sci U S A. 1998 Mar 31;95(7):3720-5
+
+ <dt>Sharp, PM and Li, WH
+<dd><a href=http://www.pubmedcentral.nih.gov/articlerender.fcgi?tool=pubmed&pubmedid=3547335><i>The codon Adaptation Index--a measure of directional synonymous codon usage bias, and its potential applications</i></a>
+<br>Nucleic Acids Res. 1987 Feb 11;15(3):1281-95
+
+<dt>Henikoff S, Henikoff JG
+<dd><i><a href=http://www.pnas.org/cgi/reprint/89/22/10915.pdf>Amino acid substitution matrices from protein blocks</a></i>
+<br>Proc Natl Acad Sci U S A. 1992 Nov 15;89(22):10915-9
+
+<dt>Burge C, Karlin S.  <b>(Genscan paper)</b>
+<dd><a href=http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6WK7-45VGF7T-9&_coverDate=04%2F25%2F1997&_alid=160112332&_rdoc=1&_fmt=&_orig=search&_qd=1&_cdi=6899&_sort=d&view=c&_acct=C000050264&_version=1&_urlVersion=0&_userid=1010281&md5=005a1721daf865b7d0d94c3f79ec68f2><i>Prediction of complete gene structures in human genomic DNA</i></a>
+<br>J Mol Biol. 1997 Apr 25;268(1):78-94. 
+
+<dt>Korf I, Flicek P, Duan D, Brent MR
+<dd><a href=http://bioinformatics.oupjournals.org/cgi/pmidlookup?view=reprint&pmid=11473003><i>Integrating genomic homology into gene structure prediction</i></a>
+<br>Bioinformatics. 2001;17 Suppl 1:S140-8. 
+
+
+</dl>
+
+<p><br><br>
+<font size=+1 color=red><a name=april5><b>April 5</b></a></font>
+
+     <br>Comparitive genomice and informatics tools: basic properties of 
+genomes, non-coding RNAs, cis-acting regulatory sequences, unusual gene families, analysis tools in current use.
+
+     <p><b>References:</b>
+<dl>
+<dt>Chapter 10 in Hartwell textbook
+<dd>&nbsp;
+
+<dt><font color=red>*</font>
+Waterston R, et al
+<dd><a href=papers/bi188mousegenome2002.pdf><i>Initial sequencing and comparitive analysis of the mouse genome</i></a>
+<br>Nature, v. 420 pp. 520-562; December, 2002.
+
+<dt><font color=red>*</font>
+Dehal, P., et al
+<dd><a href=papers/stubbsH19chromcompbi188.pdf><i>Human Chromosome 19 and
+Related Regions in Mouse: Conservative and Lineage-Specific Evolution</i></a>
+<br>Science, Vol 293, pp. 104-112; July 6, 2001.
+
+<dt><font color=red>*</font>
+Shannon, M. et al
+<dd><a href=papers/stubbsznfingerH19bi188.pdf><i>Differential Expansion of Zinc-Finger Transcription
+Factor Loci in Homologous Human and Mouse
+Gene Clusters</i></a>
+<br>Genome Research 13: 1097-1110; 2003.
+</dl>
+
+
+<p><b>Links:</b>
+<dl>
+<dt><a href=http://genome.ucsc.edu/>UCSC Draft Human Genome Browser</a> 
+</dl>
+
+
+<p><br><br>
+<font size=+1 color=red><a name=april12><b>April 12</b></a></font>
+
+<br>Global gene expression studies: tools for analysis, ordering and clustering, data quality and statistics, practical considerations 
+
+          <p><b>References:</b>
+	  <dl>
+
+	  <dt><font color=red>*</font>
+	  Ross, D.T. et al 
+<dd><a href=papers/bi188_3/trichebotsteintumorclass.pdf><i>Systematic variation in gene expression
+patterns in human cancer cell lines</i></a>
+<br>Nature Genetics, Volume 24, March 2000
+<br>The Botstein 60 tumor cell lines paper
+
+<dt><font color=red>*</font>
+Lee, T.I. et al
+<dd><a href=papers/bi188_3/leeyoungchrmatinipchipchip.pdf><i>Transcriptional Regulatory Networks in Saccharomyces cerevisiae</i></a>
+<br>Science Vol 298 25 October 2002
+<br>Lee et al microarray chip/chip paper
+
+<dt><font color=red>*</font>
+Bergmann et al
+<dd><a href=papers/bi188_3/barkaimultiorganismplos2004.pdf><i>Similarities and Differences in Genome-Wide Expression Data of Six Organisms</i></a>
+<br>PLoS Biology, January 2004, Volume 2, Issue 1, Page 0085
+<br>Barkai multiple organism paper
+
+<dt><font color=red>*</font>
+Eisen, M.B. et al
+<dd><a href=papers/bi188_3/eisenbotsteinpnasxclust.pdf><i>Cluster analysis and display of genome-wide expression patterns</i></a>
+<br>Proc. Natl. Acad. Sci. USA
+Vol. 95, pp. 14863-14868, December 1998
+<br>Eisen and Botstein X clust paper
+
+<dt>McCarrol, S.A. et al
+<dd><a href=papers/bi188_3/Bargmannliflywormarrayage.pdf><i>Comparing genomic expression patterns across species identifies shared transcriptional profile in aging</i></a>
+<br>Nature Genetics, Vol 36, Num 2, February 2004
+
+<dt>Perou, C.M. et al
+<dd><a href=papers/bi188_3/Botsteinarray188triche.pdf><i>Molecular portrait of human breast tumors</i></a>
+<br>Nature, Vol 406, 17 August 2000
+
+<dt>Bergmann, S. et al
+<dd><a href=papers/bi188_3/Barkaisignaturephysrev03.pdf>Iterative signature algorithm for the analysis of large-scale gene expression data</i></a>
+<br>Physical Review E 67, 031902 (2003)
+</dl>
+
+<p><br>
+<b>Optional Assignment:
+<dl>
+<dt><a href=http://issola.caltech.edu/~t/sites/family.caltech.edu/project/>Comparative Sequence Analysis</a>
+
+
+
+</dl>
+<!--#include file="foot.html" -->
+
+
+
+

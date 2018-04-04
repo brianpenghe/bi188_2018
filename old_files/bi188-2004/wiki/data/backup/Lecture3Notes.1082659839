@@ -1,0 +1,237 @@
+##language:en
+== Bi188 Notes  Lecture 3  April 12 ==
+
+papers being mailed out for reading
+
+users guide to the human genome
+entry into world of genome browsers with very detailed step-by-step walkthrough 
+
+start w/ sequence info, find out everything you can get out of those data browsers
+
+go do the test case, get familiar
+
+underlying theme for today
+
+gene expression analysis
+
+what's emerged since the betting of expresion analysis
+
+
+which genes are expressed in this situation?  how much expressed?
+
+tradeoff: quantity over quality 
+
+relative, not completely linear over teh range of rna
+
+'''slide: overview of affy & spotted arrays'''
+
+variety of ways to look at and process gene expression array data
+
+typically done with gene chip that represents all the genes in an organism
+
+'''slide: readout from a small chip w/ a few thousand genes'''
+
+hierarchical phylogenetic tree clsutering vs. "real" clustering with cluster boundaries 
+
+reasons why both are useful, so might want to do both 
+
+tree doesn't handle all the genes in a genome well 
+but ordered by tree helps
+
+
+'''slide: yeast analysis'''
+
+from early study on yeast, normal cell cycle, 
+spoprulate, heat stress, and other conditions 
+
+
+'''slide: 60 tumor cell lines, partial microarray analysis'''
+
+Ross et al, Nature Genet. 2000
+
+grouping of major subgroups of cancers, 
+how similar the different tumor cell line (conditions) are
+
+note distribution of breast & non-small-cell lung
+
+breast, prostate, & non-small-cell lung & carcinomas
+all different in that they're distributed around the tree
+
+this was a kinda old study, a problem: dominated by highly-expressed
+adult genes so missing TF's & cell surface receptors & ... that are
+key in cancers, so conclusions: redo all early studies to get closer
+to the answer!
+
+
+'''Slide: top 1100 genes showing the most signal (via preprocessing)'''
+
+
+'''Slide: single tumor type, breast tumor array analysis (perou et al example)'''
+
+main lesson: 2 tumors from same subject will be a lot closer to each
+other than any 2 between individuals (a single tumor collected 2x,
+detection in surgery, & another during chemo),
+
+there are specific cell type kinds of cancers, e.g.: stromal cells,
+ductal carcinomas, etc.
+
+large scale gene analysis and what you get out of it
+
+
+'''slide: ChIP / Array (chromatin immunoprecipitation (aka "chrimatin IP") 
+via microarray readout) Lee et al. 2002'''
+
+related large-scale measurement, only recently feasible
+
+regulator proteins that regulate genes and the genes they regulate
+
+instead of 1-10 gene operation as in the past
+do it globally, computational algorithms to make connections 
+
+in prokaryotes a bit, in eukariotes a LOT, 
+combinatorics of multiple regulators needed to regulate a gene 
+
+chromatin IP - a good antibody for a protein of interest to you 
+antibody for a factor X.
+bomb them with formaldahide
+
+crosslink proteins / proteins and proteins / dna
+
+if you do it well, at the right level, then you have a factor of 
+interest connected to dna, pluck out protein & attached DNA
+use polymerase to make more copies of that DNA in particular 
+and assay it somehow
+
+purified away from the rest of the genome
+that band should come up more strongly than no antibody or 
+wrong antibody
+
+this approach, assay with PCR primers, 1 gene at a time
+effective, boring , 1 gene at a time
+
+instead, use generic amplification
+e.g. ligated PCR, ..., etc.
+
+pull out your antibody and the control material that came out with 
+the non-specific antibody
+
+microarray, each represents the promotor and upstream regulatory 
+region for a gene of interest 
+
+after cross-linked and enriched, chop up the DNA into peices, 
+pretty large, a few hundred bp long, getting small is a problem
+not surgical determination of which nucleotides a factor binds to
+(ideas for the future, not how it works now)
+
+first run at a global study (done at MIT by Lee, rick young) 
+done in yeast, 1/2 of transcription factors, 
+
+~30% false negatives and ~10% flase positives with P=0.001 as threshold
+
+cataloged those above-threshold, ~4000 interactions
+usually low number of regulators bound, e.g. plot from 1 -> 12
+don't expect it to be very high, so the numbers make sense, "not too bad"
+number of promoter regions bound
+(undersstimating by a bit), not surprising that the most dominant 
+group are a small group of genes.
+also true that a small gropu of genes (20-50) can affect the results
+
+
+'''Slide: regulatory network connections revealed by the analysis'''
+
+tinker-toy building blocks
+
+circles are transcription factors, boxes are targets (genes) which produce 
+transcription factors 
+
+autoregulation, multi-component loop, feedforward loop, single-input motif
+multi-input motif, regulator chain
+
+feedforward loop 
+mcm1 regulator functions in more than one phase of the cell cycle
+-> SWI4 gene -> SWI4 factor -> CLB2 gene
+
+represents simultanaety, or if both occuring in 1 cell at the same time, 
+not sure
+
+the regulator chain shows exmaple of lots of cascading control, 
+observed frequently in developmental
+
+''question:'' chain to amplify? B: yes, but not the only way, while the shown
+modules/connections exist, there are other inputs (not shown) as well,
+so the chain is not necessarily subject to just 1 kind of signal
+
+
+'''Slide: yeast circle plot of cell cycle regulation/control'''
+
+models are only as good as their inputs, so incomplete, but still 
+lots of connections did get made
+
+didn't use a sample organism per time point per regulator 
+instead, if you have good temporal data, ...
+
+
+'''Slide: chris hart's PCA cluster expression groups '''
+
+infer time course of factors
+
+
+=== Sequence comparison ===
+second 1/2 - Titus Brown
+
+Davidson lab
+
+intro to s/w for doing seq comp to pull out & identify functional elements
+
+beta testing for newly revised FR
+part of thesis work
+
+tell us what's understood (and how) about that gene
+when mutated in human and in model organisms
+
+expecting you to state in e.g. the final 3 paragraphs 
+what really matters about the gene, and what 
+
+pdf or word files, kill no trees, electronic submission
+
+talk w/ tracy and/or Barb and/or Stew
+to make sure everyone doesn't pick distrophin
+or genes about which so little is known
+has to fall in a reasonable range
+
+=== Midterm project information ===
+
+OMIM web site - online mamillian inheiritance in man
+
+intro to individual genes and human genetic disorders related
+though some are out of date, some has been superceded
+
+look for nice blue references, that's a starting point
+to find genes of interest to you
+friends/family affected by polymorphism in the gene
+free with motivations
+
+5-6 or sometimes more pages in length, 6-10 pages including bibliography
+
+figures generated by you (or at least referring to a figure) 
+that's highly relevant
+
+I want to be real clear, some people this far, sophmore -> grad students, confusion about plagarism
+regarding the web, copying off the web is plagarism even if not a
+journal. also to just change a few words of a paragraph
+
+dark moment explaining to a junior that an effectively copied 
+paragraph was plagarism, 
+
+serious about it and sharp enough to pick it up
+
+also serious about references, crucial facts, and studies you are citing, need to be referenced
+
+doing it for all kinds of reasons, though slow reading at 
+first, not expected to master the content as a grad student 
+in the field would, but to at least be exposed. 
+
+
+
+
+

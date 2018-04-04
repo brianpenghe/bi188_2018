@@ -1,0 +1,108 @@
+##language:en
+#pragma section-numbers off
+
+= Bi188 Notes  Lecture 7  May 10 =
+
+
+Dr. Wold presenting
+
+* Gene therapy, difficulties with
+  * Beta thalasima, seemed like a possible test case 
+    * tried to do the experiment in Israel. 
+    * 25 years later, just starting to be cured though
+  * Insertional mutagenesis
+    * everything except for homologous recombination has chance for mutagenesis
+      * disrupt gene
+      * cis effects (disrupt regulation)
+        * therapy for SCIDX1, solves immune problem while causing leukemia
+      * homologous recombination works nicely in mice
+        * recombination is inefficient in any model organism, problem for humans
+          very low chances compared to random integration
+          even in yeast you need to do a selection critera
+          * ethical issues for humans
+            * worldwide ban on germ line research
+            * though its easier in the embryo than adult; hard to get at cell compartments, later in life from a technological point of view, working in the embryo would be much easier
+            * technically possible to do IVF and insert gene into blastocyst, select which one uptook the gene and then create new embryo from it.
+        * many other cells will integrate it randomly anyway.
+  * Target cell access
+      * need to access a large enough number of cells to uptake
+            gene and provide a selection pressure to filter out the
+            cells without the modified gene.
+  * Engineering apropriate place/amount of expression
+      * need to express in the right cells at the right time in the right amount.  Could affect things badly if incorrect.
+  * Permanance
+     * if you miss the stem cell, the treatment will wear out
+  * Immune rejection
+     * presenting new protein can bring up immune response
+            against targeted gene
+
+
+* Beta thalassemia gene therapy
+  * old goal not realized, first work 1979
+  * hematopoetic lineage is favorable for gene therapy
+    * self marrow transplants can be done well, although still dangerous - have to lethally radiate recipient to knock out native maroow, kill off diseased cells and make an environment with a ot of space for new cells to take hold, lots of problems - no immune system, platelets 
+  * getting gene expressed in physiological amounts in right cells but
+    not others is a challenge
+  * LCR (locus control region)
+    * operationl definition without a complete molecular definiton
+    * site in DNA that covers 12 kb, has number of transcription
+      factors, chromitin is permanently remodeled within the LCR,
+      acts at a distance, on the order of 60 kb.
+      * LCR seems to control the total amount of transcription,
+        protects against position effects.
+  * Lentiviral vectors
+    * can only integrate into cell
+    * though there's an issue about whether or not virus can recombine
+      with a currently viable virus and make a new super virus
+    * lentivirus has limitations on total payload size
+    * cd34 seems to target largely hematopoetic progenitor cells
+    * lentivirus can integrate into a cell that is not currently going
+      through cell cycle, other retroviruses can't
+
+* Gene therapy mediated insertional mutagenesic hazard
+  * SCIDX1 severe combined imuni deficiency disorder
+  * codes for gamma-c cytokine receptor subunit common chain in
+    recepters for IL2,4,7,9,15 needed for survival, growth, differentiation of early immune progenitors
+  * the retrovirus for this study was a murine maloney retroviral vector
+    * the LTR also codes to for something that encourages the gene to
+      be shut down probably by chromitin remodeling
+  * Trial was done on two patients - 11 and 8 months old
+    * Remove marrow and isolate CD34+ cells (~5 million cells)
+    * get cells to start dividing in culture, (needed for the
+      retrovirus)
+    * infect repeatedly for 3 days with gammaC moloney virus
+    * 3 year latency, 2 people developed lymphoblastoid leukemia
+      T-cell leukemia
+    * infuse ~2*10^7 cells/Kg body weight (Note: no irradiation of host.  Expect growth advantage to gamma-C positive cells.)
+    * In these patients gene therapy was able to provide correction of disease phenotype and hence clinical benefit, both children could leave hospital and go home.
+
+    * in two cases triggered LMO2 oncogenes - acute lymphoblastoid leukemia (3 years later)
+      * LMO2 is transcription factor of progenitor cells
+      * preclinical mouse trials did not reveal the risk
+      * both patients with leukemia treated for leukemia and doing OK now
+      * these patients had gotten ~10 times more cells than the others, will the others get it, or just get it later?
+
+  * Insertional sites, biases, consequences
+  * retroviruses insert "randomly"
+    * but have preferential neighborhoods - open chromatin domains and explicit promoter regions are often favored
+
+* Triplet repeat diseases
+  * went through several explanations of how they worked
+    * increasing severity with progression of generations = anticipation
+  * molecular origins
+    * putative replication slippage of repeats (apparent relation with microsatellite instability)
+    * huntingtons was expansion in a protein coding region
+    * myotonic dystrophy
+      5-38 repeats is normal
+      [[BR]]39-100 is mild disease alleal
+      [[BR]]disease alleles is up to 2000 for the most severe
+
+    
+* For myotonic dystrophy - 4 current hypotheses
+  * RNA processing defect leads to defective protein and less protein
+  * Repeat structure alters local chromatin structure affecting near by genes and their expression
+  * CUG repeats interact with RNA binding proteins to alter normal activity of RNA binding proteins (gumming-up-the-works notion) i.e. toxic gain of function
+  * CUG repeats in RNA can serve as biding sites for a subset of DNA binding proteins that include specific transcription factors
+
+
+

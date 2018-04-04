@@ -1,0 +1,244 @@
+##language:en
+#pragma section-numbers off
+
+= Bi188 Notes  Lecture 8  May 17 =
+
+Human Genetics
+
+* mobile elements
+  or how does a conserved genome get randomized.
+
+  * learned about transpons through mutations that have unsual
+    characteristics
+  * transpons are everywhere, you can't help but finding them
+  * genome project shows the complete catalog of all the transpons
+  * how does a dna sequence move?
+
+{{{
+
+          A | B | C
+        ------------
+          D | B | E
+        ------------
+              |  (transposition event)
+              v
+          A | B | E
+        ------------
+          D | B | C
+        ------------
+
+}}}
+
+    * site B helps control location of integration
+
+      * B can be specific allowing specific integration
+      * B could also be missing allowing random reintegration
+        elsewhere
+
+    * what's a switching system vs a ? system
+
+      * states switch more frequently than could be possible via mutation
+      * could be a number of states
+      * example salmonila
+
+        * changes surface antegen possible on flagella
+        * inverted repeats of 14bp 
+
+{{{
+
+                       P ----> H2 --->  RH1-->
+             Hpb       
+             <--          -->               < switching 
+           ------------------------------
+
+}}}
+
+           it switches promotor back and forth to control which
+           direction it reads to control expression of H2 or H1
+
+           another organism switch structural gene around
+
+      * best studied: yeast mating type
+
+        * 2 states \alpha and A
+
+      * some systems even swap genes around between different
+        individuals
+      * some clever organisms can switch their surface protein to
+        defeat your immune system.
+
+        * switches protein once the immune system has learned to
+          recognize the first protein
+        * nicerium? (one that causes gonnoreah)
+        * relapsing fever berllia(sp?)
+
+          * has dozens of potential surface proteins
+
+        * similar african trapanisome(sp?)
+
+          * perhaps a thousand, like berillia, out near the telemer
+          * inserts an unusual base into the DNA "J"
+
+        * malaria has one of the most elaborate switching systems
+
+  * transposable elements
+
+    * DNA transposons
+
+      * those that replicate
+
+        * example: TN3 in bacteria
+
+      * those that "don't" - the excise in process of moving -
+        "cut-n-paste"
+
+        * most eukaryotics use this method
+
+          * DNA moves out, leaving a hole, however other diploid copy 
+            can repair the hole
+
+    * RNA intermediate
+
+      * Transposons
+      * Retroviruses
+
+    * issues:
+
+      * how dependent is the transposon on the host cell?
+      * how does it regulate itself so that it doesn't overwhelm the
+        host and kill it.
+      * can it promote its own expression, does it require "good
+        fortune" for there to be a promoter when it lands
+      * TY1 element of yeast
+
+        * just like retrovirus but doesn't have an evelope protein, so
+          doesn't leave the cell
+        * hard to study, rare events
+
+          * in "higher organisms" may only happen in specific cell types
+          * how to test to see if it uses an RNA intermediate
+            * insert an intron
+          * up the frequency to see it happen?
+            * stick a regulatable promotor in the front
+          * test to see if it's hapened?
+            * when it lands it can bring a  gene under its regulation
+          * another technique
+
+            * put gene in backwards with a forward intron
+            * reverse transcriptse chops out intron, dna copy turns
+              it back into proper order
+
+    * how does the organism fight back against the transposons?
+
+      * c. elegans well studied
+
+        * mutator strains have elevated mutation rates
+        * detour to talk about RNAi - double stranded rna 
+        * mutator strains were defective in RNAi and something else
+
+      * nerosperum ( almost no repeated sequence )
+
+        * has at least 3 different systems to block repeated sequences
+        * vegetative growth, has process "quelling"
+
+          * has system to lower threshold for quelling by using rna
+            dependent polyerase
+
+        * MSRD - miotic supression of unpaired dna
+
+          * if genome has a sequence that is unparied with other copy
+            in the other copy of the genome which causes that locus to
+            be supressed, it also supresses other chromosome
+            locations.
+
+        * RIP - name changes as understanding of phenomenon changes
+
+          * repeat induced point mutation 
+          * inserted genes were heavily mutated after cross
+
+            * up to 30% of sequence mutated from GC -> AT
+            * happened after matiting before miosis
+            * appears to be methelation using secondary system
+
+    * mammilian systems (name copies, % of genome)
+
+      * LINEs 850,000 21% of genome
+
+        * related to retrotranspons but without terminal repeats
+        * instead of using tRNA priming, perhaps just nick the genome
+          and start from the polyA
+        * frequently doesn't fully copy, sometimes part of it gets
+          inverted
+        * L1 is probably still active, and some can still replicate
+        * have preferences on where they want to go
+        * excess of line elements on X chromosome, and flanking genes
+          that show monolilic expression (only one is being used)
+
+          * perhaps one of the LINE families is used in the silencing
+            of the extra copy of X in XX individuals    
+
+            * ICF ( mutation in methelation system used in silencing )
+
+      * SINEs 1.5M 13%
+
+        * to short to encode their movement protein (instead uses
+          components from LINEs)
+        * certain SINE elements use LINE elements
+        * in humans Alu uses L1 machinery to move around
+
+          * L1 seen at GC rich regions, Alu in AT, which is confusing
+            considering Alu uses L1 machinery
+            new Alu transposition events are in same as L1 
+          * the preference seems to come from how they mutate with
+            time 
+
+        * MIR uses L2
+        * imprinted genes seem to have reduction of SINEs
+
+      * Retrovirus-like 450,000 8%
+
+        * has LTR structure
+          - LTR Gag Pol Env LTR ->
+        * may or may not have Env gene
+
+          * if you have env gene, can leave the genome and live as a
+            virus
+          * retrovrius phase has much higher mutation rate
+            * copying is error prone
+          * uncertain if there are any RV-like transposons are moving,
+            many say no
+          * historical mutations of RV
+
+            * no increase in stop codons
+            * reduction of non-synonymous mutation
+            * mutation rate of Env gene doesn't seem higher
+              (perhaps some are leaving genome and living as viruses)
+
+      * DNA-Transposons 300,000 3%
+
+        * protein needs to find a copy in genome
+        * means that as time progresses and number of broken copies
+          increase the DNA transposons tend to die off
+
+      * usually transposons are thought of in the eukaryotic cells
+
+        * prokaryotics have complety different system
+        * found in mixobateria
+
+          * some e.coli also has one (though lab strains randomly
+            didn't have copy
+
+      * main things to know about transposons
+
+        * are they still active
+        * how long have they existed
+
+* horizontal transmission of genes
+
+  * very controversial section of human genome draft paper
+  * may be other copies in other vertabrate that aren't commonly
+    studied
+  * some best blast hit is misleading, doesn't mean the best hit is
+    closest phylogenetically
+  
+

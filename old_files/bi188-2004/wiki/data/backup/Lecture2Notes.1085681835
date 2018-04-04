@@ -1,0 +1,370 @@
+##language:en
+#pragma section-numbers off
+
+= Bi188 Notes  Lecture 2  April 5 =
+
+Dr. Wold lecturing
+
+Course web site
+http://woldlab.caltech.edu/bi188
+
+Tracy: 
+
+handing out assignment next week
+mck sequence comparison
+to get familiar with blast, seq comparison, working with genomes
+
+could be on your final, could have a sequence analysis question on your final
+introduce you to the kinds of things that are important in working w/ genomes
+
+Barbara: 
+
+assignment's to get you to interact with genome browsers
+use as a warm-up exercise, optional
+it will be useful
+
+in 1st hour: underpinnings of bio/data from whole genome analysis
+
+last hour: tools, algorithms for seq comp; 
+[[BR]]2 classes of biology:
+  * large general features, base pair statistics; 
+  * other is finding a gene, knowing when 1 gene/genome is an ortholog, where protein 
+coding sequence is.
+
+how you find the cis-regulatory elements that run genes and dictate where/when they'll be expressed
+
+tried to get most recent paper on the human genome, rather than the paper from 2yrs ago, but couldn't
+The mouse genome paper offers some comparison also.  Another newer paper being written now.
+
+'''slide: reference genome sequences 4/03'''
+
+  * mycoplasma (parasitic bacterium) ~400 genes  (done)
+it's the simplest/smallest self-conatined cell in terms of gene number
+
+  * E. coli + 100    4.6 Mb  (done)  ~4300 genes
+
+  * yeast  12.5 Mb  (done) 6300 genes 
+now 5 other yeast species done to lower quality
+
+  * mustard weed, arabidopsis  120Mb (done) ~26,000 genes
+classic model organism for plant development
+
+  * worms 1 & 2: c. elegans, c. briggsae (less well) 97Mb (done)  17,000 genes
+
+  * fruitfly 120 Mb  (done) 13,000 genes
+
+  * mouse & rat  3000 Mb  (done) 30,000 genes
+
+  * Human 3,300 Mb  (done)  23,000 genes (that are protein coding)   (maybe 22,500)
+recently discovered it includes a large segment duplication, hard to deal with in sequencing, learning about why this happens
+
+  * First draft of Chimp 3,300 Mb
+
+  * chicken (draft) - will be important from phylogenetic perspective
+
+  * sea urchin (almost draft)
+Highly polymorphic individuals can be utterly limiting. Paternal & maternal chromosomes differ quite a bit
+
+  * sea squirt, 25x coverage, still couldn't assemble the genome because it's too polymorphic
+
+  * dog genome (draft in a few months)
+went to trouble to pick inbred boxers, engaging in ill-advised inbreeding, then selected least polymorphic 
+of all, now the source of the dog genome.
+
+Now looking for an elephant like that.
+[[BR]]African less polymorphic than indian elephants??? (Barbara can't recall) - chosen based on relative polymorphism
+
+
+'''Slide: Genome Project History'''
+
+The post-human-genome sequence era, go get genes
+
+
+'''Slide: how human genome first draft was done (twice)'''
+
+public strategy vs. private/celera strategy
+
+public approach:
+
+150-350 Kb BACs (bacterial artificial chromosomes) - developed by Mel Simon, Hiroaki Shizuya at Caltech
+[[BR]]Generate vectors that can clone large (repeated) sequences
+[[BR]]any novel recombination apparatus that sees all the repeats is going to get confused 
+
+built a physical map, overlapping clones (except for centromere) to get tiling path
+[[BR]]whole genome, take each clone, chop into small pieces, sequence them, overlap them, put it all together
+
+
+private approach:
+
+shotgun approach
+[[BR]]500 base runs lots and lots of times, 5x coverage OK, 
+10-15x coverage statistically gets you everything.
+
+Then put together computationally all at the end
+
+Celera had the machines and started sequencing, but didn't have the algorithms to assemble it all, but had the guy:
+Gene Myers, ex caltech undergrad, had been thinking about the algorithms and he developed the algorithms while they were shotgunning
+
+$100M+ to buy the machines and get the system up and running
+
+But how do you combine pieces that are smaller than length of repeat?
+complicated decisions to make, use clones of differing lengths, to get enough info
+
+500bp info, 
+both ends, know how far apart they are, 
+series that are 2Kb appart, or 10Kb apart, or 50Kb apart, 
+can puzzle together things that are otherwise ambiguous
+
+Now, getting other genomes sequenced, the biggest challenge is polymorphism
+(See notes above that I inserted within the "genomes sequenced" section 
+on polymorphism issues)
+
+Now believe that a mix of the strategies used in the public and private efforts
+is optimal for an entirely "new" genome
+
+
+'''Slide: Genome browsers'''
+
+EMBL, UCSC, NCBI etc.
+
+Problem with looking for gene by gene name.  If you're interested in some gene by name and you type
+that name in to one of these systems, it often takes to right place, 
+but as often will take you to another gene with similar/related name.  Should instead enter the gene by e.g. genbank accession number.  Mouse genes & human genes that are the same are sometimes given the same name, and sometimes different names.  The rule is, if you want to go someplace with assurance, start with some sequence and blast it.
+Sometimes a name PLUS accession number will help.
+
+
+'''Slide: Global CpG island survey'''
+
+CpG islands are an interesting feature, look globally at genomes, 
+within vertebrates, these CpG islands have some functional significance 
+
+Normally counter-selected (conversion to TpG) and 5x underrepresented, of interest due to high frequency near 5' end
+of genes.  They are localized and highly enriched around the beginning of genes.  While they may not define a part of a promoter, they do tend to localize near promoters.
+
+numbers/maps of cpg islands match genes pretty well
+[[BR]]what happens with CpG islands is that they're the subjects of methylation, for making open or closed chromatin
+
+
+'''Slide:  % of sequence that's coding:'''
+
+Human genome < 3% of sequence is protein coding , pretty small fraction, thus a large fraction is introns, repeats, intergenic (including islands of regulatory info)
+
+> 70% of yeast is protein coding, much more compact, but do have 
+full splicing apparatus
+
+small non-coding RNAs with apparent regulatory functions in transcription and RNA turnover helps explain the low
+protein coding numbers in humans
+
+> 45 % of human sequnece is repeated sequence due to families of transposable elements
+
+sequence length?  complexity of genes?
+[[BR]]while one goes down, another goes up
+
+In mouse genome, still have lots of repeat families bouncing into new sites & joining mouse genome.
+In humans things are slowing down, not adding repeats as rapidly.  Most human transposable elements are now dead or quiet; mouse genome generating events as fast as ever.  Repeats hopping around can be mutagens.
+
+
+'''Slide: repeat incidence'''
+
+repeat incidence used to identify functionally special regions of the genome where
+repeats cannot go
+[[BR]]e.g. HoxD  (homeobox) gene cluster in human, not allowed to be invaded by repeats
+
+
+'''Slide: terminology'''
+
+paralogous genes = Highly similar genes within a genome derived from a
+common ancestral gene
+[[BR]]e.g. histone genes, betaglobin genes, alphaglobin genes
+
+orthologous genes = "same" gene in two different genomes.
+[[BR]]Consider how to distinguish a true ortholog from paralogs where there has
+been gene loss or rearrangement - the power of choromomal position to arbitrate - same
+chromosomal neighborhood = ortholog
+
+one gene in same neighborhood, ortholog if rearrangement then may be "at sea" about which of 2 is *the* ortholog, 
+e.g. the superior blast sequence, unless curated
+
+Homologous = 100% similarity as in small polymorphisms
+[[BR]]% homology loosely = % similarity
+
+
+'''slide: biggest human gene known  dystrophin = 2.4Mb hnRNA'''
+
+mutated in Duchenne Muscular Dystrophy, the lead disease for the the telethon foundation
+
+Located in X, thus males are affected
+
+2.4 M base pairs long, 
+transcription occurs over the space of hours (sort of amazing)
+incredibly large target, lots of ways to mutate it
+
+Many alleles -> huge target
+[[BR]]some in ways the gene doesn't care about.  Some large insertions/deletions in introns, make no difference
+but lots of ways to stop it or cause disfunction
+
+the mRNA for this is ~6000 bp long
+
+Average human gene:
+  * ORF on order of 450 AA, 1350 bases  
+  * distributed over 30KB
+  * 11.1 genes per megabase on average
+
+There are gene rich domains, and gene poor deserts
+
+mRNA = 1600 bases  including 5' & 3' UTR
+
+'''Slide: complex gene anatomy - distant and multiple regulatory elements'''
+
+different elements can direct expression in different spatiotemporal domains in response to diverse signals
+
+regulatory elements can operate over ~100 Kb  and skip over gene X 
+(or 2 or 3 genes away) 
+to site e.g. between MRF5 and myf5, as well as simpler control of downstream gene control, MRF5 -> myf5
+
+can't be sure about regulation over distances within 3-5 genes
+
+Q: how regulation over 100Kb? 
+[[BR]]]DNA looping to transactivate by promoting formation and action 
+of the proximal / initiator complex.  How does it *know* how to interact with the gene 2 genes down the road?
+
+But... also multiple cases where gene x and mrf4 are exclusive in 
+transcription patterns, from myf5, e.g. chromatin opening/closing  
+methylation of CpG islands, can play a role
+
+Chromosome scale comparative genomics
+
+paper included, by Stubbs and colleagues, Dehal et al Science: 293 p.104
+
+Hu CHR 19, 
+
+mouse genome, pull out all sequences corresponding to genes on hu chr 19
+all these interesting papers that do diagnostic genome scan start with 
+everything on 1 chromosome: Y, 21, 22, 19
+(high numbers implies small chromosome rather than e.g. 1 or 7 which are large)
+
+Chr 19 most gene dense chromosome - highest packing ratio of genes per unit length
+[[BR]]chromosomes in other organisms: representatives of a number of 
+complex gene families, protein coding genes that occur once per genome, large paralogous families, 
+medium paralogous families
+
+family of zinc finger transcription factors, over 1000 of them, 
+repressing expressors, all use co-expressor protein, olfactory receptor family, t-cell receptors
+all highly-represented on 19  (other creb-class zinc finger on other chromosomes, also olfactory on others)
+
+
+Missing Slide: the interesting appearance of the junctions
+not surprisingly at sites of repeated genes, multiply within 
+a choromosome, semi-homologous mediators of chromosomal 
+translocations, happen to have occurred in germ line, 
+generating novel genes at the junctions
+
+'''Slide: finding conserved elements, using to map conserved features'''
+
+Using MUSSA software from the Wold lab
+mouse/human
+
+mouse/human/cat/dog/cow 70% threshold
+
+muscle-creatin-kinase (MCK) exons
+one tiny green box, non-coding exon, 
+
+output from interactive viewer designed to highlight conserved regions 
+
+more user friendly than a dot plot
+
+30 bp sliding window across a 30 KB region of MCK, "simple" gene
+
+simple sequence repeats (only) masked
+
+leverage protein coding part, disallowing frame shifts, etc.
+
+cis-acting regulatory elements
+
+trying to find other genes we're less familiar with, e.g. micro-rna's
+
+microRNAs very difficult to find with searching algorithms, comparative genomics helps
+you can look at exons and regulatory/functional elements.  It's better to use multiple genomes.
+If something is conserved in many genomes it can help determine if it's functional.
+
+lots of mammals "radiated" 80-100 Million years ago
+(mouse, human, cat, dog, cow)
+
+What can be detected with 2 versus 5 mammals for a 'simple' gene?  Things under functional pressure are conserved
+
+evolutionary tree is your friend in these comparisons, 
+especially if you have multiple species that are distant from your reference genome
+
+The release of the dog genome will be a good addition in the phylogenetic tree
+
+Comparative sequence analysis can help understand the anatomy of a gene, 
+find candidate binding sites for transcription factors, enhancers, silencers
+
+several occur:
+bunch of tiny features
+used to be that you could find a transcription factor in front of genes you're studying, but not in other genes very easily.
+
+if in conserved domain, and you see binding, candidate factors, 
+you can computationally infer what transcription factor or combinations are regulating 
+a given gene without doing a biological experiment
+
+you can infer / hypothesize, but may not be ironclad hypothesis
+so still large role for confirmatory experiments
+
+but still an enormous gift from comparative genomics
+
+
+'''Slide: characteristics of protein coding genes in 3 genomes'''
+
+fly, worm, human
+[[BR]]moving in direction of more uniform, shorter exons, 
+interrupted by large introns
+
+prevailing idea: through differential splicing or 
+transpositions, 
+exon defines protein-protein interaction sites, widely used 
+sites, ring-finger proteins, luceine zippers
+
+big invitation if you put element into some other gene, to get protein-protein interactions that previously didn't 
+exist
+
+'''slide: low on short introns'''
+
+'''slide: functional group distribution for protein coding genes'''
+
+look across prokaryotes, esp. those out in the environment, 
+look at the pathways represented by bacteria. Which bacteria live in which envoronment and what pathways do they use?
+
+also immunity and defense has big differences, 
+human more elaborate t-cell b-cell recognition
+can do sweep of funcitonal groups
+
+'''Slide: recent duplications:'''
+
+inter(red) and intra(blue) chromosomal duplications
+positive positional bias for centromere and telomere... why?
+concequences?
+
+impression: positional biases / frequency dep. on distance to 
+end of chromosome or centromere, no understanding of this fact.
+
+some of these very recent duplications in human since chimp, 
+are fodder for being interesting differences; they are 
+intra chromosomal, not inter-chromosomal 
+
+how many genes (what fraction) are about being a cell
+
+30% of known human disease genes have an identifiable candidate
+ortholog in yeast.  This is higher than everyone predicted, (predicted approx 10% only) but so many things like map kinase are in all of these species
+
+'''Slide: conserved squence elements between mouse & human 19'''
+
+repeated & varied over/over again 
+
+'''slide: mouse mutation rate approx twice as high as human'''
+
+for next week, read chapter 10 for background, and 11 will be relevant
+soon also
+
+
+

@@ -1,0 +1,743 @@
+##language:en
+== Bi188 Notes  Lecture 1  March 29 ==
+
+Biology 188
+human genetics
+2004-03-29
+
+S. Scherer lecturing
+
+can learn a lot given just the sequence alone
+
+who cares how the sequence made, where it came from, etc.
+
+sequence analysis: 
+  * statistical analysis
+  * alignment algs
+  * gene prediction
+    * find where the genes are
+      * clear ideas about what works & doesn't
+
+
+== Statistical analysis ==
+
+base composition
+comes up over and over again
+
+various issues, e.g.
+  * too much GC -> too hard to sequence
+  * not enough GC, difficult to clone (E. coli doesn't like it)
+
+when looking at two strands:
+
+  A = T   (i.e. concentrations of A = conc. of T)
+  
+  G = C   (i.e. concentrations of G = conc. of C)
+
+but not true if looking at one strand
+
+Locally they don't have to be true
+
+prokaryotic DNA 
+
+plot (C-G) / (C+G)  
+
+versus the whole genome, e.g.:
+
+E.coli   across genome
+
+so why does 1/2 the genome have more C's (vs. G's)?
+
+would like more G's on the leading strand when replicating, not
+all bacteria do this.  E. coli and Bacillus do, but not some blue-green
+algae and archea.  Why?  Maybe gene repair.
+
+which side the genes are transcribed from?
+
+around origin there IS strand bias
+
+most of excess Cs and Gs are in the 3rd codons
+but still not straightforward
+
+what can you say about dinucleotide 
+nearest neighbor analysis
+first done to explain strands are antiparallel 
+(not confident of previous statement)
+
+observed value less than expected value
+
+"there is some biology going on"
+
+C's are often methylated
+
+leads to mutogenesis
+
+CG's are special
+
+CG == GC
+
+clustered in CPG islands 
+
+CPG islands, often have regulatory functions.
+
+isolated ones are methylated all the time
+
+others in islands are not so methylated, usually involved in regulation
+
+C - methylation
+yeast does not do methylation (modern) , though once they believed it did
+but yeast doesn't have as much cg as expected if it doesn't do methylation?
+
+(not sure if all of the above methylation stuff is correct!)
+
+genome project forces everyone to do the same thing
+maybe an onld artifact?
+
+in areas you find are GC rich, you'll observe more CGs than expected
+
+How to find CPG islands
+  * 500bp of 55% G+C
+  * look at CG nucleotides - observed/expected > 0.65
+  * want at least 7 CG dinucleotides in this region to avoid trivial higher-order oligonucleotides
+
+trinucleotides or tetranucleotides
+
+sequences are not random
+some biology in the shorter sequences
+
+bulk statistics of tetranucleotides:
+does all human DNA look alike?  how 
+
+can you identify DNA that doesn't belong e.g. in Human?
+horizontal transmission, transposition, biology, 
+genes that belong there but don't look like the other genes?
+
+we're good at looking at things that we know what they look like
+but not as good at discovery, things just anomalous
+
+bulk sequence, look at all possible hexanucleotides
+interesting biology happens when you look but find too few things 
+
+why wouldn't find tetranucleotide GATC
+symmetrical sequences tend not to be in e.coli, GATC, A gets methylated
+
+sites for restriction enzymes, how many should be is less than 
+there ought to be
+
+particular sequences, esp. symmetrical
+
+CTAG also underrepresented in most bacteria
+
+trinucleotides & codon usage
+should be straightforward, but still some interesting biology
+multiple codons can code an amino acid
+
+in particular organisms, some preferred to others 
+
+e.g. from [ endacolimin ? ] (spelling?)  (some simle organism)
+
+6 columns:
+TEF3
+EN01
+HSP70 = heat shock protein
+TRL1
+MKC1 = map kinase
+PKC1 = protein kinase C
+
+
+by 4 rows: 
+
+CCT  3  1  5  7  6 11
+
+CCC  0  0  0  5  5  3
+
+CCA 38 16 22 15 11 28
+
+CCG  0  0  0  2  2  7
+
+look at codon bias, adaptation index  (CAI)
+
+works well on proteins with widely varying AA 
+also of varying length
+
+look at ith Amino Acid 
+
+ aai
+
+ codon J
+
+ X is how many times used in abundantly expressed protein
+
+ Wid = Xij / Xi  max
+
+weight by the one used the most
+
+for the one occuring the most, divide by itself, weight factor is 1
+
+geometric mean
+
+ CAI = (  PI  range 1:L  of Wn  ) rasied to 1/L
+
+plus minor adjustment ot the rows so 0 doesn't zero whole thing
+
+the number for different organisms:
+
+2 columns: 
+ yeast 
+ e.coli
+
+CCT   .047  .007
+
+CCC   .009  .012
+
+CCA  1.0    .135
+
+CCG   .002 1.0
+
+for these 4 codons
+
+often run into issues in the lab because of codons not preferred 
+dep. on the genome
+
+there's reasonable predictive value from codon usage
+
+cells can get amplification by translation being efficient, don't have
+to amplify trancription
+
+save production of mrna
+
+why are there codon biases at all?
+
+what codons get chosen and why?
+
+base composition in bacterial world, varys over wide range
+70% GC,  others 20% gc
+
+how do change in base composition?
+
+genes packed in wall-to-wall, all coding region
+can only change 3rd position in codon??? almost true
+
+make a strange graph
+
+x axis: %GC content (per organism)
+
+Y is use of G in each of 3 positions
+
+  1st position how often use G?
+
+  2nd position how often use G?
+
+  3rd position how often use G?
+
+in 3rd position in GC rich organism, lots in those, not surprising 
+
+orgs are also changing usage in position in 1st two positions as well.
+
+base composition in genome is changing, change which 
+AA they're usin gto make proteins
+not big effect but arginine vs. leucine sustitute one for the other   (spelling?)
+
+alanine vs. valine   (spelling?)
+
+organism can't change some
+but can change composition
+
+
+
+== Sequence Alignment ==
+
+
+everything you need to know about sequence alignment you can learn from 
+dot plots
+
+e.g. compare 2 retroviruses related to each other
+
+can make up some rule about base pair relationships
+
+e.g. 1  pair match?   2 pairs match?
+if so, dot appears..
+
+Are all dots equal???  
+
+yes, more if it's a protein
+
+rules for deciding how much dots are worth
+
+21st century, also for connecting the dots
+
+terminal repeats also, explained in corners
+
+issues about best vs. good
+
+substitution matrices, scoring rules, damage for misses
+rules for opening up gaps, 
+
+scores for alignments, to judge one vs. another
+
+smith-waterman vs. brute force try every alignment
+
+switch over to talk about blast
+how it gets the right anwer virtually all of the time.
+then run smith-waterman on the end to get a better answer
+
+also fasta for historic interest
+
+found points on the diagonal, then put diagonals together
+45degree lines, connect
+
+scoring rules first
+
+for nda sequences are boring, turn into simple matrices
+unit matrix
+the scoring rules for aligning protein sequences matter a LOT
+
+that's the only thing that matters compared to everything else
+when blast first developed, used substitution matrices, +/- 
+to score match/mismatch
+
+PAM matrices, nice idea, didn't work as well as current
+closely related proteins
+what mutations are tolerated: point-  mutations..
+
+more than 85% identical, what substitutions are acceptable
+
+single mutations not double mutations
+
+more distantly related proteins, see what remains conserved, 
+that works better
+
+blocks database, 
+aligned, conserved regions
+
+big table
+
+a protein sequence
+
+    A   G   Y   W
+
+in a related protein
+
+    A   G   F   W
+
+another
+
+    G   G   Y   W
+
+
+enormous tables
+
+all pairwise combinations, across all positions
+
+make a table of pair matches observed, e.g. 
+
+ AA  GG  YF  WW  
+
+ AG  GG  FY  WW
+
+frequency of usage of pairs, 
+
+ Fij
+
+then from frequencies can get probabilites  
+
+ Qij = Fij / sigma over i (sigma over ij j<=i  Fij ) )
+
+probability of seeing any pairs
+
+single amino acid amount all of these pairs
+
+probability of a pair
+
+probability of a single Amino Acid  (AA)
+
+ Pi  e.g. probability of an A being in this table
+
+ Pi = Qii + sigma over j!=i  of Qij)  / 2    
+
+over 2 because only half of the pair is comprised of the A.
+
+what do we expect, what do we see, take a log ratio
+
+
+can get expectation, Eij  = Pi Pj  (j=i)
+or Eij = 2 Pi Pj  (J != i)
+
+  now multiply back by factor of 2
+
+then calculate an entropy
+
+shows up in many context... 
+
+take log of odds ratio      ("odds ratio???")
+
+ Sij = log2 (Qij / Pij)
+
+positive or negative number
+
+number of bits
+
+multiplied by 2 and rounded to nearest integer
+
+but these are the entropies.
+
+Units of 1/2 bits
+
+older dna searches, blast scores & bit scores, differ by 
+factor of 2, and that's the reason.
+
+these multiplied by 2 to match old PAM matrices, that's the difference
+
+
+to score a particular substitution
+
+how changing the rules for which things to put in the table 
+affects how the whole process works...
+
+can get different numbers out the other end.
+
+start with distant sequences and see which parts are conserved
+if table is human and chimp, vary by 1 or 2 AAs, not a lot of info.
+
+
+Pentacoff did 10+ years ago, made a rule if 2 proteins differ 
+by less than a certain %, then average their contributinos to this 
+table. they won't count as much, fewer things to work with to make 
+the table, but won't be over-weighted by too-close 
+
+calculate an entropy not for an individual substitution but for the 
+whole matrix
+
+sum over all amino acids, 
+
+ H = sigma i (sigma J<=i  of Qij Sij)
+
+get a number, use to say how much info is in this structure 
+we're producing; 
+
+what happens when change rules for how closely related things can 
+be in the table, how it changes H, the relative entropy, i.e. 
+information content, the whole ball of wax...
+
+plot (not reproduced in my notes)
+2 y axes:
+  Left:  H  0.4, 0.8, 1.2
+  right: total base pairs available  (10E5, 10E6, 10E7)
+X axis: 
+  % clustering
+
+how does it affect how the searches come up?
+
+which search results are right, and which are wrong?
+
+do better than 99.5% percentile of junk/fake/bogus matches; 
+a real match has to score better than that.
+
+
+blosum 0.62 relative entropy point, 
+get minimum average number of entries missed
+how often you're missing things
+
+if you construct matrices right, you'll miss the least
+
+blast vs. fasta vs. s/w
+
+blosum matrices doo it a little less
+if build scoring rules in sensible way, 
+
+find distant relationships, build rules out of them, 
+the more reasonable way
+
+now that we have scoring rules, have to align sequences
+
+align globally or locally
+
+First: global, start at one end, try to get to the other
+
+Next: local, try to get best score over local region
+
+e.g. Human and chimp e.g. betaglobin genes
+
+vs. 
+
+e.g. 2 yeast genes which separated 100M years ago
+
+local align is trivial case of the global alignment algorithm
+
+2 prot seq's
+
+    F    L    L
+
+F  +1    0   -1
+
+Fj  0    0   -1
+
+K  -1   -1   -1
+
+L  -2    0    0 
+
+match, gain a point
+
+don't match, lose a point
+
+gap, lose a point
+
+muliple paths to same point, record/save only the best path for transition
+
+move down or left 1 unit, open a gap, cost a point
+
+move diagonally, 
+
+looking for A best score, not THE best score
+recording all paths to each point doesn't matter, just "best"
+
+global alignment, from bottom corner of graph, trace a path 
+back to the top left corner, a best solution
+
+global: always path from bottom right corner to the origin
+  * one gap, one mismatch
+smith waterman, stop at a zero to open a gap
+
+To make sure don't get random things that count
+  * don't allow negative scores
+  * don't worry about getting to bottom right
+  * start at highest point and go to zero
+
+gapping rules crucial
+
+once opened up sequence, sticking in 100 AA's isn't different than opening 
+3 AA's.  different rules for opening & extending, 
+have to check back to other places, 
+
+computationally can be brutal
+
+can be implemented in hardware
+
+as sequences get large, 
+table is square of length of sequences
+millions of bases long is unfeasable!!!
+fortunately any outer-bound of matrix is function of next row in.
+only need something a little off diagonal to 
+
+
+blast
+
+basic local alignment search tool
+  * talking about local alignments
+try to take advantage of a little biology to speed the math along a lot
+
+dot plot
+
+rare when 2 seq's align and are bio-related, that the mtches 
+are uniformely distributed along the length
+usually peices that match well, plus others.
+rare that matches & mismatches are uniform.
+
+use the few dots that are close together to start the search
+a place where there are a few dots on the same diagonal, 
+that the aggregate score is above some threshold score
+
+a little piece that matches well, lookup table to make it fast, 
+then go up the table 
+
+original blast
+
+look for threshold score, then extend
+now 2 dots exceed score, that are not too far apart, then extend around there.
+
+DNA done like proteins but with simpler rules
+
+dna sequence, only 4 possibilities, can bit pack, if willing to require 
+certain word boundaries for matches, 
+
+now, modern blast, not only looks for points on diagonal, but 
+if found a few over in another area, if 2 diagonals don't line up, 
+will apply smith-waterman over a bigger region, within area of 
+graph having slightly-off diagonal alignments, then run S/W over 
+that to find the best
+
+what do you expect to find?
+
+AA match by chance?
+
+sequence 20 genomes, pile more stuff on, have some match, 
+what's probability of finding a match by chance?  Higher since 
+adding more stuff.  Biology hasn't changed but statistics have, 
+so take gene vs. yeast genome, get a probability; then search 
+against EVERYTHING, probability of seing by chnace grows, but 
+it doesn't change underlying biology
+
+
+
+== Gene Finding ==
+
+
+in large genomic sequences
+
+doing it now, but need to do better
+
+in bacteria, simle ORFs, look for them, done
+ribosome binding site up front, stop codon in back, operon, 
+not too hard.  almost everything is a gene anyway.
+
+some genes spread over wide range, hard in 
+
+rather than historic perspective, intro to contemporary way...
+
+given sequence, e.g.: 
+
+  ATATCTGATATGATTCGGTCCTAGCCGGCAAGGCAAGATCAAAGA
+
+regular markov model vs. hidden
+
+regular markov: transition to next base...
+
+but hiding one fact: new there was an A there, so knew what 
+to lookup next.
+
+At any given point, don't know which it is, 
+2 matrices of probabilities... 
+
+1 says what are the odds of switching states
+e.g. intron & exon, prob of switch based on what we see.
+2x2 matrix of transition probabilities
+from 1 state to another
+
+2nd set is:
+
+if in particular state, what are odds of observing the DNA 
+sequence 
+
+exon higher prob of G&C
+
+intron higher prob of A&T
+
+try out all possibilities, see which is the most likely
+
+switch back & forth 
+
+try all possible switches that occur, then try all possible things
+and knowing proabilities for observing transitions, which is most likkely
+then call that our gene model
+
+but of course we have other states as well, e.g. 
+
+promotor or not?
+
+5'UTR or not?
+
+3'UTR or not?
+
+5' splice junction?
+
+3' splice junction?
+
+Genscan or derivatives use:
+20 odd states
+
+some transitions not allowed:
+
+e.g. 3'UTR -> 5'UTR not allowed
+
+some other things algorithm uses can cut down on the work as well
+
+basic thing they teach you in vegas is dice don't have memory.
+but in this process, memory matters!
+
+e.g. intron size matters
+
+if too long, doesn't splice efficiently
+thus need duration model
+transition models not surprisingly depend on the base composition
+one basic feature of our dna: if GC rich, introns smaller
+if AT rich, introns get larger
+
+so genome bp statistics affect the transition probabilities
+
+Genscan designed to handle human genome project
+arbitrary length sequence
+decide if 1) no genes, 2) some number of genes
+
+doesn't take care of overlapping genes
+problem in bacterial world in particular
+in bacteria it happens occasionally, 
+in humans, less often
+
+also doesn't handle alternative splicing
+
+what's most probable set of pieces & how they go together.
+not designed to give alternatives, like 2nd best 
+alternative
+
+dealing with splice juctions
+
+when you have a 5' splice junction, you have a GT in 
+positions +1 & +2.
+
+
+   -3   -2  -1   +1   +2   +3   +4   +5   +6
+
+A  33   60   8    0    0   49   71    6   15
+
+C  37   13   4    0    0    3    7    5   19
+
+G  18   14  81  100    0   45   12   84   20
+
+U  12   13   7    0  100    3    9    5   46
+
+
+the U1 RNA is comlementary to 5' splice junction
+
+U1 suRNA:
+
+3'  G    U    C   C   A   U   U   C  A   5'
+             ***
+
+decision tree actually to explain the options possible
+
+6 bases, know 5, what's probability of 6th
+
+different models depending on the base composition
+
+when dealing with exons, need 1 more refinement
+when going through exon...
+1st position, 2nd or 3rd of the codon?
+apply different models dep on which reading frame you can be in.
+
+when exon, in which frame 1, 2 or 3?
+
+poly-adenalation site
+
+look for TATA boxes to see if you can find the promotor
+but some genes don't have those, so need another model 
+to help explain 
+
+if you try out all of these tricks, do surprisingly well--- 
+10-15% RIGHT, another 1/4 pretty good.
+
+is one more piece of info available...
+e.g. human sequence & mouse sequence.
+how do incorporate into gene finding?
+parts that match well are probably genes, don't match are not.
+
+but a refinement to genscan:
+have 2 seq's we can observe, so going along human sequence, 
+done alignment to mouse, (there's a reference for how that's 
+done).
+Before 2 probabilities: 1 state to another, 
+another 
+
+now also need proability of getting the 2 sequences we see?
+
+output sequence is not just the one.
+
+Proability of T in intron, and T intron in comparison sequence, 
+or G, or gap, or whatever.
+
+Essence of modern gene finding: improve by looking at 2nd sequence
+model produce alternative sequence ALSO, and see if reasonable 
+as well...
+
+all these things built on a model of how you think the world works.
+But some genes don't work that way- you won't get them!!!
+

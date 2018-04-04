@@ -1,0 +1,116 @@
+Human genetics and genomics
+
+* papers to read coming out soon
+  * 4 recommended
+  * more available
+  * users guide to the human genome     
+    * entry into world of genome browsers (detailed walk through)
+      * given sequence find all the information about the gene.
+
+* gene expression analysis
+  * trade off between quantity and quality
+    * microarray lots of quantity, qt-pcr high quality only few genes
+  * microarray (ron davis, caltech alum, )
+    * 2d array that provides semi-qantitive data
+    * affymetrix array
+      * built by growing short nucleotides about 25 bp, n(ever made in
+        own lab)
+      * features very similar between chips
+        * allows making comparisons between chips
+    * spotted array
+      * can use any dna on it
+      * fewer features needed than affy, but can only put fewer down
+      * always done in ratio
+
+* phylogenetic ordering (hierarchical clustering)
+  * treeview
+    * calculate pierson correlation coefficient between two data
+      points
+    * red = higher expression, green = lower expression
+    * works nicely for fewer genes, helps with being intuitive
+  * clustering does help increase the perceived order
+
+* tumor cell lines
+  * know of oncogenes and tumor supressors
+    * modified in germ line or somantically to change odds of getting 
+      cancer
+    * several cancer types cluster together ( published 2000 )
+      * melanomias, colon, leukemia, renal (kidney) group together
+      * breast, prostiate, non-small lung are scattered around the tre
+      * published in 2000 not so comprehensive
+        * focused on genes expressed in large quantities by adult
+          cells. Need to be done ove rwhen as our knowledge of the 
+          genome and genes increases
+        * based on 1100 genes showing the greatest signal
+   * breast tumor array analysis
+     * single tumor that was sampled at detection and after chemo is
+       more similiar to itself than to other tumors
+     * clustering can be overdriven by other
+     issues. e.g. vascularization
+
+* chip array (ChIP/chip) 
+  * different combinations of transcription factors are...
+  * beta test, tool to compare ChIP/chip data
+  * Chromotan IP
+    * put epitotpe tag after promoter?
+    * take cell douse in formaldehyde
+      * crosslinks proteins to proteins and proteins to dna
+    * chop dna up to fragments of about 100 bp 
+    * lyse cells open
+    * PCR amplify dna fragments (random primed amplification)
+    * put sample and control onto ratio array containing promoter and
+      regulatory sequence (at least hopefully)
+    * gets neighborhood, not specific nucelotides
+  * ChIP/Array (Lee, Rick Young)
+    * half transcription factors of yeast
+    * triplicate measure of cells in log phase growth
+      * estimated aobut ~30% false negatives, ~10% false positives
+        * missing some interactions, implies bogus connctions
+      * worked around it using a strong P value (.0001)
+    * shows pictures of resulting predicted interaction maps
+      of various qualities. (some missing additional interactions)
+    * shows summary of cell cycle regulation
+      * which regulators are attached to which gene
+      * used peak in microarray timecourse to predict when regulator
+        was attached to gene
+
+* titus, talks about FRII
+  * HW makes more sense as it is linked as web page
+  * used to look at genomic dna between human, mouse, rat
+    or human vs chick.
+  * tool is useful to find regulatory regions
+    * look for comparison between genomes.
+    * tools are actually used.
+  * two projects Myf5 or Sox2
+    * myf5 
+      * 
+    * sox2
+      * early midline regulator in chick
+  * using FRII, tutorial on page.
+    * two sequences, connects all points of similarity between
+      sequences with a line 
+    * FRII can handle 3 way comparison (Mussa is more)
+      * can force requirement that there's a connection between all 3 
+        sequences
+      * shows myf5, with a large number 
+    * reverse compliment match shows up in bp view
+
+* Homework
+  * due date for paper, 
+    * ID human gene, chosen by me, looked at from genetic and genomic
+      view.
+      * what happens when mutated in human & model organism
+      * need to be somewhat knowable
+      * omim website, good introduction to human diseases
+        * can be somewhat out of date
+        * omin is starting place, but can be 
+      * papers 2 pages are too short, and 
+      * 5-6 pages to explain why gene is interesting and what kind of
+        experiment should be done
+      * should include figures
+      * recommended 6-10 pages with some figures
+    * plagerism == bad, make sure you properly footnote websites
+    * reference crucial facts
+      * look at real science pages
+    * mid may due date
+    * turn in paper electronically on monday
